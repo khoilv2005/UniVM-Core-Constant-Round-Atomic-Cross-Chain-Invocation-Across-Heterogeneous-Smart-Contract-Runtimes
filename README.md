@@ -2,6 +2,8 @@
 
 Research artifact for **UniVM-Core**, a prototype for constant-round atomic cross-chain invocation across heterogeneous smart-contract runtimes.
 
+**DOI:** https://doi.org/10.5281/zenodo.20140391
+
 This repository contains smart-contract prototypes, relayer code, benchmark harnesses, raw result artifacts, and figure-generation scripts used to reproduce the reported evaluation. The artifact is intended for review, replication, and follow-on systems research, not production deployment.
 
 ## Artifact Scope
@@ -134,3 +136,7 @@ The WAN/concurrency RQ4 artifacts are retained under `benchmark-results/rq4/`. T
 ## Artifact Use
 
 For reproduction, record the exact Git commit hash and keep generated outputs separate from the curated raw artifacts in this repository.
+
+Archived release:
+
+Lê Văn Khôi. (2026). *khoilv2005/UniVM-Core-Constant-Round-Atomic-Cross-Chain-Invocation-Across-Heterogeneous-Smart-Contract-Runtimes: UniVM-Core: Constant-Round Atomic Cross-Chain Invocation Across Heterogeneous Smart-Contract Runtimes (v0.0.1).* Zenodo. https://doi.org/10.5281/zenodo.20140391
