@@ -1,0 +1,86 @@
+{
+  "workflow_id": "atom-travel-write-only-depth-5",
+  "workflow_name": "Atom Travel Write Only Depth 5",
+  "total_operations": 4,
+  "remote_functions": [
+    {
+      "function_id": "hotel-write",
+      "chain_id": 2,
+      "contract_address": "0x13cF0D18BCb898EFD4e85Ae2Bb65A443ab86023C",
+      "business_unit": "hotel.book",
+      "pattern": "atomicWrite",
+      "lock_do_selector": "book_lock_do",
+      "unlock_selector": "book_unlock",
+      "undo_unlock_selector": "book_undo_unlock"
+    },
+    {
+      "function_id": "train-write",
+      "chain_id": 3,
+      "contract_address": "0x13cF0D18BCb898EFD4e85Ae2Bb65A443ab86023C",
+      "business_unit": "train.book",
+      "pattern": "atomicWrite",
+      "lock_do_selector": "book_lock_do",
+      "unlock_selector": "book_unlock",
+      "undo_unlock_selector": "book_undo_unlock"
+    },
+    {
+      "function_id": "flight-write",
+      "chain_id": 2,
+      "contract_address": "0x3693Da93b9d5E63cB4804b8813c8214A76724485",
+      "business_unit": "flight.book",
+      "pattern": "atomicWrite",
+      "lock_do_selector": "book_lock_do",
+      "unlock_selector": "book_unlock",
+      "undo_unlock_selector": "book_undo_unlock"
+    },
+    {
+      "function_id": "taxi-write",
+      "chain_id": 3,
+      "contract_address": "0x3693Da93b9d5E63cB4804b8813c8214A76724485",
+      "business_unit": "taxi.book",
+      "pattern": "atomicWrite",
+      "lock_do_selector": "book_lock_do",
+      "unlock_selector": "book_unlock",
+      "undo_unlock_selector": "book_undo_unlock"
+    }
+  ],
+  "operations": [
+    {
+      "id": 1,
+      "step": 1,
+      "function_id": "hotel-write",
+      "parameter_names": [
+        "user",
+        "rooms"
+      ]
+    },
+    {
+      "id": 2,
+      "step": 2,
+      "function_id": "train-write",
+      "parameter_names": [
+        "user",
+        "outboundTickets",
+        "returnTickets"
+      ]
+    },
+    {
+      "id": 3,
+      "step": 3,
+      "function_id": "flight-write",
+      "parameter_names": [
+        "user",
+        "rooms"
+      ]
+    },
+    {
+      "id": 4,
+      "step": 4,
+      "function_id": "taxi-write",
+      "parameter_names": [
+        "user",
+        "rooms"
+      ]
+    }
+  ]
+}

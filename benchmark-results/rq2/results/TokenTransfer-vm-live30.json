@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ2a",
+  "mode": "vm-full-live-original-vs-translated",
+  "contract": "TokenTransfer",
+  "namespace": "vm-token-live30-20260429-021650",
+  "casesPath": "D:\\UIT\\randomly\\benchmark-results\\rq2\\cases\\tokentransfer.jsonl",
+  "generatedAt": "2026-04-29T01:33:52.604Z",
+  "elapsedSeconds": 22606.993,
+  "runs": 30,
+  "targetRuns": 30,
+  "pass": 30,
+  "fail": 0,
+  "passRate": 1,
+  "results": [
+    {
+      "caseId": "token-0000",
+      "seed": 20260426,
+      "pass": true,
+      "originalSnapshotHash": "0xa0610a42124ba903dbae0173d64b832f782a253e3bb15e438bdb53842dd97da6",
+      "translatedSnapshotHash": "0xa0610a42124ba903dbae0173d64b832f782a253e3bb15e438bdb53842dd97da6"
+    },
+    {
+      "caseId": "token-0001",
+      "seed": 20268345,
+      "pass": true,
+      "originalSnapshotHash": "0x87d9d0922ea7263c517225bfb9387d88af12fb586cb18f2dbafeb8c2fd15996f",
+      "translatedSnapshotHash": "0x87d9d0922ea7263c517225bfb9387d88af12fb586cb18f2dbafeb8c2fd15996f"
+    },
+    {
+      "caseId": "token-0002",
+      "seed": 20276264,
+      "pass": true,
+      "originalSnapshotHash": "0x404ade9709f5f80e296d4d119bb5b4c8763681272703592f2febb5e120da6bef",
+      "translatedSnapshotHash": "0x404ade9709f5f80e296d4d119bb5b4c8763681272703592f2febb5e120da6bef"
+    },
+    {
+      "caseId": "token-0003",
+      "seed": 20284183,
+      "pass": true,
+      "originalSnapshotHash": "0x512a11341434cce8975a3dc0d8a2eb931896fab11591212bc4058547ffb7d32a",
+      "translatedSnapshotHash": "0x512a11341434cce8975a3dc0d8a2eb931896fab11591212bc4058547ffb7d32a"
+    },
+    {
+      "caseId": "token-0004",
+      "seed": 20292102,
+      "pass": true,
+      "originalSnapshotHash": "0x047ce0ff4193ec11382fc4b035c607c524abec091b5f1bb63fe3dded01f26bc3",
+      "translatedSnapshotHash": "0x047ce0ff4193ec11382fc4b035c607c524abec091b5f1bb63fe3dded01f26bc3"
+    },
+    {
+      "caseId": "token-0005",
+      "seed": 20300021,
+      "pass": true,
+      "originalSnapshotHash": "0x5187fe863173a603674d9d8cd0412273e652bae40db63a2fae6f548794f2caf5",
+      "translatedSnapshotHash": "0x5187fe863173a603674d9d8cd0412273e652bae40db63a2fae6f548794f2caf5"
+    },
+    {
+      "caseId": "token-0006",
+      "seed": 20307940,
+      "pass": true,
+      "originalSnapshotHash": "0xf05e5199d87862500461686ee78ee335f7d6a39fa1b0684e71205b0b11fcfb49",
+      "translatedSnapshotHash": "0xf05e5199d87862500461686ee78ee335f7d6a39fa1b0684e71205b0b11fcfb49"
+    },
+    {
+      "caseId": "token-0007",
+      "seed": 20315859,
+      "pass": true,
+      "originalSnapshotHash": "0x112bdbb39985df36b0f174be62fac60753f93e9306305694dc377ec2de7c445d",
+      "translatedSnapshotHash": "0x112bdbb39985df36b0f174be62fac60753f93e9306305694dc377ec2de7c445d"
+    },
+    {
+      "caseId": "token-0008",
+      "seed": 20323778,
+      "pass": true,
+      "originalSnapshotHash": "0x275ba73ac9e789d21163ba0d7dcfbf93687aff9c5aa196a2bff9c98d9923f370",
+      "translatedSnapshotHash": "0x275ba73ac9e789d21163ba0d7dcfbf93687aff9c5aa196a2bff9c98d9923f370"
+    },
+    {
+      "caseId": "token-0009",
+      "seed": 20331697,
+      "pass": true,
+      "originalSnapshotHash": "0x1758caeb76e1e9b4fd29d3ea83c0d6ef439e03adabbc7e1cc3245d8b1693390b",
+      "translatedSnapshotHash": "0x1758caeb76e1e9b4fd29d3ea83c0d6ef439e03adabbc7e1cc3245d8b1693390b"
+    },
+    {
+      "caseId": "token-0010",
+      "seed": 20339616,
+      "pass": true,
+      "originalSnapshotHash": "0xaba0286e0911b685086c0f208ee6285ecdefba69897981499f9e88500942c1dc",
+      "translatedSnapshotHash": "0xaba0286e0911b685086c0f208ee6285ecdefba69897981499f9e88500942c1dc"
+    },
+    {
+      "caseId": "token-0011",
+      "seed": 20347535,
+      "pass": true,
+      "originalSnapshotHash": "0x2fa2789510a0fc380b6fce3d8099fa20be2d637a259389fd4bcae059874c8004",
+      "translatedSnapshotHash": "0x2fa2789510a0fc380b6fce3d8099fa20be2d637a259389fd4bcae059874c8004"
+    },
+    {
+      "caseId": "token-0012",
+      "seed": 20355454,
+      "pass": true,
+      "originalSnapshotHash": "0xe7929a8b77e77bcbcb7157860aa71d80444e7452a35199fc346e6ed75c5a055c",
+      "translatedSnapshotHash": "0xe7929a8b77e77bcbcb7157860aa71d80444e7452a35199fc346e6ed75c5a055c"
+    },
+    {
+      "caseId": "token-0013",
+      "seed": 20363373,
+      "pass": true,
+      "originalSnapshotHash": "0x1ef02f30976ca2e5fd2dccfe78cdd1bcbcbfa81b31dcc91c23dadb9b9da9bce0",
+      "translatedSnapshotHash": "0x1ef02f30976ca2e5fd2dccfe78cdd1bcbcbfa81b31dcc91c23dadb9b9da9bce0"
+    },
+    {
+      "caseId": "token-0014",
+      "seed": 20371292,
+      "pass": true,
+      "originalSnapshotHash": "0x70ff132c83f00b68947e3e64f464b51698a8ef3e6d3618f4afc7ede639ba8e16",
+      "translatedSnapshotHash": "0x70ff132c83f00b68947e3e64f464b51698a8ef3e6d3618f4afc7ede639ba8e16"
+    },
+    {
+      "caseId": "token-0015",
+      "seed": 20379211,
+      "pass": true,
+      "originalSnapshotHash": "0xc96aeb904101f04173eb54c9bc7d85f144c2aa49cdd2306226398591301d1959",
+      "translatedSnapshotHash": "0xc96aeb904101f04173eb54c9bc7d85f144c2aa49cdd2306226398591301d1959"
+    },
+    {
+      "caseId": "token-0016",
+      "seed": 20387130,
+      "pass": true,
+      "originalSnapshotHash": "0xc827b0bd8b393c31ca6f2645d8db2fb477ad5d682bfbbc77f9a3b5286158f75e",
+      "translatedSnapshotHash": "0xc827b0bd8b393c31ca6f2645d8db2fb477ad5d682bfbbc77f9a3b5286158f75e"
+    },
+    {
+      "caseId": "token-0017",
+      "seed": 20395049,
+      "pass": true,
+      "originalSnapshotHash": "0xe1281735f07f3b81dc53fc1ab6cec3583a1264fdbdb3f3ff5e1ebf670c8908bf",
+      "translatedSnapshotHash": "0xe1281735f07f3b81dc53fc1ab6cec3583a1264fdbdb3f3ff5e1ebf670c8908bf"
+    },
+    {
+      "caseId": "token-0018",
+      "seed": 20402968,
+      "pass": true,
+      "originalSnapshotHash": "0x9d03971966f65f6f175d114f443d658b2f61f6078a39e73bb2f18185f3fee37e",
+      "translatedSnapshotHash": "0x9d03971966f65f6f175d114f443d658b2f61f6078a39e73bb2f18185f3fee37e"
+    },
+    {
+      "caseId": "token-0019",
+      "seed": 20410887,
+      "pass": true,
+      "originalSnapshotHash": "0x51646e6621d5054c7a87090cb125cb15eebdc99809e05424b519cd90ef37615b",
+      "translatedSnapshotHash": "0x51646e6621d5054c7a87090cb125cb15eebdc99809e05424b519cd90ef37615b"
+    },
+    {
+      "caseId": "token-0020",
+      "seed": 20418806,
+      "pass": true,
+      "originalSnapshotHash": "0xdfa60c4e07364bbe46eed87c3ff9ac045a619e00b1cee079e4bfc1882ceb9b09",
+      "translatedSnapshotHash": "0xdfa60c4e07364bbe46eed87c3ff9ac045a619e00b1cee079e4bfc1882ceb9b09"
+    },
+    {
+      "caseId": "token-0021",
+      "seed": 20426725,
+      "pass": true,
+      "originalSnapshotHash": "0xb47f1c1a84835677ec214fda5236c6b93d6acab730c49bd8804a859ae3f91c66",
+      "translatedSnapshotHash": "0xb47f1c1a84835677ec214fda5236c6b93d6acab730c49bd8804a859ae3f91c66"
+    },
+    {
+      "caseId": "token-0022",
+      "seed": 20434644,
+      "pass": true,
+      "originalSnapshotHash": "0x2810045efb5087110dc9d753273d5d8e8d35d1e6a44723d944e2ebf8ced7f57d",
+      "translatedSnapshotHash": "0x2810045efb5087110dc9d753273d5d8e8d35d1e6a44723d944e2ebf8ced7f57d"
+    },
+    {
+      "caseId": "token-0023",
+      "seed": 20442563,
+      "pass": true,
+      "originalSnapshotHash": "0x928ef117d751e8a4889908b6f78c6064038c5fd6f9b576d7d72404b016c4e82c",
+      "translatedSnapshotHash": "0x928ef117d751e8a4889908b6f78c6064038c5fd6f9b576d7d72404b016c4e82c"
+    },
+    {
+      "caseId": "token-0024",
+      "seed": 20450482,
+      "pass": true,
+      "originalSnapshotHash": "0x6c608f502333f28082ba6a1ca774e8d13b690a46e7cfb8f39e8b2231a17e0f92",
+      "translatedSnapshotHash": "0x6c608f502333f28082ba6a1ca774e8d13b690a46e7cfb8f39e8b2231a17e0f92"
+    },
+    {
+      "caseId": "token-0025",
+      "seed": 20458401,
+      "pass": true,
+      "originalSnapshotHash": "0x1add28efc9774f8c5b01cfeef754feeee96973c1b5a53ab4d06e04825b0617f5",
+      "translatedSnapshotHash": "0x1add28efc9774f8c5b01cfeef754feeee96973c1b5a53ab4d06e04825b0617f5"
+    },
+    {
+      "caseId": "token-0026",
+      "seed": 20466320,
+      "pass": true,
+      "originalSnapshotHash": "0x259062d79f534b2c4c39417d552bcfa95b9b595269532cd05d40d073204952ee",
+      "translatedSnapshotHash": "0x259062d79f534b2c4c39417d552bcfa95b9b595269532cd05d40d073204952ee"
+    },
+    {
+      "caseId": "token-0027",
+      "seed": 20474239,
+      "pass": true,
+      "originalSnapshotHash": "0x631826300e5fe3fafb9ac5b6be361345903c709691852c0318e783c44140d886",
+      "translatedSnapshotHash": "0x631826300e5fe3fafb9ac5b6be361345903c709691852c0318e783c44140d886"
+    },
+    {
+      "caseId": "token-0028",
+      "seed": 20482158,
+      "pass": true,
+      "originalSnapshotHash": "0xce22f8a742c7ccf4c7517669f08b825035d81048dc16a53e05cd6e1febcda07f",
+      "translatedSnapshotHash": "0xce22f8a742c7ccf4c7517669f08b825035d81048dc16a53e05cd6e1febcda07f"
+    },
+    {
+      "caseId": "token-0029",
+      "seed": 20490077,
+      "pass": true,
+      "originalSnapshotHash": "0xbdc65d79e47e58b493da5106056cab1efce349626a26b9a2bee97a7c443a214d",
+      "translatedSnapshotHash": "0xbdc65d79e47e58b493da5106056cab1efce349626a26b9a2bee97a7c443a214d"
+    }
+  ]
+}

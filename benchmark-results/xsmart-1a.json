@@ -1,0 +1,321 @@
+{
+  "protocol": "xsmart",
+  "mode": "live-e2e-homogeneous-evm",
+  "workloadAxis": "service-depth-2-chain-representative",
+  "note": "RQ1a uses fixed [sHotel(bc2-evm), sTrain(bc3-evm)] and is closer to RQ1b d=3 than RQ1b d=2",
+  "summary": {
+    "runs": 30,
+    "minMs": 21631,
+    "maxMs": 34250,
+    "avgMs": 25081.933333333334,
+    "medianMs": 26620.5,
+    "stdMs": 2839.1078168247777,
+    "minSeconds": 21.631,
+    "maxSeconds": 34.25,
+    "avgSeconds": 25.081933333333335,
+    "medianSeconds": 26.6205,
+    "stdSeconds": 2.839107816824778
+  },
+  "samples": [
+    {
+      "run": 1,
+      "txId": "1777145351097001",
+      "startBlock": 122596,
+      "finalBlock": 122600,
+      "latencySeconds": 34.25,
+      "latencyMs": 34250,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 2,
+      "txId": "1777145388357002",
+      "startBlock": 122601,
+      "finalBlock": 122605,
+      "latencySeconds": 22.485,
+      "latencyMs": 22485,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 3,
+      "txId": "1777145413856003",
+      "startBlock": 122607,
+      "finalBlock": 122611,
+      "latencySeconds": 27.108,
+      "latencyMs": 27108,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 4,
+      "txId": "1777145443971004",
+      "startBlock": 122613,
+      "finalBlock": 122617,
+      "latencySeconds": 26.892,
+      "latencyMs": 26892,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 5,
+      "txId": "1777145473867005",
+      "startBlock": 122619,
+      "finalBlock": 122623,
+      "latencySeconds": 26.93,
+      "latencyMs": 26930,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 6,
+      "txId": "1777145503809006",
+      "startBlock": 122625,
+      "finalBlock": 122629,
+      "latencySeconds": 26.85,
+      "latencyMs": 26850,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 7,
+      "txId": "1777145533671007",
+      "startBlock": 122630,
+      "finalBlock": 122634,
+      "latencySeconds": 21.839,
+      "latencyMs": 21839,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 8,
+      "txId": "1777145558515008",
+      "startBlock": 122635,
+      "finalBlock": 122639,
+      "latencySeconds": 22.219,
+      "latencyMs": 22219,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 9,
+      "txId": "1777145583745009",
+      "startBlock": 122641,
+      "finalBlock": 122645,
+      "latencySeconds": 27.374,
+      "latencyMs": 27374,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 10,
+      "txId": "1777145614129010",
+      "startBlock": 122647,
+      "finalBlock": 122651,
+      "latencySeconds": 26.717,
+      "latencyMs": 26717,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 11,
+      "txId": "1777145643857011",
+      "startBlock": 122653,
+      "finalBlock": 122657,
+      "latencySeconds": 26.822,
+      "latencyMs": 26822,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 12,
+      "txId": "1777145673694012",
+      "startBlock": 122658,
+      "finalBlock": 122662,
+      "latencySeconds": 21.631,
+      "latencyMs": 21631,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 13,
+      "txId": "1777145698336013",
+      "startBlock": 122663,
+      "finalBlock": 122667,
+      "latencySeconds": 22.335,
+      "latencyMs": 22335,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 14,
+      "txId": "1777145723674014",
+      "startBlock": 122668,
+      "finalBlock": 122672,
+      "latencySeconds": 22.214,
+      "latencyMs": 22214,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 15,
+      "txId": "1777145748890015",
+      "startBlock": 122674,
+      "finalBlock": 122678,
+      "latencySeconds": 26.966,
+      "latencyMs": 26966,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 16,
+      "txId": "1777145778859016",
+      "startBlock": 122680,
+      "finalBlock": 122684,
+      "latencySeconds": 26.654,
+      "latencyMs": 26654,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 17,
+      "txId": "1777145808518017",
+      "startBlock": 122685,
+      "finalBlock": 122689,
+      "latencySeconds": 22.112,
+      "latencyMs": 22112,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 18,
+      "txId": "1777145833631018",
+      "startBlock": 122690,
+      "finalBlock": 122694,
+      "latencySeconds": 21.694,
+      "latencyMs": 21694,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 19,
+      "txId": "1777145858338019",
+      "startBlock": 122695,
+      "finalBlock": 122699,
+      "latencySeconds": 22.47,
+      "latencyMs": 22470,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 20,
+      "txId": "1777145883818020",
+      "startBlock": 122701,
+      "finalBlock": 122705,
+      "latencySeconds": 26.587,
+      "latencyMs": 26587,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 21,
+      "txId": "1777145913405021",
+      "startBlock": 122706,
+      "finalBlock": 122710,
+      "latencySeconds": 22.379,
+      "latencyMs": 22379,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 22,
+      "txId": "1777145938800022",
+      "startBlock": 122712,
+      "finalBlock": 122716,
+      "latencySeconds": 26.799,
+      "latencyMs": 26799,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 23,
+      "txId": "1777145968600023",
+      "startBlock": 122717,
+      "finalBlock": 122721,
+      "latencySeconds": 23.049,
+      "latencyMs": 23049,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 24,
+      "txId": "1777145994654024",
+      "startBlock": 122723,
+      "finalBlock": 122727,
+      "latencySeconds": 25.954,
+      "latencyMs": 25954,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 25,
+      "txId": "1777146023622025",
+      "startBlock": 122729,
+      "finalBlock": 122733,
+      "latencySeconds": 27.073,
+      "latencyMs": 27073,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 26,
+      "txId": "1777146053706026",
+      "startBlock": 122734,
+      "finalBlock": 122738,
+      "latencySeconds": 21.977,
+      "latencyMs": 21977,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 27,
+      "txId": "1777146078692027",
+      "startBlock": 122740,
+      "finalBlock": 122744,
+      "latencySeconds": 26.682,
+      "latencyMs": 26682,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 28,
+      "txId": "1777146108382028",
+      "startBlock": 122745,
+      "finalBlock": 122749,
+      "latencySeconds": 22.57,
+      "latencyMs": 22570,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 29,
+      "txId": "1777146133961029",
+      "startBlock": 122751,
+      "finalBlock": 122755,
+      "latencySeconds": 26.832,
+      "latencyMs": 26832,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    },
+    {
+      "run": 30,
+      "txId": "1777146163800030",
+      "startBlock": 122757,
+      "finalBlock": 122761,
+      "latencySeconds": 26.994,
+      "latencyMs": 26994,
+      "blockLatencySeconds": 20,
+      "depth": 3
+    }
+  ]
+}

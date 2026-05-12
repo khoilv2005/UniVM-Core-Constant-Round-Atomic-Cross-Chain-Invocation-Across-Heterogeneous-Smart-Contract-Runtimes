@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ2a",
+  "methodology": "hybrid-correctness",
+  "generatedAt": "2026-04-29T01:34:13.292Z",
+  "rq2a1": {
+    "name": "large-scale semantic equivalence",
+    "description": "1000 randomized cases per contract; compares canonical logical state snapshots.",
+    "totalRuns": 5000,
+    "totalPass": 5000,
+    "totalFail": 0,
+    "contracts": [
+      {
+        "contract": "HotelBooking",
+        "mode": "semantic-equivalence-1000",
+        "runs": 1000,
+        "pass": 1000,
+        "fail": 0,
+        "passRate": 1,
+        "failByCategory": {},
+        "artifact": "benchmark-results/rq2/results/HotelBooking.json"
+      },
+      {
+        "contract": "TrainBooking",
+        "mode": "semantic-equivalence-1000",
+        "runs": 1000,
+        "pass": 1000,
+        "fail": 0,
+        "passRate": 1,
+        "failByCategory": {},
+        "artifact": "benchmark-results/rq2/results/TrainBooking.json"
+      },
+      {
+        "contract": "TokenTransfer",
+        "mode": "semantic-equivalence-1000",
+        "runs": 1000,
+        "pass": 1000,
+        "fail": 0,
+        "passRate": 1,
+        "failByCategory": {},
+        "artifact": "benchmark-results/rq2/results/TokenTransfer.json"
+      },
+      {
+        "contract": "AuctionLogic",
+        "mode": "semantic-equivalence-1000",
+        "runs": 1000,
+        "pass": 1000,
+        "fail": 0,
+        "passRate": 1,
+        "failByCategory": {},
+        "artifact": "benchmark-results/rq2/results/AuctionLogic.json"
+      },
+      {
+        "contract": "DEXSwap",
+        "mode": "semantic-equivalence-1000",
+        "runs": 1000,
+        "pass": 1000,
+        "fail": 0,
+        "passRate": 1,
+        "failByCategory": {},
+        "artifact": "benchmark-results/rq2/results/DEXSwap.json"
+      }
+    ]
+  },
+  "rq2a2": {
+    "name": "live VM differential sequence validation",
+    "description": "Randomized native-VM operation sequences compared with translated EVM behavior on the VM testbed. The live30 runner produces 30 sequences per contract.",
+    "totalRuns": 150,
+    "totalPass": 150,
+    "totalFail": 0,
+    "contracts": [
+      {
+        "contract": "HotelBooking",
+        "mode": "live-vm-sequences",
+        "runs": 30,
+        "pass": 30,
+        "fail": 0,
+        "passRate": 1,
+        "artifact": "benchmark-results/rq2/results/HotelBooking-vm-live30.json",
+        "status": "pass"
+      },
+      {
+        "contract": "TrainBooking",
+        "mode": "live-vm-sequences",
+        "runs": 30,
+        "pass": 30,
+        "fail": 0,
+        "passRate": 1,
+        "artifact": "benchmark-results/rq2/results/TrainBooking-vm-live30.json",
+        "status": "pass"
+      },
+      {
+        "contract": "TokenTransfer",
+        "mode": "live-vm-sequences",
+        "runs": 30,
+        "pass": 30,
+        "fail": 0,
+        "passRate": 1,
+        "artifact": "benchmark-results/rq2/results/TokenTransfer-vm-live30.json",
+        "status": "pass"
+      },
+      {
+        "contract": "AuctionLogic",
+        "mode": "live-vm-sequences",
+        "runs": 30,
+        "pass": 30,
+        "fail": 0,
+        "passRate": 1,
+        "artifact": "benchmark-results/rq2/results/AuctionLogic-vm-live30.json",
+        "status": "pass"
+      },
+      {
+        "contract": "DEXSwap",
+        "mode": "live-vm-sequences",
+        "runs": 30,
+        "pass": 30,
+        "fail": 0,
+        "passRate": 1,
+        "artifact": "benchmark-results/rq2/results/DEXSwap-vm-live30.json",
+        "status": "pass"
+      }
+    ],
+    "fallbackSmoke": {
+      "artifact": "benchmark-results/rq2/results/vm-smoke.json",
+      "runs": 5,
+      "pass": 5,
+      "fail": 0
+    }
+  },
+  "note": "RQ2a does not run 1000 cases per contract as per-operation live VM transactions because block-time/finality overhead makes that operationally prohibitive. The large-scale part tests semantic correctness; live VM sequences validate that the same execution paths are reachable on the heterogeneous VM testbed."
+}

@@ -1,0 +1,11 @@
+FROM hyperledger/fabric-peer:2.5
+
+RUN apt-get update && apt-get install -y \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY core.yaml /etc/hyperledger/fabric/core.yaml
+
+ENV FABRIC_CFG_PATH=/etc/hyperledger/fabric
+
+CMD ["peer", "node", "start"]

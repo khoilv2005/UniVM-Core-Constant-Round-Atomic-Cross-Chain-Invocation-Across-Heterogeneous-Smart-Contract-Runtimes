@@ -1,0 +1,34 @@
+{
+  "workflow_id": "gpact-travel-hetero-d5",
+  "root_chain_id": 1,
+  "segments": [
+    {
+      "segment_id": 1,
+      "chain_id": 3,
+      "contract": "XBridgeBc3",
+      "function": "hotel",
+      "kind": "hotel"
+    },
+    {
+      "segment_id": 2,
+      "chain_id": 2,
+      "contract": "5GRFGjrKB5AcNsufYR92DWDSG6DYEFJy3PadA3XDJWy6a5je",
+      "function": "train",
+      "kind": "train"
+    },
+    {
+      "segment_id": 3,
+      "chain_id": 22,
+      "contract": "0x4597f43de2D25B8bF15BA842326953df929b006A",
+      "function": "flight",
+      "kind": "flight"
+    },
+    {
+      "segment_id": 4,
+      "chain_id": 33,
+      "contract": "0xE8057658087c0f3bfc17d3A71150282294cEA864",
+      "function": "taxi",
+      "kind": "taxi"
+    }
+  ]
+}

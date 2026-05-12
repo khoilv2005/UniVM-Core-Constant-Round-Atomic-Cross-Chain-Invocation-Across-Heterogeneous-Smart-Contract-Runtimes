@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ3c",
+  "protocol": "gpact",
+  "mode": "homogeneous-evm-concurrency",
+  "workload": {
+    "depth": 5,
+    "concurrency": 1,
+    "contention": "high",
+    "hotLockFraction": 0.8,
+    "overlap": "all requests reuse the same benchmark service/state set for the selected depth",
+    "submission": "back-to-back burst from one signer; protocol completion is overlapped"
+  },
+  "timing": {
+    "startedAt": "2026-05-11T11:34:03.167Z",
+    "endedAt": "2026-05-11T11:35:14.041Z",
+    "elapsedSeconds": 70.874,
+    "timeoutSeconds": 600,
+    "pollIntervalMs": 250,
+    "submitGapMs": 0
+  },
+  "summary": {
+    "submitted": 1,
+    "terminal": 1,
+    "completed": 1,
+    "rolledBack": 0,
+    "timedOut": 0,
+    "successRate": 1,
+    "completionRate": 1,
+    "abortRate": 0,
+    "lockConflictRate": 0,
+    "avgCompletionLatencyMs": 70638,
+    "medianCompletionLatencyMs": 70638,
+    "p50CompletionLatencyMs": 70638,
+    "p90CompletionLatencyMs": 70638,
+    "p95CompletionLatencyMs": 70638,
+    "p99CompletionLatencyMs": 70638,
+    "stdCompletionLatencyMs": 0,
+    "avgCompletionLatencySeconds": 70.638,
+    "medianCompletionLatencySeconds": 70.638,
+    "p50CompletionLatencySeconds": 70.638,
+    "p90CompletionLatencySeconds": 70.638,
+    "p95CompletionLatencySeconds": 70.638,
+    "p99CompletionLatencySeconds": 70.638,
+    "stdCompletionLatencySeconds": 0,
+    "avgRecoveryTimeMs": 0,
+    "avgRecoveryTimeSeconds": 0
+  },
+  "samples": [
+    {
+      "id": "0xe9552df2fec8a79b6e8d3bb6db7cc393e157ad357ba84f4da0a2144927f53de2",
+      "index": 1,
+      "startBlock": 1071,
+      "submitStartedAtMs": 1778499243403,
+      "submittedAtMs": 1778499254620,
+      "submitLatencyMs": 11217,
+      "protocolTxHash": "0xd0a0b6febb42b8ac9a26414bb9a63050247927d104db9cad656d523824dc5749",
+      "terminal": true,
+      "completed": true,
+      "rolledBack": false,
+      "timedOut": false,
+      "finalStatus": 5,
+      "finalBlock": 1075,
+      "observedAtMs": 1778499314041,
+      "latencyMs": 70638,
+      "latencySeconds": 70.638
+    }
+  ]
+}

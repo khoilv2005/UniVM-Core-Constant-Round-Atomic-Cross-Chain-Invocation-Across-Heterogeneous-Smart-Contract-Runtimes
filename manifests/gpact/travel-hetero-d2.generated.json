@@ -1,0 +1,20 @@
+{
+  "workflow_id": "gpact-travel-hetero-d2",
+  "root_chain_id": 1,
+  "segments": [
+    {
+      "segment_id": 1,
+      "chain_id": 3,
+      "contract": "XBridgeBc3",
+      "function": "hotel",
+      "kind": "hotel"
+    },
+    {
+      "segment_id": 2,
+      "chain_id": 2,
+      "contract": "5GRFGjrKB5AcNsufYR92DWDSG6DYEFJy3PadA3XDJWy6a5je",
+      "function": "train",
+      "kind": "train"
+    }
+  ]
+}

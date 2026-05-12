@@ -1,0 +1,74 @@
+title: "XSmart Relayer Configuration"
+
+protocol: "xsmart"
+
+relayer:
+  id: "xsmart-relayer"
+  log_level: "debug"
+  workers: 4
+  private_key: "b71c71a67e1177ad4e901695e1b4b9ee17ae16c6668d313eac2f96dbcda3f291"
+
+chains:
+  bc1:
+    name: "Execution Chain"
+    vm: "evm"
+    chain_id: 1
+    finality_blocks: 4
+    rpc_url: "ws://209.38.21.129:8546"
+    http_url: "http://209.38.21.129:8545"
+
+  bc2:
+    name: "WASM Train Chain"
+    vm: "wasm"
+    chain_id: 1338
+    finality_blocks: 1
+    rpc_url: "http://170.64.194.4:18545"
+    ws_url: "ws://170.64.194.4:18545"
+    metadata_path: "D:/UIT/randomly/contracts/xsmart/bc2/bridge/target/ink/xbridge_bc2.contract"
+    account_endpoint: "5Cfhgv1HHQrgUpLGEF3wQPBWeniJPR7Z4S4pfTBdHXVJq7fL"
+    submitter_uri: "//Alice"
+    labels:
+      network_id: "substrate-1338"
+      endpoint_identity: "5Cfhgv1HHQrgUpLGEF3wQPBWeniJPR7Z4S4pfTBdHXVJq7fL"
+  bc3:
+    name: "Fabric Hotel Chain"
+    vm: "fabric"
+    chain_id: 3
+    finality_blocks: 1
+    rpc_url: "http://127.0.0.1:18645"
+    http_url: "http://127.0.0.1:18645"
+    account_endpoint: "XBridgeBc3"
+    fabric_gateway_endpoint: "209.38.21.129:7051"
+    fabric_channel: "mychannel"
+    fabric_chaincode: "xsmart-bc3"
+    fabric_msp_id: "Org1MSP"
+    fabric_user_cert_path: "D:/UIT/randomly/configs/fabric/crypto-generated/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem"
+    fabric_user_key_path: "D:/UIT/randomly/configs/fabric/crypto-generated/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/key.pem"
+    fabric_tls_cert_path: "D:/UIT/randomly/configs/fabric/crypto-generated/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
+    fabric_peer_name: "peer0.org1.example.com"
+    labels:
+      network_id: "mychannel-prod"
+      endpoint_identity: "XBridgeBc3"
+
+contracts:
+  xsmart:
+    bc1:
+      xbridging_contract: "0x3Dc2cd8F2E345951508427872d8ac9f635fBe0EC"
+      ubtl_registry: "0x537e697c7AB75A26f9ECF0Ce810e3154dFcaaf44"
+      relayer_manager: "0xdB7d6AB1f17c6b31909aE466702703dAEf9269Cf"
+      light_client: "0x3A220f351252089D385b29beca14e27F204c296A"
+
+proof:
+  max_retry: 3
+  retry_delay_ms: 1000
+  confirmation_blocks: 4
+
+relay:
+  timeout_seconds: 60
+  max_pending: 100
+
+xsmart:
+  manifest: "D:/UIT/randomly/manifests/xsmart/travel-hetero.generated.json"
+  service_id: "travel"
+  wasm_lock_num: 1
+  wasm_timeout_blocks: 30

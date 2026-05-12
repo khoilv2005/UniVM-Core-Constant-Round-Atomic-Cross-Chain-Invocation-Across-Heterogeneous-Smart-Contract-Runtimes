@@ -1,0 +1,320 @@
+{
+  "protocol": "gpact",
+  "mode": "live-e2e",
+  "workflow": "representative_train_hotel_2segment",
+  "segmentCount": 2,
+  "depthEquivalent": 3,
+  "summary": {
+    "runs": 30,
+    "minMs": 34160,
+    "maxMs": 36886,
+    "avgMs": 34884.53333333333,
+    "medianMs": 34835,
+    "minSeconds": 34.16,
+    "maxSeconds": 36.886,
+    "avgSeconds": 34.88453333333333,
+    "medianSeconds": 34.835
+  },
+  "samples": [
+    {
+      "run": 1,
+      "txId": "0x2d4d6f1146245307a6cb22745e4982b7504b207fb6d78f2bd64648d9b180abfe",
+      "startBlock": 122178,
+      "finalBlock": 122184,
+      "latencySeconds": 36.886,
+      "latencyMs": 36886,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 2,
+      "txId": "0x06450bff834672f824080a21efcb9da0f128c3b1a7d29f7655da31a404268a05",
+      "startBlock": 122185,
+      "finalBlock": 122191,
+      "latencySeconds": 34.864,
+      "latencyMs": 34864,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 3,
+      "txId": "0x81267099fc57776e1f7f170fea73120e6aba76d69a0eea53f682eabeca0f7b7e",
+      "startBlock": 122192,
+      "finalBlock": 122198,
+      "latencySeconds": 34.882,
+      "latencyMs": 34882,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 4,
+      "txId": "0xbf8e7c345446496282c013ec7300156957970380ebe8bfe591cbc9084e28899c",
+      "startBlock": 122199,
+      "finalBlock": 122205,
+      "latencySeconds": 34.527,
+      "latencyMs": 34527,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 5,
+      "txId": "0x1c060882f6b890f783ccde0cb411ab830c4a384bf69b6ce4bd12587ff8c86872",
+      "startBlock": 122206,
+      "finalBlock": 122212,
+      "latencySeconds": 35.154,
+      "latencyMs": 35154,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 6,
+      "txId": "0x55b9b7c0e81bfa7a4b6ad1b88727d4607ffa8fed00ff77d7c038c0b0f4a5cbf0",
+      "startBlock": 122213,
+      "finalBlock": 122219,
+      "latencySeconds": 34.578,
+      "latencyMs": 34578,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 7,
+      "txId": "0x1449e8a84b10bb3d8a9ddfc75202d0a966779c2e9429ded3c0374f3da89b3d4a",
+      "startBlock": 122220,
+      "finalBlock": 122226,
+      "latencySeconds": 34.755,
+      "latencyMs": 34755,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 8,
+      "txId": "0x3d19434aac291105a36f56fadcb0be70489e1c8950a93cd258994b33b7a806aa",
+      "startBlock": 122227,
+      "finalBlock": 122233,
+      "latencySeconds": 34.966,
+      "latencyMs": 34966,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 9,
+      "txId": "0xaf3587d1255a8b46757aa643307aeee6c83ff7cb1b60a8a8a8122689bf86e6bb",
+      "startBlock": 122234,
+      "finalBlock": 122240,
+      "latencySeconds": 34.972,
+      "latencyMs": 34972,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 10,
+      "txId": "0x602aca532fe1e13879cd6b246ea3462a72722d3e8afe4066baff69e6836c680d",
+      "startBlock": 122241,
+      "finalBlock": 122247,
+      "latencySeconds": 34.664,
+      "latencyMs": 34664,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 11,
+      "txId": "0x6d9b3d24f3e89de7508315f2d3e21afd7fe0b7f30635d263f732238a773e38f6",
+      "startBlock": 122248,
+      "finalBlock": 122254,
+      "latencySeconds": 34.886,
+      "latencyMs": 34886,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 12,
+      "txId": "0x3f0ed45750ae7545b457dc2bdca8585eae051bb9ca686166bb13104274388a42",
+      "startBlock": 122255,
+      "finalBlock": 122261,
+      "latencySeconds": 34.746,
+      "latencyMs": 34746,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 13,
+      "txId": "0xa9ee555b5eada4f396247046d9692d00c40d22457307135b86a62aef4771448e",
+      "startBlock": 122262,
+      "finalBlock": 122268,
+      "latencySeconds": 34.898,
+      "latencyMs": 34898,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 14,
+      "txId": "0x3f0367cb6b48154bd6e4967f721b4ada374178915548a1a52f2c4b3c611f853b",
+      "startBlock": 122269,
+      "finalBlock": 122275,
+      "latencySeconds": 34.739,
+      "latencyMs": 34739,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 15,
+      "txId": "0x5b5d062a543d2863ce620472e13a613db6c5990ca4ef942069144ea7c1500714",
+      "startBlock": 122276,
+      "finalBlock": 122282,
+      "latencySeconds": 34.906,
+      "latencyMs": 34906,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 16,
+      "txId": "0xa3f254caca39937e466d4fe2f25f7d1f781150ddd74ad540fd78880ba1562ca9",
+      "startBlock": 122283,
+      "finalBlock": 122289,
+      "latencySeconds": 34.975,
+      "latencyMs": 34975,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 17,
+      "txId": "0x012a3c9c527783e78a6fdf8493641654414bdca5906e59d1afbd8a45f66085fd",
+      "startBlock": 122290,
+      "finalBlock": 122296,
+      "latencySeconds": 34.638,
+      "latencyMs": 34638,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 18,
+      "txId": "0xc929a3e6a3b0aed8e38df6b83ab2abec1dc7a6b788784ba250e0b1259c4b0536",
+      "startBlock": 122297,
+      "finalBlock": 122303,
+      "latencySeconds": 34.655,
+      "latencyMs": 34655,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 19,
+      "txId": "0x63b73dcb6007835018d2fde7e0a84c7a8f65d89f661ed57d1afd261b7bee7807",
+      "startBlock": 122304,
+      "finalBlock": 122310,
+      "latencySeconds": 35.017,
+      "latencyMs": 35017,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 20,
+      "txId": "0xda0bbd2c0f8801d1327c73a3e19129278d4ca9fc619b732a3ad3fe84c0c6642e",
+      "startBlock": 122311,
+      "finalBlock": 122317,
+      "latencySeconds": 34.787,
+      "latencyMs": 34787,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 21,
+      "txId": "0x02ab0350b30d2ddff8a40211c6d2ec89f9568bb16f144e84e789f30fef7424b4",
+      "startBlock": 122318,
+      "finalBlock": 122324,
+      "latencySeconds": 35.11,
+      "latencyMs": 35110,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 22,
+      "txId": "0x094bff3b106833ff96aaf600c98b5d4d7c1a0bdd986b2305ce90ce6a67e30358",
+      "startBlock": 122325,
+      "finalBlock": 122331,
+      "latencySeconds": 34.671,
+      "latencyMs": 34671,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 23,
+      "txId": "0xfeff74a50a919287c1f57fe3bb4b571c299f6a8f61299ed775be2439a999c098",
+      "startBlock": 122332,
+      "finalBlock": 122338,
+      "latencySeconds": 35.048,
+      "latencyMs": 35048,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 24,
+      "txId": "0x12c9109deb968e4771d7532e8e1b7f88d1b09bb1bbd31cabe0d3bacd2550fffa",
+      "startBlock": 122339,
+      "finalBlock": 122345,
+      "latencySeconds": 34.733,
+      "latencyMs": 34733,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 25,
+      "txId": "0xbb7cce832b91073bf94beab3d65cf153c2fa08e2521e4d6b3f2f8400a81989e7",
+      "startBlock": 122346,
+      "finalBlock": 122352,
+      "latencySeconds": 34.803,
+      "latencyMs": 34803,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 26,
+      "txId": "0x3e27ae1f4b7c8693445feacf9f0cdd9eb8afa02ddb186f1ff4dfd4af597f0fbb",
+      "startBlock": 122353,
+      "finalBlock": 122359,
+      "latencySeconds": 34.16,
+      "latencyMs": 34160,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 27,
+      "txId": "0x3e6984ef8360f441497434a4ea3bbfaf484a8106ccfe52e934794bfbb9c863af",
+      "startBlock": 122360,
+      "finalBlock": 122366,
+      "latencySeconds": 34.891,
+      "latencyMs": 34891,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 28,
+      "txId": "0x57d6500cc20c396df1b720182a834b9c2595a0944419759181a530e941a04deb",
+      "startBlock": 122367,
+      "finalBlock": 122373,
+      "latencySeconds": 34.673,
+      "latencyMs": 34673,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 29,
+      "txId": "0x78524e6e2950a7f18ad470af787b560cd45aa3bd8a83e43173c2c099c46ef7c9",
+      "startBlock": 122374,
+      "finalBlock": 122380,
+      "latencySeconds": 34.806,
+      "latencyMs": 34806,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    },
+    {
+      "run": 30,
+      "txId": "0xd954e8ae472c7fd4055b792c7cba011ba912e16120703bb3291118b0bd889d78",
+      "startBlock": 122381,
+      "finalBlock": 122387,
+      "latencySeconds": 35.146,
+      "latencyMs": 35146,
+      "blockLatencySeconds": 30,
+      "finalStatus": 5
+    }
+  ]
+}

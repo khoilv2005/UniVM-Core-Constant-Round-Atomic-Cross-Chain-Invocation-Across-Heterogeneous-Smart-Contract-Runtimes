@@ -1,0 +1,17 @@
+FROM golang:1.21-bookworm AS build
+WORKDIR /src
+
+COPY go.mod go.sum ./
+RUN go mod download
+
+COPY *.go ./
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /out/xsmart-bc3 .
+
+FROM debian:bookworm-slim
+WORKDIR /app
+RUN useradd -m -u 10001 chaincode
+COPY --from=build /out/xsmart-bc3 /usr/local/bin/xsmart-bc3
+USER chaincode
+EXPOSE 9999
+ENV CHAINCODE_SERVER_ADDRESS=0.0.0.0:9999
+ENTRYPOINT ["/usr/local/bin/xsmart-bc3"]

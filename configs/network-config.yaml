@@ -1,0 +1,80 @@
+# Cross-VM Network Configuration
+# Used by deploy scripts and relayer config generator
+
+network:
+  name: integratex-distributed
+  version: "1.0"
+
+chains:
+  evm:
+    networkId: 1337
+    chainId: 1337
+    consensus: clique
+    blockTime: 5
+    p2pPort: 30303
+  wasm:
+    networkId: 1338
+    chainId: 1338
+    consensus: clique
+    blockTime: 5
+    p2pPort: 30304
+
+vms:
+  vm1:
+    ip: "209.38.21.129"
+    evmRpc: "http://209.38.21.129:8545"
+    evmWs: "ws://209.38.21.129:8546"
+    wasmRpc: "http://209.38.21.129:18545"
+    wasmWs: "ws://209.38.21.129:18546"
+    peerEndpoint: "209.38.21.129:7051"
+    ordererEndpoint: "209.38.21.129:7050"
+  vm2:
+    ip: "170.64.194.4"
+    evmRpc: "http://170.64.194.4:8545"
+    evmWs: "ws://170.64.194.4:8546"
+    wasmRpc: "http://170.64.194.4:18545"
+    wasmWs: "ws://170.64.194.4:18546"
+    peerEndpoint: "170.64.194.4:7051"
+    ordererEndpoint: "170.64.194.4:7050"
+  vm3:
+    ip: "170.64.164.173"
+    evmRpc: "http://170.64.164.173:8545"
+    evmWs: "ws://170.64.164.173:8546"
+    wasmRpc: "http://170.64.164.173:18545"
+    wasmWs: "ws://170.64.164.173:18546"
+    peerEndpoint: "170.64.164.173:7051"
+    ordererEndpoint: "170.64.164.173:7050"
+  vm4:
+    ip: "134.199.160.48"
+    evmRpc: "http://134.199.160.48:8545"
+    evmWs: "ws://134.199.160.48:8546"
+    wasmRpc: "http://134.199.160.48:18545"
+    wasmWs: "ws://134.199.160.48:18546"
+    peerEndpoint: "134.199.160.48:7051"
+    ordererEndpoint: "134.199.160.48:7050"
+
+fabric:
+  channel: "mychannel"
+  chaincode: "integratexcc"
+  consortium: "SampleConsortium"
+  
+  orgs:
+    org1:
+      mspId: "Org1MSP"
+      peers:
+        - peer1.org1.example.com
+        - peer2.org1.example.com
+    org2:
+      mspId: "Org2MSP"
+      peers:
+        - peer1.org2.example.com
+        - peer2.org2.example.com
+
+  orderers:
+    - orderer1.example.com:7050
+    - orderer2.example.com:7050
+    - orderer3.example.com:7050
+
+  consortiumMembers:
+    - Org1MSP
+    - Org2MSP

@@ -1,0 +1,9 @@
+bc3.exe
+Dockerfile.ccaas
+*.test
+*.log
+target/
+bin/
+obj/
+vendor/**/testdata/
+vendor/**/*.md

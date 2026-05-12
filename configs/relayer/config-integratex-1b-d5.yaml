@@ -1,0 +1,52 @@
+title: "IntegrateX Relayer Configuration (RQ1b depth 5)"
+
+protocol: "integratex"
+
+relayer:
+  id: "integratex-relayer-1b-d5"
+  log_level: "debug"
+  workers: 4
+  private_key: "b71c71a67e1177ad4e901695e1b4b9ee17ae16c6668d313eac2f96dbcda3f291"
+  checkpoint_file: "var/integratex-1b-d5-ckpt.json"
+
+chains:
+  bc1:
+    name: "Execution Chain"
+    chain_id: 1
+    rpc_url: "ws://209.38.21.129:8546"
+    http_url: "http://209.38.21.129:8545"
+    contract_address: "0x4A031608637fcE8BdA856b136D365C9d5376Be77"
+    travel_dapp_address: "0x49A6EdC2E148Be22100664c708A6CA70a6427c38"
+
+  bc2:
+    name: "Hotel Chain"
+    chain_id: 2
+    rpc_url: "ws://170.64.194.4:8546"
+    http_url: "http://170.64.194.4:8545"
+    contract_address: "0x67eD724481E14fb304154b659688641a3Fe3eF40"
+    service_state_contracts:
+      hotel-service:
+        - "0x0270019C2C1735f5e05bbEB90c73b26BE72E6b28"
+      flight-service:
+        - "0x2E494a1d5Be109DEcCd63d1B93E42FCAA53E381e"
+
+  bc3:
+    name: "Train Chain"
+    chain_id: 3
+    rpc_url: "ws://170.64.164.173:8546"
+    http_url: "http://170.64.164.173:8545"
+    contract_address: "0xB35A2a3FbDCE4B3eA27a71BfdDaD198d20900A02"
+    service_state_contracts:
+      train-service:
+        - "0x20D8e8F4454267aDAeEbd18683C185FD33635355"
+      taxi-service:
+        - "0x9A3338517Ad4c5a0dA62C2736495E521236eeF3C"
+
+proof:
+  max_retry: 3
+  retry_delay_ms: 1000
+  confirmation_blocks: 1
+
+relay:
+  timeout_seconds: 120
+  max_pending: 100

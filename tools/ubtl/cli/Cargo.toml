@@ -1,0 +1,13 @@
+[package]
+name = "ubtl"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[dependencies]
+serde_json = "1.0"
+ubtl-backend-evm = { path = "../backend_evm" }
+ubtl-frontend-evm = { path = "../frontend_evm" }
+ubtl-frontend-fabric = { path = "../frontend_fabric" }
+ubtl-frontend-wasm = { path = "../frontend_wasm" }
+ubtl-ir = { path = "../ir" }

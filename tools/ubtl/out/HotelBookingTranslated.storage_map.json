@@ -1,0 +1,30 @@
+{
+  "contract": "HotelBookingTranslated",
+  "slots": [
+    {
+      "ir_id": "META",
+      "evm_slot": 0,
+      "ty": "Tuple(String,U64,U64,U64)"
+    },
+    {
+      "ir_id": "ACCOUNT_%s",
+      "evm_slot": 1,
+      "ty": "Map(String->U64)"
+    },
+    {
+      "ir_id": "BOOKING_%s",
+      "evm_slot": 2,
+      "ty": "Map(String->U64)"
+    },
+    {
+      "ir_id": "LOCK_%s",
+      "evm_slot": 3,
+      "ty": "Map(String->Tuple(U64,U64,U64,Bool))"
+    },
+    {
+      "ir_id": "LOCK_TOTAL",
+      "evm_slot": 4,
+      "ty": "U64"
+    }
+  ]
+}

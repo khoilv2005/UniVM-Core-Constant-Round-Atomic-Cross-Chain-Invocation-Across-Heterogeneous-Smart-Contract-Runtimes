@@ -1,0 +1,48 @@
+{
+  "workflow_id": "atom-travel-write-only-depth-2",
+  "workflow_name": "Atom Travel Write Only Heterogeneous Depth 2",
+  "total_operations": 2,
+  "remote_functions": [
+    {
+      "function_id": "hotel-write",
+      "chain_id": 3,
+      "contract_address": "XBridgeBc3",
+      "business_unit": "hotel.book",
+      "pattern": "atomicWrite",
+      "lock_do_selector": "atom_lock_do",
+      "unlock_selector": "atom_unlock",
+      "undo_unlock_selector": "atom_undo_unlock"
+    },
+    {
+      "function_id": "train-write",
+      "chain_id": 2,
+      "contract_address": "5GRFGjrKB5AcNsufYR92DWDSG6DYEFJy3PadA3XDJWy6a5je",
+      "business_unit": "train.book",
+      "pattern": "atomicWrite",
+      "lock_do_selector": "atom_lock_do",
+      "unlock_selector": "atom_unlock",
+      "undo_unlock_selector": "atom_undo_unlock"
+    }
+  ],
+  "operations": [
+    {
+      "id": 1,
+      "step": 1,
+      "function_id": "hotel-write",
+      "parameter_names": [
+        "user",
+        "rooms"
+      ]
+    },
+    {
+      "id": 2,
+      "step": 2,
+      "function_id": "train-write",
+      "parameter_names": [
+        "user",
+        "outboundTickets",
+        "returnTickets"
+      ]
+    }
+  ]
+}

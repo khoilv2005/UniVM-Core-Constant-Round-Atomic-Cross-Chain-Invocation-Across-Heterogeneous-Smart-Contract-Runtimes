@@ -1,0 +1,23 @@
+FROM rust:1.85-slim
+
+WORKDIR /work
+
+RUN rustup component add clippy
+
+COPY Cargo.toml ./Cargo.toml
+COPY Cargo.lock ./Cargo.lock
+COPY backend_evm ./backend_evm
+COPY cli ./cli
+COPY frontend_evm ./frontend_evm
+COPY frontend_fabric ./frontend_fabric
+COPY frontend_wasm ./frontend_wasm
+COPY ir ./ir
+
+RUN cargo fetch
+RUN cargo test -p ubtl-ir --no-run
+RUN cargo test -p ubtl-backend-evm --no-run
+RUN cargo test -p ubtl-frontend-evm --no-run
+RUN cargo test -p ubtl-frontend-fabric --no-run
+RUN cargo test -p ubtl-frontend-wasm --no-run
+
+CMD ["/usr/local/cargo/bin/cargo", "test", "-p", "ubtl-ir"]

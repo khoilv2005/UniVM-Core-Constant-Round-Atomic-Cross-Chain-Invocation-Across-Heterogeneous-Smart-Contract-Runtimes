@@ -1,0 +1,70 @@
+title: "ATOM RQ1c Heterogeneous Relayer Configuration"
+
+protocol: "atom"
+
+relayer:
+  id: "atom-rq1c-relayer"
+  log_level: "debug"
+  workers: 4
+  private_key: "70ff25649b86772b672f211d338ea82f042683c2bf5901a9a1e542f77110489e"
+  checkpoint_file: "./var/atom-rq1c-ckpt.json"
+
+chains:
+  bc1:
+    name: "Execution Chain"
+    vm: "evm"
+    chain_id: 1
+    finality_blocks: 4
+    rpc_url: "ws://209.38.21.129:8546"
+    http_url: "http://209.38.21.129:8545"
+    atom_service_address: "0x7625A7e25601CBC8414EFdB8B993AE03A4a23CE2"
+    atom_entry_address: "0x33e96FC423c30e33a7C8195407d584AB5970B4Be"
+    atom_registry_address: "0xE01478D3BC0123Fc4E22166ECB487e92edB2AB35"
+    atom_community_address: "0xDE9021116FB5A7c290d81C4b7Fd80f35CBC21de7"
+
+  bc2:
+    name: "WASM ATOM Remote Chain"
+    vm: "wasm"
+    chain_id: 2
+    # WASM contracts node finalizes transaction blocks directly and does not
+    # author idle blocks. Extra confirmation-depth waits would hang on a block
+    # that is already finalized.
+    finality_blocks: 1
+    rpc_url: "http://170.64.194.4:18545"
+    ws_url: "ws://170.64.194.4:18545"
+    metadata_path: "D:/UIT/randomly/contracts/xsmart/bc2/bridge/target/ink/xbridge_bc2.contract"
+    account_endpoint: "5F8hax7qzEG2AYshyfYDy7JB384QZ2jURH3D6zTkhzQbjXbH"
+    submitter_uri: "//Alice"
+
+  bc3:
+    name: "Fabric ATOM Remote Chain"
+    vm: "fabric"
+    chain_id: 3
+    finality_blocks: 1
+    rpc_url: "http://127.0.0.1:18645"
+    http_url: "http://127.0.0.1:18645"
+    account_endpoint: "XBridgeBc3"
+    fabric_gateway_endpoint: "209.38.21.129:7051"
+    fabric_channel: "mychannel"
+    fabric_chaincode: "xsmart-bc3"
+    fabric_msp_id: "Org1MSP"
+    fabric_user_cert_path: "D:/UIT/randomly/configs/fabric/crypto-generated/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem"
+    fabric_user_key_path: "D:/UIT/randomly/configs/fabric/crypto-generated/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/key.pem"
+    fabric_tls_cert_path: "D:/UIT/randomly/configs/fabric/crypto-generated/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
+    fabric_peer_name: "peer0.org1.example.com"
+
+proof:
+  max_retry: 3
+  retry_delay_ms: 1000
+  confirmation_blocks: 4
+
+relay:
+  timeout_seconds: 60
+  max_pending: 100
+
+atom:
+  write_only_manifest: "../../manifests/atom/train-hotel-write-only-hetero.generated.json"
+  judge_private_keys:
+    - "b71c71a67e1177ad4e901695e1b4b9ee17ae16c6668d313eac2f96dbcda3f291"
+    - "fbd6535363327d6c7b8fb48481e726ff61a0c16faf20fab3edd4288748a68897"
+    - "28df2e95c9fb5530abf55ab4d2408c6ce9292db79db60fcc1115ecf1dd327d69"

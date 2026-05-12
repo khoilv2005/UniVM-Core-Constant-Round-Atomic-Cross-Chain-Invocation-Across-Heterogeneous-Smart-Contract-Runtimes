@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = [
+  "xsmart-state-guest",
+  "xsmart-state-host",
+]
+
+[workspace.package]
+edition = "2021"
+license = "MIT"

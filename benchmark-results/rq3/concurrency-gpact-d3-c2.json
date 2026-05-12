@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ3c",
+  "protocol": "gpact",
+  "mode": "homogeneous-evm-concurrency",
+  "workload": {
+    "depth": 3,
+    "concurrency": 2,
+    "overlap": "all requests reuse the same benchmark service/state set for the selected depth",
+    "submission": "back-to-back burst from one signer; protocol completion is overlapped"
+  },
+  "timing": {
+    "startedAt": "2026-04-27T05:59:12.792Z",
+    "endedAt": "2026-04-27T06:00:16.039Z",
+    "elapsedSeconds": 63.247,
+    "timeoutSeconds": 420,
+    "pollIntervalMs": 250,
+    "submitGapMs": 0
+  },
+  "summary": {
+    "submitted": 2,
+    "terminal": 2,
+    "completed": 2,
+    "rolledBack": 0,
+    "timedOut": 0,
+    "successRate": 1,
+    "avgCompletionLatencyMs": 54086,
+    "medianCompletionLatencyMs": 54086,
+    "stdCompletionLatencyMs": 6065,
+    "avgCompletionLatencySeconds": 54.086,
+    "medianCompletionLatencySeconds": 54.086,
+    "stdCompletionLatencySeconds": 6.065
+  },
+  "samples": [
+    {
+      "id": "0x369765e0ec0df34b3f684ceb87d9f7e7df19f6deaff871db09bcf6519a6ec6b3",
+      "index": 1,
+      "startBlock": 147434,
+      "submitStartedAtMs": 1777269552793,
+      "submittedAtMs": 1777269555887,
+      "submitLatencyMs": 3094,
+      "protocolTxHash": "0xba7cab3aec2f76cda365588d9f45bd0204b10e531da8b7ec2c80b464109dfc45",
+      "terminal": true,
+      "completed": true,
+      "rolledBack": false,
+      "timedOut": false,
+      "finalStatus": 5,
+      "finalBlock": 147443,
+      "observedAtMs": 1777269600814,
+      "latencyMs": 48021,
+      "latencySeconds": 48.021
+    },
+    {
+      "id": "0xf75444b10ca6405295e140811f3b2501d17572285552e94fff2f6039446a3134",
+      "index": 2,
+      "startBlock": 147435,
+      "submitStartedAtMs": 1777269555888,
+      "submittedAtMs": 1777269560721,
+      "submitLatencyMs": 4833,
+      "protocolTxHash": "0xb5a8fb5710aafe78748adeb58614356e0a1fba672885a6e4216b758957551914",
+      "terminal": true,
+      "completed": true,
+      "rolledBack": false,
+      "timedOut": false,
+      "finalStatus": 5,
+      "finalBlock": 147446,
+      "observedAtMs": 1777269616039,
+      "latencyMs": 60151,
+      "latencySeconds": 60.151
+    }
+  ]
+}

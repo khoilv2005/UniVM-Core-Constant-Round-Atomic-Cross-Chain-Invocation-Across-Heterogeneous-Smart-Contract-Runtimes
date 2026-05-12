@@ -1,0 +1,47 @@
+OrdererOrgs:
+  - Name: Orderer
+    Domain: example.com
+    Specs:
+      - Hostname: orderer1
+        SANS:
+          - "209.38.21.129"
+          - localhost
+      - Hostname: orderer2
+        SANS:
+          - "170.64.194.4"
+          - localhost
+      - Hostname: orderer3
+        SANS:
+          - "170.64.164.173"
+          - localhost
+
+PeerOrgs:
+  - Name: Org1
+    Domain: org1.example.com
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: peer1
+        SANS:
+          - "209.38.21.129"
+          - localhost
+      - Hostname: peer2
+        SANS:
+          - "170.64.194.4"
+          - localhost
+    Users:
+      Count: 1
+
+  - Name: Org2
+    Domain: org2.example.com
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: peer1
+        SANS:
+          - "170.64.164.173"
+          - localhost
+      - Hostname: peer2
+        SANS:
+          - "134.199.160.48"
+          - localhost
+    Users:
+      Count: 1

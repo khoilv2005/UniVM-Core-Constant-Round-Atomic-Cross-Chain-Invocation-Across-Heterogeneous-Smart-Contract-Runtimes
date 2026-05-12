@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ3c",
+  "protocol": "integratex",
+  "mode": "homogeneous-evm-concurrency",
+  "workload": {
+    "depth": 3,
+    "concurrency": 2,
+    "overlap": "all requests reuse the same benchmark service/state set for the selected depth",
+    "submission": "back-to-back burst from one signer; protocol completion is overlapped"
+  },
+  "timing": {
+    "startedAt": "2026-04-27T05:57:32.888Z",
+    "endedAt": "2026-04-27T05:58:10.836Z",
+    "elapsedSeconds": 37.948,
+    "timeoutSeconds": 420,
+    "pollIntervalMs": 250,
+    "submitGapMs": 0
+  },
+  "summary": {
+    "submitted": 2,
+    "terminal": 2,
+    "completed": 2,
+    "rolledBack": 0,
+    "timedOut": 0,
+    "successRate": 1,
+    "avgCompletionLatencyMs": 25131.5,
+    "medianCompletionLatencyMs": 25131.5,
+    "stdCompletionLatencyMs": 18.5,
+    "avgCompletionLatencySeconds": 25.1315,
+    "medianCompletionLatencySeconds": 25.1315,
+    "stdCompletionLatencySeconds": 0.0185
+  },
+  "samples": [
+    {
+      "id": "1000613",
+      "index": 1,
+      "startBlock": 147415,
+      "submitStartedAtMs": 1777269455920,
+      "submittedAtMs": 1777269460818,
+      "submitLatencyMs": 4898,
+      "protocolTxHash": "0x9eaa86d7775e52c3681524917fc2a95558094755af6f0d96527af61141dfd9c0",
+      "terminal": true,
+      "completed": true,
+      "rolledBack": false,
+      "timedOut": false,
+      "finalStatus": 7,
+      "finalBlock": 147419,
+      "observedAtMs": 1777269481033,
+      "latencyMs": 25113,
+      "latencySeconds": 25.113
+    },
+    {
+      "id": "1000614",
+      "index": 2,
+      "startBlock": 147417,
+      "submitStartedAtMs": 1777269465686,
+      "submittedAtMs": 1777269471229,
+      "submitLatencyMs": 5543,
+      "protocolTxHash": "0x1a9202e1e381637181246b57cbaa0ecc178e4de6d2e4424e1911ecaf4c14b147",
+      "terminal": true,
+      "completed": true,
+      "rolledBack": false,
+      "timedOut": false,
+      "finalStatus": 7,
+      "finalBlock": 147421,
+      "observedAtMs": 1777269490836,
+      "latencyMs": 25150,
+      "latencySeconds": 25.15
+    }
+  ]
+}

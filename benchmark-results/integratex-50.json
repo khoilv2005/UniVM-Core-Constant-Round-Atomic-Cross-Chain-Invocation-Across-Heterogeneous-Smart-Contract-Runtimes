@@ -1,0 +1,317 @@
+{
+  "protocol": "integratex",
+  "mode": "live-e2e",
+  "summary": {
+    "runs": 30,
+    "minMs": 24523,
+    "maxMs": 26557,
+    "avgMs": 25307.7,
+    "medianMs": 25296,
+    "minSeconds": 24.523,
+    "maxSeconds": 26.557,
+    "avgSeconds": 25.3077,
+    "medianSeconds": 25.296
+  },
+  "samples": [
+    {
+      "run": 1,
+      "txId": 62,
+      "startBlock": 121742,
+      "finalBlock": 121746,
+      "latencySeconds": 25.377,
+      "latencyMs": 25377,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 2,
+      "txId": 63,
+      "startBlock": 121749,
+      "finalBlock": 121753,
+      "latencySeconds": 24.807,
+      "latencyMs": 24807,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 3,
+      "txId": 64,
+      "startBlock": 121756,
+      "finalBlock": 121760,
+      "latencySeconds": 24.888,
+      "latencyMs": 24888,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 4,
+      "txId": 65,
+      "startBlock": 121762,
+      "finalBlock": 121766,
+      "latencySeconds": 25.486,
+      "latencyMs": 25486,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 5,
+      "txId": 66,
+      "startBlock": 121768,
+      "finalBlock": 121772,
+      "latencySeconds": 25.275,
+      "latencyMs": 25275,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 6,
+      "txId": 67,
+      "startBlock": 121774,
+      "finalBlock": 121778,
+      "latencySeconds": 26.557,
+      "latencyMs": 26557,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 7,
+      "txId": 68,
+      "startBlock": 121781,
+      "finalBlock": 121785,
+      "latencySeconds": 25.155,
+      "latencyMs": 25155,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 8,
+      "txId": 69,
+      "startBlock": 121787,
+      "finalBlock": 121791,
+      "latencySeconds": 25.279,
+      "latencyMs": 25279,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 9,
+      "txId": 70,
+      "startBlock": 121793,
+      "finalBlock": 121797,
+      "latencySeconds": 25.247,
+      "latencyMs": 25247,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 10,
+      "txId": 71,
+      "startBlock": 121799,
+      "finalBlock": 121803,
+      "latencySeconds": 25.594,
+      "latencyMs": 25594,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 11,
+      "txId": 72,
+      "startBlock": 121805,
+      "finalBlock": 121809,
+      "latencySeconds": 25.489,
+      "latencyMs": 25489,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 12,
+      "txId": 73,
+      "startBlock": 121811,
+      "finalBlock": 121815,
+      "latencySeconds": 25.873,
+      "latencyMs": 25873,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 13,
+      "txId": 74,
+      "startBlock": 121818,
+      "finalBlock": 121822,
+      "latencySeconds": 24.8,
+      "latencyMs": 24800,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 14,
+      "txId": 75,
+      "startBlock": 121824,
+      "finalBlock": 121828,
+      "latencySeconds": 25.408,
+      "latencyMs": 25408,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 15,
+      "txId": 76,
+      "startBlock": 121831,
+      "finalBlock": 121835,
+      "latencySeconds": 24.523,
+      "latencyMs": 24523,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 16,
+      "txId": 77,
+      "startBlock": 121837,
+      "finalBlock": 121841,
+      "latencySeconds": 25.296,
+      "latencyMs": 25296,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 17,
+      "txId": 78,
+      "startBlock": 121843,
+      "finalBlock": 121847,
+      "latencySeconds": 25.263,
+      "latencyMs": 25263,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 18,
+      "txId": 79,
+      "startBlock": 121849,
+      "finalBlock": 121853,
+      "latencySeconds": 25.48,
+      "latencyMs": 25480,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 19,
+      "txId": 80,
+      "startBlock": 121855,
+      "finalBlock": 121859,
+      "latencySeconds": 25.288,
+      "latencyMs": 25288,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 20,
+      "txId": 81,
+      "startBlock": 121861,
+      "finalBlock": 121865,
+      "latencySeconds": 25.698,
+      "latencyMs": 25698,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 21,
+      "txId": 82,
+      "startBlock": 121867,
+      "finalBlock": 121871,
+      "latencySeconds": 25.45,
+      "latencyMs": 25450,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 22,
+      "txId": 83,
+      "startBlock": 121873,
+      "finalBlock": 121877,
+      "latencySeconds": 25.296,
+      "latencyMs": 25296,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 23,
+      "txId": 84,
+      "startBlock": 121879,
+      "finalBlock": 121883,
+      "latencySeconds": 25.611,
+      "latencyMs": 25611,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 24,
+      "txId": 85,
+      "startBlock": 121885,
+      "finalBlock": 121889,
+      "latencySeconds": 25.471,
+      "latencyMs": 25471,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 25,
+      "txId": 86,
+      "startBlock": 121892,
+      "finalBlock": 121896,
+      "latencySeconds": 25.192,
+      "latencyMs": 25192,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 26,
+      "txId": 87,
+      "startBlock": 121899,
+      "finalBlock": 121903,
+      "latencySeconds": 24.566,
+      "latencyMs": 24566,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 27,
+      "txId": 88,
+      "startBlock": 121905,
+      "finalBlock": 121909,
+      "latencySeconds": 24.835,
+      "latencyMs": 24835,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 28,
+      "txId": 89,
+      "startBlock": 121911,
+      "finalBlock": 121915,
+      "latencySeconds": 25.523,
+      "latencyMs": 25523,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 29,
+      "txId": 90,
+      "startBlock": 121917,
+      "finalBlock": 121921,
+      "latencySeconds": 25.357,
+      "latencyMs": 25357,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    },
+    {
+      "run": 30,
+      "txId": 91,
+      "startBlock": 121923,
+      "finalBlock": 121927,
+      "latencySeconds": 25.147,
+      "latencyMs": 25147,
+      "blockLatencySeconds": 20,
+      "finalStatus": 7
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+title: "ATOM RQ1c Heterogeneous Depth 2"
+
+protocol: "atom"
+
+relayer:
+  id: "atom-rq1c-d2"
+  log_level: "debug"
+  workers: 4
+  private_key: "70ff25649b86772b672f211d338ea82f042683c2bf5901a9a1e542f77110489e"
+  checkpoint_file: "./var/atom-rq1c-d2-ckpt.json"
+
+chains:
+  bc1:
+    name: "Execution Chain"
+    vm: "evm"
+    chain_id: 1
+    finality_blocks: 4
+    rpc_url: "ws://209.38.21.129:8546"
+    http_url: "http://209.38.21.129:8545"
+    atom_service_address: "0x6F72e0c2A9F8fc92D2CfEaf2414EDc14878c11Ce"
+    atom_entry_address: "0x3d6edA784DaAaFd33Eca54234E310905CcC90bd2"
+    atom_registry_address: "0x1638A17C4690923D2b2d4324FBF06Bc445d4d25B"
+    atom_community_address: "0x74511969765Dce9124Dab0cEBE2E4819609bc730"
+
+  bc2:
+    name: "WASM ATOM Remote Chain"
+    vm: "wasm"
+    chain_id: 2
+    finality_blocks: 1
+    rpc_url: "http://170.64.194.4:18545"
+    ws_url: "ws://170.64.194.4:18545"
+    metadata_path: "D:/UIT/randomly/contracts/xsmart/bc2/bridge/target/ink/xbridge_bc2.contract"
+    account_endpoint: "5GRFGjrKB5AcNsufYR92DWDSG6DYEFJy3PadA3XDJWy6a5je"
+    submitter_uri: "//Alice"
+
+  bc3:
+    name: "Fabric ATOM Remote Chain"
+    vm: "fabric"
+    chain_id: 3
+    finality_blocks: 1
+    rpc_url: "http://127.0.0.1:18645"
+    http_url: "http://127.0.0.1:18645"
+    account_endpoint: "XBridgeBc3"
+    fabric_gateway_endpoint: "209.38.21.129:7051"
+    fabric_channel: "mychannel"
+    fabric_chaincode: "xsmart-bc3"
+    fabric_msp_id: "Org1MSP"
+    fabric_user_cert_path: "D:/UIT/randomly/configs/fabric/crypto-generated/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem"
+    fabric_user_key_path: "D:/UIT/randomly/configs/fabric/crypto-generated/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/key.pem"
+    fabric_tls_cert_path: "D:/UIT/randomly/configs/fabric/crypto-generated/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
+    fabric_peer_name: "peer0.org1.example.com"
+
+  bc2evm:
+    name: "EVM ATOM Flight Chain"
+    vm: "evm"
+    chain_id: 22
+    finality_blocks: 4
+    rpc_url: "ws://170.64.194.4:8546"
+    http_url: "http://170.64.194.4:8545"
+    atom_flight_address: "0x86927f4626eD95f47776c53a3E92D729634F7444"
+
+  bc3evm:
+    name: "EVM ATOM Taxi Chain"
+    vm: "evm"
+    chain_id: 33
+    finality_blocks: 4
+    rpc_url: "ws://170.64.164.173:8546"
+    http_url: "http://170.64.164.173:8545"
+    atom_taxi_address: "0xe12b07fF7cF217E27dD57ec7f5B9FEF19ce9B2CE"
+
+proof:
+  max_retry: 3
+  retry_delay_ms: 1000
+  confirmation_blocks: 4
+
+relay:
+  timeout_seconds: 120
+  max_pending: 100
+
+atom:
+  write_only_manifest: "../../manifests/atom/travel-write-only-hetero-d2.generated.json"
+  judge_private_keys:
+    - "b71c71a67e1177ad4e901695e1b4b9ee17ae16c6668d313eac2f96dbcda3f291"
+    - "fbd6535363327d6c7b8fb48481e726ff61a0c16faf20fab3edd4288748a68897"
+    - "28df2e95c9fb5530abf55ab4d2408c6ce9292db79db60fcc1115ecf1dd327d69"

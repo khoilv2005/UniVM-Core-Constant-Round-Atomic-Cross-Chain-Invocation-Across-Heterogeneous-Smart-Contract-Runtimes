@@ -1,0 +1,27 @@
+{
+  "workflow_id": "gpact-travel-depth-4",
+  "root_chain_id": 1,
+  "segments": [
+    {
+      "segment_id": 1,
+      "chain_id": 2,
+      "contract": "0xd5C91F8fDD6E2e13a2699E71F3274900B493E5f0",
+      "function": "hotel",
+      "kind": "hotel"
+    },
+    {
+      "segment_id": 2,
+      "chain_id": 3,
+      "contract": "0x76Fc302B91021805d5a24715056fD9c7209cf652",
+      "function": "train",
+      "kind": "train"
+    },
+    {
+      "segment_id": 3,
+      "chain_id": 2,
+      "contract": "0x8fd13df6d393892A61a02370b4100EE08C20586A",
+      "function": "flight",
+      "kind": "flight"
+    }
+  ]
+}

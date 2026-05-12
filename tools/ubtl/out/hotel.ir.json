@@ -1,0 +1,686 @@
+{
+  "meta": {
+    "name": "HotelBooking",
+    "version": "go1.21",
+    "source_vm": {
+      "Fabric": {
+        "go_version": "1.21"
+      }
+    },
+    "source_hash": [
+      190,
+      54,
+      36,
+      60,
+      120,
+      92,
+      169,
+      201,
+      68,
+      155,
+      182,
+      252,
+      131,
+      136,
+      223,
+      227,
+      229,
+      78,
+      138,
+      206,
+      48,
+      185,
+      20,
+      120,
+      32,
+      80,
+      83,
+      74,
+      4,
+      214,
+      122,
+      105
+    ]
+  },
+  "storage": {
+    "slots": [
+      {
+        "id": "META",
+        "ty": {
+          "Tuple": [
+            "String",
+            "U64",
+            "U64",
+            "U64"
+          ]
+        },
+        "native_offset": 0,
+        "native_encoding": {
+          "FabricKey": {
+            "pattern": "META"
+          }
+        }
+      },
+      {
+        "id": "ACCOUNT_%s",
+        "ty": {
+          "Map": {
+            "key": "String",
+            "val": "U64"
+          }
+        },
+        "native_offset": 1,
+        "native_encoding": {
+          "FabricKey": {
+            "pattern": "ACCOUNT_%s"
+          }
+        }
+      },
+      {
+        "id": "BOOKING_%s",
+        "ty": {
+          "Map": {
+            "key": "String",
+            "val": "U64"
+          }
+        },
+        "native_offset": 2,
+        "native_encoding": {
+          "FabricKey": {
+            "pattern": "BOOKING_%s"
+          }
+        }
+      },
+      {
+        "id": "LOCK_%s",
+        "ty": {
+          "Map": {
+            "key": "String",
+            "val": {
+              "Tuple": [
+                "U64",
+                "U64",
+                "U64",
+                "Bool"
+              ]
+            }
+          }
+        },
+        "native_offset": 3,
+        "native_encoding": {
+          "FabricKey": {
+            "pattern": "LOCK_%s"
+          }
+        }
+      },
+      {
+        "id": "LOCK_TOTAL",
+        "ty": "U64",
+        "native_offset": 4,
+        "native_encoding": {
+          "FabricKey": {
+            "pattern": "LOCK_TOTAL"
+          }
+        }
+      }
+    ]
+  },
+  "signatures": [
+    {
+      "name": "InitLedger",
+      "selector4": [
+        121,
+        14,
+        170,
+        32
+      ],
+      "inputs": [
+        "String",
+        "U64",
+        "U64",
+        "U64"
+      ],
+      "outputs": [],
+      "mutability": "NonPayable",
+      "effects": [
+        {
+          "Write": {
+            "slot": "META"
+          }
+        }
+      ],
+      "entry_block": 0
+    },
+    {
+      "name": "GetPrice",
+      "selector4": [
+        109,
+        144,
+        22,
+        78
+      ],
+      "inputs": [],
+      "outputs": [
+        "U64"
+      ],
+      "mutability": "View",
+      "effects": [
+        {
+          "Read": {
+            "slot": "META"
+          }
+        }
+      ],
+      "entry_block": 1
+    },
+    {
+      "name": "GetRemain",
+      "selector4": [
+        227,
+        51,
+        81,
+        247
+      ],
+      "inputs": [],
+      "outputs": [
+        "U64"
+      ],
+      "mutability": "View",
+      "effects": [
+        {
+          "Read": {
+            "slot": "META"
+          }
+        }
+      ],
+      "entry_block": 2
+    },
+    {
+      "name": "GetAvailableRemain",
+      "selector4": [
+        57,
+        38,
+        252,
+        244
+      ],
+      "inputs": [],
+      "outputs": [
+        "U64"
+      ],
+      "mutability": "View",
+      "effects": [
+        {
+          "Read": {
+            "slot": "LOCK_TOTAL"
+          }
+        },
+        {
+          "Read": {
+            "slot": "META"
+          }
+        }
+      ],
+      "entry_block": 3
+    },
+    {
+      "name": "GetAccountBalance",
+      "selector4": [
+        30,
+        167,
+        204,
+        222
+      ],
+      "inputs": [
+        "String"
+      ],
+      "outputs": [
+        "U64"
+      ],
+      "mutability": "View",
+      "effects": [
+        {
+          "Read": {
+            "slot": "ACCOUNT_%s"
+          }
+        }
+      ],
+      "entry_block": 4
+    },
+    {
+      "name": "GetBooking",
+      "selector4": [
+        193,
+        20,
+        163,
+        126
+      ],
+      "inputs": [
+        "String"
+      ],
+      "outputs": [
+        "U64"
+      ],
+      "mutability": "View",
+      "effects": [
+        {
+          "Read": {
+            "slot": "BOOKING_%s"
+          }
+        }
+      ],
+      "entry_block": 5
+    },
+    {
+      "name": "IsStateLocked",
+      "selector4": [
+        140,
+        69,
+        82,
+        251
+      ],
+      "inputs": [
+        "String"
+      ],
+      "outputs": [
+        "Bool"
+      ],
+      "mutability": "View",
+      "effects": [
+        {
+          "Read": {
+            "slot": "LOCK_%s"
+          }
+        }
+      ],
+      "entry_block": 6
+    },
+    {
+      "name": "BookLocal",
+      "selector4": [
+        255,
+        158,
+        135,
+        20
+      ],
+      "inputs": [
+        "String",
+        "U64"
+      ],
+      "outputs": [
+        "U64"
+      ],
+      "mutability": "NonPayable",
+      "effects": [
+        {
+          "Read": {
+            "slot": "ACCOUNT_%s"
+          }
+        },
+        {
+          "Read": {
+            "slot": "BOOKING_%s"
+          }
+        },
+        {
+          "Read": {
+            "slot": "LOCK_TOTAL"
+          }
+        },
+        {
+          "Read": {
+            "slot": "META"
+          }
+        },
+        {
+          "Write": {
+            "slot": "ACCOUNT_%s"
+          }
+        },
+        {
+          "Write": {
+            "slot": "BOOKING_%s"
+          }
+        },
+        {
+          "Write": {
+            "slot": "META"
+          }
+        }
+      ],
+      "entry_block": 7
+    },
+    {
+      "name": "LockState",
+      "selector4": [
+        118,
+        59,
+        109,
+        215
+      ],
+      "inputs": [
+        "String",
+        "U64",
+        "U64"
+      ],
+      "outputs": [
+        "U64",
+        "U64"
+      ],
+      "mutability": "NonPayable",
+      "effects": [
+        {
+          "Read": {
+            "slot": "LOCK_%s"
+          }
+        },
+        {
+          "Read": {
+            "slot": "LOCK_TOTAL"
+          }
+        },
+        {
+          "Read": {
+            "slot": "META"
+          }
+        },
+        {
+          "Write": {
+            "slot": "LOCK_%s"
+          }
+        },
+        {
+          "Write": {
+            "slot": "LOCK_TOTAL"
+          }
+        }
+      ],
+      "entry_block": 8
+    },
+    {
+      "name": "UpdateState",
+      "selector4": [
+        67,
+        23,
+        52,
+        49
+      ],
+      "inputs": [
+        "String",
+        "U64",
+        "String",
+        "U64",
+        "U64"
+      ],
+      "outputs": [],
+      "mutability": "NonPayable",
+      "effects": [
+        {
+          "Read": {
+            "slot": "ACCOUNT_%s"
+          }
+        },
+        {
+          "Read": {
+            "slot": "BOOKING_%s"
+          }
+        },
+        {
+          "Read": {
+            "slot": "LOCK_%s"
+          }
+        },
+        {
+          "Read": {
+            "slot": "LOCK_TOTAL"
+          }
+        },
+        {
+          "Read": {
+            "slot": "META"
+          }
+        },
+        {
+          "Write": {
+            "slot": "ACCOUNT_%s"
+          }
+        },
+        {
+          "Write": {
+            "slot": "BOOKING_%s"
+          }
+        },
+        {
+          "Write": {
+            "slot": "LOCK_%s"
+          }
+        },
+        {
+          "Write": {
+            "slot": "LOCK_TOTAL"
+          }
+        },
+        {
+          "Write": {
+            "slot": "META"
+          }
+        }
+      ],
+      "entry_block": 9
+    },
+    {
+      "name": "UnlockState",
+      "selector4": [
+        109,
+        136,
+        194,
+        151
+      ],
+      "inputs": [
+        "String"
+      ],
+      "outputs": [],
+      "mutability": "NonPayable",
+      "effects": [
+        {
+          "Read": {
+            "slot": "LOCK_%s"
+          }
+        },
+        {
+          "Read": {
+            "slot": "LOCK_TOTAL"
+          }
+        },
+        {
+          "Read": {
+            "slot": "META"
+          }
+        },
+        {
+          "Write": {
+            "slot": "LOCK_%s"
+          }
+        },
+        {
+          "Write": {
+            "slot": "LOCK_TOTAL"
+          }
+        }
+      ],
+      "entry_block": 10
+    },
+    {
+      "name": "UnlockOnTimeout",
+      "selector4": [
+        8,
+        177,
+        245,
+        97
+      ],
+      "inputs": [
+        "String"
+      ],
+      "outputs": [],
+      "mutability": "NonPayable",
+      "effects": [
+        {
+          "Read": {
+            "slot": "LOCK_%s"
+          }
+        },
+        {
+          "Read": {
+            "slot": "LOCK_TOTAL"
+          }
+        },
+        {
+          "Write": {
+            "slot": "LOCK_%s"
+          }
+        },
+        {
+          "Write": {
+            "slot": "LOCK_TOTAL"
+          }
+        }
+      ],
+      "entry_block": 11
+    },
+    {
+      "name": "SetBridge",
+      "selector4": [
+        76,
+        87,
+        163,
+        250
+      ],
+      "inputs": [
+        "String"
+      ],
+      "outputs": [],
+      "mutability": "NonPayable",
+      "effects": [
+        {
+          "Read": {
+            "slot": "META"
+          }
+        },
+        {
+          "Write": {
+            "slot": "META"
+          }
+        }
+      ],
+      "entry_block": 12
+    }
+  ],
+  "cfg": {
+    "blocks": [
+      {
+        "id": 0,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 1,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 2,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 3,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 4,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 5,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 6,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 7,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 8,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 9,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 10,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 11,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 12,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      }
+    ]
+  },
+  "externals": []
+}

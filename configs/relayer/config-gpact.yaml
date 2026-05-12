@@ -1,0 +1,53 @@
+title: "GPACT Relayer Configuration"
+
+protocol: "gpact"
+
+relayer:
+  id: "gpact-relayer"
+  log_level: "debug"
+  workers: 4
+  private_key: "70ff25649b86772b672f211d338ea82f042683c2bf5901a9a1e542f77110489e"
+  checkpoint_file: "var/rq4-gpact-d5-ckpt.json"
+
+chains:
+  bc1:
+    name: "Execution Chain"
+    chain_id: 1
+    rpc_url: "http://35.185.111.61:8545"
+    http_url: "http://35.185.111.61:8545"
+    gpact_control_address: "0x6658bf02379e826164AD66CBeC5cd220CaDbB938"
+    gpact_app_address: "0x772F9dd7c0e7ac2397600614540581D953811742"
+
+  bc2:
+    name: "Hotel Chain"
+    chain_id: 2
+    rpc_url: "http://34.118.30.0:8545"
+    http_url: "http://34.118.30.0:8545"
+    gpact_control_address: "0x1acDF9985559919b7De44D86a6FaF7852A62f146"
+    gpact_app_address: "0x6658bf02379e826164AD66CBeC5cd220CaDbB938"
+
+  bc3:
+    name: "Train Chain"
+    chain_id: 3
+    rpc_url: "http://35.187.203.226:8545"
+    http_url: "http://35.187.203.226:8545"
+    gpact_control_address: "0x1acDF9985559919b7De44D86a6FaF7852A62f146"
+    gpact_app_address: "0x6658bf02379e826164AD66CBeC5cd220CaDbB938"
+
+proof:
+  max_retry: 3
+  retry_delay_ms: 1000
+  confirmation_blocks: 1
+
+relay:
+  timeout_seconds: 60
+  max_pending: 100
+
+gpact:
+  manifest: "../../manifests/gpact/travel-depth-5.generated.json"
+  event_transfer_mode: "direct-signing"
+  execution_mode: "serial"
+  signer_private_keys:
+    - "70ff25649b86772b672f211d338ea82f042683c2bf5901a9a1e542f77110489e"
+    - "fbd6535363327d6c7b8fb48481e726ff61a0c16faf20fab3edd4288748a68897"
+    - "28df2e95c9fb5530abf55ab4d2408c6ce9292db79db60fcc1115ecf1dd327d69"

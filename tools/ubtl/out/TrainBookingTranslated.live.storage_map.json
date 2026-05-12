@@ -1,0 +1,65 @@
+{
+  "contract": "TrainBookingTranslated",
+  "slots": [
+    {
+      "ir_id": "bridge",
+      "evm_slot": 0,
+      "ty": "Address"
+    },
+    {
+      "ir_id": "price",
+      "evm_slot": 1,
+      "ty": "U128"
+    },
+    {
+      "ir_id": "remain",
+      "evm_slot": 2,
+      "ty": "U64"
+    },
+    {
+      "ir_id": "ir_hash",
+      "evm_slot": 3,
+      "ty": "Tuple(Bytes)"
+    },
+    {
+      "ir_id": "locked_amount",
+      "evm_slot": 4,
+      "ty": "U128"
+    },
+    {
+      "ir_id": "lock_block",
+      "evm_slot": 5,
+      "ty": "U32"
+    },
+    {
+      "ir_id": "timeout_blocks",
+      "evm_slot": 6,
+      "ty": "U32"
+    },
+    {
+      "ir_id": "active",
+      "evm_slot": 7,
+      "ty": "Bool"
+    },
+    {
+      "ir_id": "locked_total",
+      "evm_slot": 8,
+      "ty": "U128"
+    },
+    {
+      "ir_id": "accounts",
+      "evm_slot": 9,
+      "ty": "U128"
+    },
+    {
+      "ir_id": "bookings",
+      "evm_slot": 10,
+      "ty": "U64"
+    },
+    {
+      "ir_id": "lock_size",
+      "evm_slot": 11,
+      "ty": "U64"
+    }
+  ]
+}

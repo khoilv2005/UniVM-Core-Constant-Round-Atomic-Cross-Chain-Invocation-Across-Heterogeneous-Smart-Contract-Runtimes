@@ -1,0 +1,20 @@
+{
+  "workflow_id": "gpact-train-hotel-write",
+  "root_chain_id": 1,
+  "segments": [
+    {
+      "segment_id": 1,
+      "chain_id": 2,
+      "contract": "0x6658bf02379e826164AD66CBeC5cd220CaDbB938",
+      "function": "hotel",
+      "kind": "hotel"
+    },
+    {
+      "segment_id": 2,
+      "chain_id": 3,
+      "contract": "0x6658bf02379e826164AD66CBeC5cd220CaDbB938",
+      "function": "train",
+      "kind": "train"
+    }
+  ]
+}

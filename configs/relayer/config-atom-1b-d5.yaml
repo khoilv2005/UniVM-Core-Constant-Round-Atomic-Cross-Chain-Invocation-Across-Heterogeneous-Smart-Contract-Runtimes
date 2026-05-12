@@ -1,0 +1,53 @@
+title: "Atom Relayer Configuration (RQ1b depth=5)"
+
+protocol: "atom"
+
+relayer:
+  id: "atom-relayer-1b-d5"
+  log_level: "debug"
+  workers: 4
+  private_key: "70ff25649b86772b672f211d338ea82f042683c2bf5901a9a1e542f77110489e"
+  checkpoint_file: "var/rq4-atom-d5-ckpt.json"
+
+chains:
+  bc1:
+    name: "Execution Chain"
+    chain_id: 1
+    rpc_url: "ws://35.185.111.61:8546"
+    http_url: "http://35.185.111.61:8545"
+    atom_service_address: "0x2074f91470365144Df78C333948814FE4158af5A"
+    atom_entry_address: "0x8c1094d088E2E2B62263326e2D88Ce512327CB3c"
+    atom_registry_address: "0x6800170Dc24E75f1CcC74873E4b21eDF5C6c18d7"
+    atom_community_address: "0x7c8024C9eb17A3908444F0DCe2Ec6B1eEf735Fa3"
+
+  bc2:
+    name: "Hotel Chain"
+    chain_id: 2
+    rpc_url: "ws://34.118.30.0:8546"
+    http_url: "http://34.118.30.0:8545"
+    atom_hotel_address: "0x13cF0D18BCb898EFD4e85Ae2Bb65A443ab86023C"
+    atom_flight_address: "0x3693Da93b9d5E63cB4804b8813c8214A76724485"
+
+  bc3:
+    name: "Train Chain"
+    chain_id: 3
+    rpc_url: "ws://35.187.203.226:8546"
+    http_url: "http://35.187.203.226:8545"
+    atom_train_address: "0x13cF0D18BCb898EFD4e85Ae2Bb65A443ab86023C"
+    atom_taxi_address: "0x3693Da93b9d5E63cB4804b8813c8214A76724485"
+
+proof:
+  max_retry: 3
+  retry_delay_ms: 1000
+  confirmation_blocks: 1
+
+relay:
+  timeout_seconds: 60
+  max_pending: 100
+
+atom:
+  write_only_manifest: "../../manifests/atom/travel-write-only-depth-5.generated.json"
+  judge_private_keys:
+    - "b71c71a67e1177ad4e901695e1b4b9ee17ae16c6668d313eac2f96dbcda3f291"
+    - "fbd6535363327d6c7b8fb48481e726ff61a0c16faf20fab3edd4288748a68897"
+    - "28df2e95c9fb5530abf55ab4d2408c6ce9292db79db60fcc1115ecf1dd327d69"

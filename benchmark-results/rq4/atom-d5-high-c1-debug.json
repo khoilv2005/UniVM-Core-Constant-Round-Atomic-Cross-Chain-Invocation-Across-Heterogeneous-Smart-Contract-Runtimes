@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ3c",
+  "protocol": "atom",
+  "mode": "homogeneous-evm-concurrency",
+  "workload": {
+    "depth": 5,
+    "concurrency": 1,
+    "contention": "high",
+    "hotLockFraction": 0.8,
+    "overlap": "all requests reuse the same benchmark service/state set for the selected depth",
+    "submission": "back-to-back burst from one signer; protocol completion is overlapped"
+  },
+  "timing": {
+    "startedAt": "2026-05-11T11:55:05.793Z",
+    "endedAt": "2026-05-11T11:56:29.124Z",
+    "elapsedSeconds": 83.331,
+    "timeoutSeconds": 600,
+    "pollIntervalMs": 250,
+    "submitGapMs": 0
+  },
+  "summary": {
+    "submitted": 1,
+    "terminal": 1,
+    "completed": 1,
+    "rolledBack": 0,
+    "timedOut": 0,
+    "successRate": 1,
+    "completionRate": 1,
+    "abortRate": 0,
+    "lockConflictRate": 0,
+    "avgCompletionLatencyMs": 83091,
+    "medianCompletionLatencyMs": 83091,
+    "p50CompletionLatencyMs": 83091,
+    "p90CompletionLatencyMs": 83091,
+    "p95CompletionLatencyMs": 83091,
+    "p99CompletionLatencyMs": 83091,
+    "stdCompletionLatencyMs": 0,
+    "avgCompletionLatencySeconds": 83.091,
+    "medianCompletionLatencySeconds": 83.091,
+    "p50CompletionLatencySeconds": 83.091,
+    "p90CompletionLatencySeconds": 83.091,
+    "p95CompletionLatencySeconds": 83.091,
+    "p99CompletionLatencySeconds": 83.091,
+    "stdCompletionLatencySeconds": 0,
+    "avgRecoveryTimeMs": 0,
+    "avgRecoveryTimeSeconds": 0
+  },
+  "samples": [
+    {
+      "id": "0x057bdc9de378e0ad868d7fc9e1784c1e7a27b980ad2bd1d2fcef8689d8257f53",
+      "index": 1,
+      "startBlock": 1155,
+      "submitStartedAtMs": 1778500506033,
+      "submittedAtMs": 1778500514084,
+      "submitLatencyMs": 8051,
+      "protocolTxHash": "0x967449b41180a2ec72dda9a1dc92aca0f612ee311b586a77a7ea6e1fe06cdc94",
+      "terminal": true,
+      "completed": true,
+      "rolledBack": false,
+      "timedOut": false,
+      "finalStatus": 7,
+      "finalBlock": 1160,
+      "observedAtMs": 1778500589124,
+      "latencyMs": 83091,
+      "latencySeconds": 83.091
+    }
+  ]
+}

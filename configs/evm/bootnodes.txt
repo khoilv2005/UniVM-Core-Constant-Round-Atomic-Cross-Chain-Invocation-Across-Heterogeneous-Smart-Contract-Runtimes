@@ -1,0 +1,16 @@
+# EVM Network Bootnodes
+# After first startup, run: geth --datadir /geth/data nodekey | cut -c 3- > nodeid
+# Then construct enode URL: enode://nodeid@VM_IP:30303
+# These are placeholders - update after initial bootstrap
+
+# VM1 EVM Node
+enode://PLACEHOLDER_NODEID@209.38.21.129:30303
+
+# VM2 EVM Node
+enode://PLACEHOLDER_NODEID@170.64.194.4:30303
+
+# VM3 EVM Node
+enode://PLACEHOLDER_NODEID@170.64.164.173:30303
+
+# VM4 EVM Node
+enode://PLACEHOLDER_NODEID@134.199.160.48:30303

@@ -1,0 +1,28 @@
+{
+  "workflow_id": "atom-travel-write-only-depth-2",
+  "workflow_name": "Atom Travel Write Only Depth 2",
+  "total_operations": 1,
+  "remote_functions": [
+    {
+      "function_id": "hotel-write",
+      "chain_id": 2,
+      "contract_address": "0x13cF0D18BCb898EFD4e85Ae2Bb65A443ab86023C",
+      "business_unit": "hotel.book",
+      "pattern": "atomicWrite",
+      "lock_do_selector": "book_lock_do",
+      "unlock_selector": "book_unlock",
+      "undo_unlock_selector": "book_undo_unlock"
+    }
+  ],
+  "operations": [
+    {
+      "id": 1,
+      "step": 1,
+      "function_id": "hotel-write",
+      "parameter_names": [
+        "user",
+        "rooms"
+      ]
+    }
+  ]
+}

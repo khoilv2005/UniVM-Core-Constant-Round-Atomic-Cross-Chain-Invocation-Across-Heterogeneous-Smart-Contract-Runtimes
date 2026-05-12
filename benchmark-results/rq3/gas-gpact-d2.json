@@ -1,0 +1,3723 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ3b",
+  "protocol": "gpact",
+  "mode": "gas-homogeneous-evm",
+  "depth": 2,
+  "scope": "homogeneous-evm-all-chain-gas-bc1-bc2-bc3",
+  "note": "All-chain EVM gas sums receipts on bc1, bc2, and bc3 that touch watched protocol contracts within the request timestamp window.",
+  "scanMarginSeconds": 15,
+  "summary": {
+    "runs": 30,
+    "completed": 30,
+    "rolledBack": 0,
+    "avgTotalGas": 801563.6333333333,
+    "avgCategoryGas": {
+      "gpact_control": 139403.8,
+      "remote_gpact_segment": 383984.8333333333,
+      "user_submission": 278175
+    },
+    "avgPaperCategoryGas": {
+      "bridge_gas": 307580,
+      "integrated_execution_gas": 109998.8,
+      "state_lock_unlock_gas": 383984.8333333333
+    },
+    "avgChainGas": {
+      "bc1": 417578.8,
+      "bc2": 383984.8333333333,
+      "bc3": 0
+    }
+  },
+  "runs": [
+    {
+      "run": 1,
+      "id": "0x27e14d9106a9010e96f1bbbda252dee52f186299705efb59f201d48f35816bee",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 139946,
+      "finalBlock": 139950,
+      "latencyMs": 25514,
+      "latencySeconds": 25.514,
+      "totalGas": 801572,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383952,
+        "gpact_control": 139443
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383952,
+        "integrated_execution_gas": 110036
+      },
+      "chainGas": {
+        "bc1": 417620,
+        "bc2": 383952,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x0e309b6ae5b57fc4dae8ebe26de42b1b61c3dfa304974f2b24798f63b6489d06",
+          "blockNumber": 139946,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xbe27cbb8957e3808322f89d90db12d382640bf222a7a6f7b9583b051abfdda31",
+          "blockNumber": 139947,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x91d00655badea9a83630d67424c3a5a79114e6f00f0147853cdaaaaa20ccbe00",
+          "blockNumber": 139948,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "110036",
+          "gasUsedNumber": 110036,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x9295f2e3d15debecd26976f49e7c387b66f10d58cd3c1481844c58ef34a3db9b",
+          "blockNumber": 139949,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96120",
+          "gasUsedNumber": 96120,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x1aa67040bda7049a333ebf93bfb89ea4abaee08d9c27947cf469b0591257fed2",
+          "blockNumber": 139950,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "id": "0x101220b1ca2efa60e6cc4ee054479077c49d3a34246a2b1342c1a979b7dc9c80",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 139952,
+      "finalBlock": 139956,
+      "latencyMs": 23124,
+      "latencySeconds": 23.124,
+      "totalGas": 801593,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383961,
+        "gpact_control": 139455
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383961,
+        "integrated_execution_gas": 110048
+      },
+      "chainGas": {
+        "bc1": 417632,
+        "bc2": 383961,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x219e072ef7ba9536713f8fb7075a457deccc46c87be7b6e6c35f2e2e64174af8",
+          "blockNumber": 139952,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x8e1f2d6380995a5d17ff9e307d178efd4ca82f261b3d3c3192fee6346b872e45",
+          "blockNumber": 139953,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xfc114361c397383de16d70005f6229ab2573ec00340dc716d67e715bfe771c67",
+          "blockNumber": 139954,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "110048",
+          "gasUsedNumber": 110048,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x4855ede21af862fe279c06a9f96d2441e8717dbd86ead5407e6bbc59082bda82",
+          "blockNumber": 139955,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96129",
+          "gasUsedNumber": 96129,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x0eb4e0c293baf4421cc4cedc161ccc9ad1a0888b2b38ec0c210c613e08e4da6c",
+          "blockNumber": 139956,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "id": "0xdc2fc4828a20a227fecc22bd7c283e07de9d1d37201a0085c4c64f4be1b862fa",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 139959,
+      "finalBlock": 139963,
+      "latencyMs": 27003,
+      "latencySeconds": 27.003,
+      "totalGas": 801514,
+      "categoryGas": {
+        "user_submission": 278165,
+        "remote_gpact_segment": 383980,
+        "gpact_control": 139369
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307560,
+        "state_lock_unlock_gas": 383980,
+        "integrated_execution_gas": 109974
+      },
+      "chainGas": {
+        "bc1": 417534,
+        "bc2": 383980,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xc09e91a65ded173d9cfa909491e454be8ec52f5150f06632f818b0af6b84fcc8",
+          "blockNumber": 139959,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278165",
+          "gasUsedNumber": 278165,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x9da1d217ee190d18b872f4b69e4ac701fec8579987b25d35dbb36e7b55264f5c",
+          "blockNumber": 139960,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287820",
+          "gasUsedNumber": 287820,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xb1360f62a332eabf0ed5eb738ffc7f5b35f69649cab303ab94f3dcfdffb71470",
+          "blockNumber": 139961,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109974",
+          "gasUsedNumber": 109974,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x6044da2339d3a13a606f94c7c7b05f88455ab1e68c88446c78031d81856eef70",
+          "blockNumber": 139962,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96160",
+          "gasUsedNumber": 96160,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x6edcc1b8bd43e028546f2498d5abccd5b1a34704f51e978ec926d2aba108bcc0",
+          "blockNumber": 139963,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29395",
+          "gasUsedNumber": 29395,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 4,
+      "id": "0xea6426deed357d5cc575075010a2734433057636ba9fa9fdf4f8d311ded69ad1",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 139965,
+      "finalBlock": 139969,
+      "latencyMs": 22474,
+      "latencySeconds": 22.474,
+      "totalGas": 801576,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383982,
+        "gpact_control": 139417
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383982,
+        "integrated_execution_gas": 110010
+      },
+      "chainGas": {
+        "bc1": 417594,
+        "bc2": 383982,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xe056c7055e9111edf0bd148ccca5d736f9abbc548bb0cc72f28604a5d1d0b645",
+          "blockNumber": 139965,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x4664a4285a246ca3fc7f877a46665b0c912fddbc8c43763fb511d59562ed194e",
+          "blockNumber": 139966,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x993488323ca529edd6d69427a5322c70f14faf2e43b800184b9f17bf4ed8b978",
+          "blockNumber": 139967,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "110010",
+          "gasUsedNumber": 110010,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xabd90ac2599565d1c869ea11cf06b6de8b1a0cf24ce274edf5786905bb42b502",
+          "blockNumber": 139968,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96150",
+          "gasUsedNumber": 96150,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xb03712264cae5f3483762b04f9ce933fa48c4dc3ae250e980a22517304350828",
+          "blockNumber": 139969,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 5,
+      "id": "0xc0c84ac84b58526224c5eda832505a48cc86b8d348ecb96a75935f616ac8f09a",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 139972,
+      "finalBlock": 139976,
+      "latencyMs": 25877,
+      "latencySeconds": 25.877,
+      "totalGas": 801583,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 384001,
+        "gpact_control": 139405
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 384001,
+        "integrated_execution_gas": 109998
+      },
+      "chainGas": {
+        "bc1": 417582,
+        "bc2": 384001,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xbd57095b0b47965495635e12eab886a3366753ec047ae7080b4fcb5a3f33df65",
+          "blockNumber": 139972,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x2e143c3f519c4a6e4b5c18a7c9410895202b8ea394074fca57442c8642dd196e",
+          "blockNumber": 139973,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xf1b9ceed5872421a497b877c045b4fcd56b2b695d3e3f6615544495ffb949765",
+          "blockNumber": 139974,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109998",
+          "gasUsedNumber": 109998,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xcb20d03fb5a150d7693a7b21ad061d6b0c5815ecb51c46527260491468c77d68",
+          "blockNumber": 139975,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96169",
+          "gasUsedNumber": 96169,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xc05a430282127def9b7b24feaa7d8052df109be891d4dffe5b659e8e52fd403b",
+          "blockNumber": 139976,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 6,
+      "id": "0x1570dde0a65b79a6f898577f5592583b598e2cc100e709c088f2a41a0c8ab881",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 139978,
+      "finalBlock": 139982,
+      "latencyMs": 21849,
+      "latencySeconds": 21.849,
+      "totalGas": 801507,
+      "categoryGas": {
+        "user_submission": 278165,
+        "remote_gpact_segment": 383949,
+        "gpact_control": 139393
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307560,
+        "state_lock_unlock_gas": 383949,
+        "integrated_execution_gas": 109998
+      },
+      "chainGas": {
+        "bc1": 417558,
+        "bc2": 383949,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xf5290cacf132eb146cd2b377ff514bde5754ac1b387e085716eb20f43961b34e",
+          "blockNumber": 139978,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278165",
+          "gasUsedNumber": 278165,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x03593be7a08d16c81e9b9e0f178d75ef9ed0f6038f9a5494feee010ac32d4e96",
+          "blockNumber": 139979,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287820",
+          "gasUsedNumber": 287820,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xac7b9f75657a1c8dd4c81a40aa40881489933117a0bd568c34381c93bf78d25d",
+          "blockNumber": 139980,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109998",
+          "gasUsedNumber": 109998,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xe02494fbbc8d678e1601104080b2d31ea0d892389926500bf3ab03c19a8210b5",
+          "blockNumber": 139981,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96129",
+          "gasUsedNumber": 96129,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x4da4bfffa7e15a07501b5c56033da2f2b08a7d77cde9851331e196db307d8189",
+          "blockNumber": 139982,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29395",
+          "gasUsedNumber": 29395,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 7,
+      "id": "0xd1b81f59d6db8e3af1f506f1a50b9844d7ae7879e0fa6dc6f15710ea94d9ff52",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 139984,
+      "finalBlock": 139988,
+      "latencyMs": 23299,
+      "latencySeconds": 23.299,
+      "totalGas": 801524,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383982,
+        "gpact_control": 139365
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383982,
+        "integrated_execution_gas": 109958
+      },
+      "chainGas": {
+        "bc1": 417542,
+        "bc2": 383982,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x76162b451c802aa8c4b57d377fab2cd49952629b471236315dbeaf0f71522158",
+          "blockNumber": 139984,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x1f297243ee0b7f1d6fe7d1a1ca7b676b2435df8fd50ab54a5a83da4fc17dd1c7",
+          "blockNumber": 139985,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xb701245e991cdf4a97569c63c93cebb6d78eaca6422cc6b8450c834dd6b9a0a9",
+          "blockNumber": 139986,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109958",
+          "gasUsedNumber": 109958,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xccb514ae37db3d730df8aba3160b2c14710c12a977ff89619fddf0aad25e024c",
+          "blockNumber": 139987,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96150",
+          "gasUsedNumber": 96150,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x5f66eb65e26249a768c68cf05879bb606919d2876cbccb19727f89e0d6d802a1",
+          "blockNumber": 139988,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 8,
+      "id": "0xbdfaa195043fb4f211d1965e485aa1903deda0e27b1ec38510aeffeeb5fa88ec",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 139990,
+      "finalBlock": 139994,
+      "latencyMs": 22793,
+      "latencySeconds": 22.793,
+      "totalGas": 801522,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383980,
+        "gpact_control": 139365
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383980,
+        "integrated_execution_gas": 109958
+      },
+      "chainGas": {
+        "bc1": 417542,
+        "bc2": 383980,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x1a81235ce4d10ad06c2e65c5a9fe987a810b8b3d605bcd5eafa874b3528c3fd8",
+          "blockNumber": 139990,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x7b33905dbe0b9e9ad3ab01a8d13d3fb4c3f92df60b5dc334551ef41a63d342f4",
+          "blockNumber": 139991,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xcbbead7753d6e1440a28ecb96207aefa8bc732ebe1b69581b9715b6104537446",
+          "blockNumber": 139992,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109958",
+          "gasUsedNumber": 109958,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x1321441e0131853ca89967120e179783265a6d96d8264355aefb5237b16ccbb4",
+          "blockNumber": 139993,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96148",
+          "gasUsedNumber": 96148,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x8c105599891f4ad14b9d537368cdc181278c3090c7ec95a7c9017610615b0be8",
+          "blockNumber": 139994,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 9,
+      "id": "0x0aca73528213ce352b9bbf8e57c3309ed3208c3e2f56973e13d349ba47f62b3e",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 139996,
+      "finalBlock": 140000,
+      "latencyMs": 22788,
+      "latencySeconds": 22.788,
+      "totalGas": 801524,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383980,
+        "gpact_control": 139367
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383980,
+        "integrated_execution_gas": 109960
+      },
+      "chainGas": {
+        "bc1": 417544,
+        "bc2": 383980,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x33248103d18a2814322336ae2dae818183fd3a8064a7ec12bb10251439b423f2",
+          "blockNumber": 139996,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x86e0a29ef613c0022e20d303dd5a60ad3e7bfe167340c2286a6771ca2ede0c17",
+          "blockNumber": 139997,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x44e62a106ddabeba61b99eb79aadbe5d139296365069691a486f48178051dfdd",
+          "blockNumber": 139998,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109960",
+          "gasUsedNumber": 109960,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x8f1974db096b84f0ea8393dcc4ba7923cf5429a8bd6da47999ff96ad810f548b",
+          "blockNumber": 139999,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96148",
+          "gasUsedNumber": 96148,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x605578498d51f29b01a70bcf6bffe8927ce06c9dfe00f579df51d87c98155454",
+          "blockNumber": 140000,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 10,
+      "id": "0xca6918bc614e3bba96a4540d85c535b1322cf58587f6673393276c668dc97f47",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140002,
+      "finalBlock": 140006,
+      "latencyMs": 22559,
+      "latencySeconds": 22.559,
+      "totalGas": 801586,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383980,
+        "gpact_control": 139429
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383980,
+        "integrated_execution_gas": 110022
+      },
+      "chainGas": {
+        "bc1": 417606,
+        "bc2": 383980,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xd412092e467208e48dfd3cc08b7e936ee89969bbf2f86a0d893f9ed60fcfc2b3",
+          "blockNumber": 140002,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xeb17b6f02c85963ec1e33395f818a670bed01b569367e89e6dcc5f2f21f4359c",
+          "blockNumber": 140003,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xd1fe39ea433ba5d2e7f1f96d0583b824e3412f5598c56ade322aa5bbcecde513",
+          "blockNumber": 140004,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "110022",
+          "gasUsedNumber": 110022,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x8973477a152a3c87deb9a478a4916036c889a781a99f6b27f7eba3a1004889bf",
+          "blockNumber": 140005,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96148",
+          "gasUsedNumber": 96148,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x72fe95404bf29ed73c395f0944d974079538d5644ed47c2f7c3ab4c5e628769e",
+          "blockNumber": 140006,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 11,
+      "id": "0xed38ce9ed3c8c6355a3c1f4243e3d977806f2651eab6f475bb5e7cdf3514c5a4",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140009,
+      "finalBlock": 140013,
+      "latencyMs": 27986,
+      "latencySeconds": 27.986,
+      "totalGas": 801633,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 384001,
+        "gpact_control": 139455
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 384001,
+        "integrated_execution_gas": 110048
+      },
+      "chainGas": {
+        "bc1": 417632,
+        "bc2": 384001,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x526f6dc91a2a4ad38915c133bfed2bc417f7573d33295c090e595a3cd4292592",
+          "blockNumber": 140009,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xe2a7962fad1a28b6f50b69998d5b50801a0c46d93bf5bb1fc0e70a7f66ee5cd5",
+          "blockNumber": 140010,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xff2693b2251b646be07307d688be2c5fe75ed99a5dd145ed1cc3a531d7348fa1",
+          "blockNumber": 140011,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "110048",
+          "gasUsedNumber": 110048,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x1f0d19cfcff4785a21c5fe12d836bc7f5f8d4cd175a1d230d2e7f8f3b7b64259",
+          "blockNumber": 140012,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96169",
+          "gasUsedNumber": 96169,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x4be72e9710bb9fe66af6a7944dad300c7b2632edb464dfbd58f868915d25c125",
+          "blockNumber": 140013,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 12,
+      "id": "0x005309df06782a574ade7d2c648e85bb433abb98667d08936cd210bafd672b5d",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140015,
+      "finalBlock": 140019,
+      "latencyMs": 22600,
+      "latencySeconds": 22.6,
+      "totalGas": 801554,
+      "categoryGas": {
+        "user_submission": 278165,
+        "remote_gpact_segment": 383970,
+        "gpact_control": 139419
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307560,
+        "state_lock_unlock_gas": 383970,
+        "integrated_execution_gas": 110024
+      },
+      "chainGas": {
+        "bc1": 417584,
+        "bc2": 383970,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xb10e790e0ecff4ef6bca8674f76befac58e853392c13aef7f5e51e1487ab856d",
+          "blockNumber": 140015,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278165",
+          "gasUsedNumber": 278165,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x3ddb42a4df26c70e36b94e8628e44e1ecd07db5e758285ffc3a2bcbf84e2cb4d",
+          "blockNumber": 140016,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287820",
+          "gasUsedNumber": 287820,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xa44f3eddf52c0de69faf3e3e31d877d3885de9ed425eb9b32d4b20b5b8bf9e16",
+          "blockNumber": 140017,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "110024",
+          "gasUsedNumber": 110024,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xa0656c1ca9766cd2ee1bf13b63dcc7a64492c1a59cdb688fb6f66c25ebeb3e42",
+          "blockNumber": 140018,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96150",
+          "gasUsedNumber": 96150,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x5e04f24be26f73f19ad1c39ffe79dd1d404af6e55a921b270d384fd066156516",
+          "blockNumber": 140019,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29395",
+          "gasUsedNumber": 29395,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 13,
+      "id": "0x3b0b2cf00c3245537f4202adc186c9a044299e1d8da7ff7b2ab7d7c780d6df00",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140021,
+      "finalBlock": 140025,
+      "latencyMs": 23123,
+      "latencySeconds": 23.123,
+      "totalGas": 801516,
+      "categoryGas": {
+        "user_submission": 278165,
+        "remote_gpact_segment": 383970,
+        "gpact_control": 139381
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307560,
+        "state_lock_unlock_gas": 383970,
+        "integrated_execution_gas": 109986
+      },
+      "chainGas": {
+        "bc1": 417546,
+        "bc2": 383970,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x112934a19e1545adf7221b74047c1ae3ed43077cef29a55658da6b31b0ca0191",
+          "blockNumber": 140021,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278165",
+          "gasUsedNumber": 278165,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x2e104cd5490e75c11037c9cb08c0e04d7a829ee27ca1187d631180e38f13077e",
+          "blockNumber": 140022,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287820",
+          "gasUsedNumber": 287820,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xcf04a06d35a7479bc0df707dca365a9f03a276b89895f8e73c55d93fae43eeea",
+          "blockNumber": 140023,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109986",
+          "gasUsedNumber": 109986,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x5c8ff0cd3974fdaf48d107b89d6a4b28f0eed18483a9343b4f93d14be0eddea6",
+          "blockNumber": 140024,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96150",
+          "gasUsedNumber": 96150,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x8c84c50eedc6611968dfcda3d1961bc8ed64d525c0a5ee6996f22cb9724c57db",
+          "blockNumber": 140025,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29395",
+          "gasUsedNumber": 29395,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 14,
+      "id": "0x43adb5b6a6d9b4d81974fd33197e1d1b45d9196f012c2f149264bfb8833488e8",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140027,
+      "finalBlock": 140031,
+      "latencyMs": 22367,
+      "latencySeconds": 22.367,
+      "totalGas": 801598,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383992,
+        "gpact_control": 139429
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383992,
+        "integrated_execution_gas": 110022
+      },
+      "chainGas": {
+        "bc1": 417606,
+        "bc2": 383992,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x466ff471dfeaef5c24f29979c8e82642cc69df24242ca1d12d4eb6a547e1a60b",
+          "blockNumber": 140027,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x792a1840aaca37ca020813a3d4e42b4bcb1a29b3bc0018aeef90232067a52547",
+          "blockNumber": 140028,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xb29c1cae2365546e5d8c619ab1f4c1c88c26c71c1031094d1b72910f25b95c39",
+          "blockNumber": 140029,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "110022",
+          "gasUsedNumber": 110022,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x555ea83dd87cc4299ed57fae2fa13543157d689a87f8cc0557dd298fff4af8f6",
+          "blockNumber": 140030,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96160",
+          "gasUsedNumber": 96160,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x7e1b41ea6e21117c9caf58935c1bd80840fb75492a94c47f805663387d7d7227",
+          "blockNumber": 140031,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 15,
+      "id": "0x35acc1131f9b025feb9a30b50f727ea0fb53c4e3665dc2daff07b6e1b879fe61",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140033,
+      "finalBlock": 140037,
+      "latencyMs": 22838,
+      "latencySeconds": 22.838,
+      "totalGas": 801607,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 384001,
+        "gpact_control": 139429
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 384001,
+        "integrated_execution_gas": 110022
+      },
+      "chainGas": {
+        "bc1": 417606,
+        "bc2": 384001,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xc393dfa9cc2485b4cfac8f06fd4be6fadf8b04c2370883e62a872fe6b7b2a754",
+          "blockNumber": 140033,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x0bb1a3e7037c9c1772221b23528e8692c909835483adde55f5e886b267a9c43a",
+          "blockNumber": 140034,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x195a847377d2a9bb0fdcfc96eb4388b7c72e666ccc20eab0fbf467fc7f89875b",
+          "blockNumber": 140035,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "110022",
+          "gasUsedNumber": 110022,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x92db0aa99ab37634c46f88a3f5693c394514a70d899f53a3cdd3b00292d9b486",
+          "blockNumber": 140036,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96169",
+          "gasUsedNumber": 96169,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xdd5e3da88883da9a647f839845fcf5224e1e2b4cac0fb0a663fa359ae8fbcd91",
+          "blockNumber": 140037,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 16,
+      "id": "0xb753ba73d013ba0f095282f0eda0c3c2065b7f7ae8dde36724ca4a8b5f7d86a2",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140039,
+      "finalBlock": 140043,
+      "latencyMs": 23352,
+      "latencySeconds": 23.352,
+      "totalGas": 801546,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383992,
+        "gpact_control": 139377
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383992,
+        "integrated_execution_gas": 109970
+      },
+      "chainGas": {
+        "bc1": 417554,
+        "bc2": 383992,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xb32f34c0b52c285e75d98c2428b7c1f8544e6adbeb07ba54f79294f8c99429ad",
+          "blockNumber": 140039,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x0cd6c8de89e4a5a62df3b485ad429d2f68fad1dc6251859b3c68142eee2d0fd5",
+          "blockNumber": 140040,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x5529733ef8adb1a252e2141f6d0b2e5fec39bf6f6162a21ce9e9c4d284fba78b",
+          "blockNumber": 140041,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109970",
+          "gasUsedNumber": 109970,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x4f4d0b18c899c02e969179893a22fd061ddfd49456f28973082b404d14c7f09a",
+          "blockNumber": 140042,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96160",
+          "gasUsedNumber": 96160,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x5a5084bcbfd592fff171b9e2e5be4cdde8e1a384314eb370a06f9d2cf0806662",
+          "blockNumber": 140043,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 17,
+      "id": "0x47e5b4bf3ee5ad3d6b6ecd132944643d442a08fad76ecdd277d169986898455e",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140045,
+      "finalBlock": 140049,
+      "latencyMs": 22190,
+      "latencySeconds": 22.19,
+      "totalGas": 801569,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 384001,
+        "gpact_control": 139391
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 384001,
+        "integrated_execution_gas": 109984
+      },
+      "chainGas": {
+        "bc1": 417568,
+        "bc2": 384001,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x6b931f00bc1c78df0388c052fc772504a8df19e8682917ccb5a1ea9ac11db75a",
+          "blockNumber": 140045,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xef4cf22953033a8bd1770e0a304674d2eeb36523ccc66a9be48db350a53bb739",
+          "blockNumber": 140046,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xa2a0c0f5ed3ffda6cdad4a34a57e737f5020ecab5970037b0c53a670505a1367",
+          "blockNumber": 140047,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109984",
+          "gasUsedNumber": 109984,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xcb2afe77a0872c26352f039a7866f6b1e75e16f0961aee24f191c2f7f6c0a853",
+          "blockNumber": 140048,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96169",
+          "gasUsedNumber": 96169,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x5cd84a528e5d1ae39ecf087afba0e8aa71b3267f126f8a6ac5ed5df6a1c2dd1a",
+          "blockNumber": 140049,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 18,
+      "id": "0xc096619ccdbeb1126ece7e6a4bc522228667c24ea342311c8b741855b1179766",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140052,
+      "finalBlock": 140056,
+      "latencyMs": 26888,
+      "latencySeconds": 26.888,
+      "totalGas": 801524,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383942,
+        "gpact_control": 139405
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383942,
+        "integrated_execution_gas": 109998
+      },
+      "chainGas": {
+        "bc1": 417582,
+        "bc2": 383942,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x4ab500fac8d373ecc8d66fa265fc817bfc06f6d63db39e9ab96a15338a03a31c",
+          "blockNumber": 140052,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x84455fb1224a328c7c9f9cb4f1189a4ae274fc1b00c60e61269cc11c2f6afe8b",
+          "blockNumber": 140053,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x4d36bd54f24b40ac6d11cf2d48477757528551b38f1de97597edce56ec663cfc",
+          "blockNumber": 140054,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109998",
+          "gasUsedNumber": 109998,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x2b70d84b1a3a33ba3dfdfbe0a4513640c75ab01c2b883a21001a1d21156306b7",
+          "blockNumber": 140055,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96110",
+          "gasUsedNumber": 96110,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x29bd0f229a3f4f3e4e57616d20008db172c3554253a579b7ed6e2635edfbf202",
+          "blockNumber": 140056,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 19,
+      "id": "0xeecf93663f77905e1119d1e42c7559cd19804ded61d80ced09ed40361a08fa2f",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140059,
+      "finalBlock": 140063,
+      "latencyMs": 27286,
+      "latencySeconds": 27.286,
+      "totalGas": 801616,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 384022,
+        "gpact_control": 139417
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 384022,
+        "integrated_execution_gas": 110010
+      },
+      "chainGas": {
+        "bc1": 417594,
+        "bc2": 384022,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x48588f47884249c45428fde056cdae601ddd5ed58d9064ac26435e7d759d2542",
+          "blockNumber": 140059,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x5a84a39928154f3e6493b8b9c3be1a24c0ab4111684a340a57aaae0870752274",
+          "blockNumber": 140060,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x5835f32337300b36ce7cd5f92fca9bef33507fa8fea29908353fc267a8166a14",
+          "blockNumber": 140061,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "110010",
+          "gasUsedNumber": 110010,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xd1f7bfe852dbfe543751131ce0e6f6137bc9bb211951306ec4cfc7a2a6ee658e",
+          "blockNumber": 140062,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96190",
+          "gasUsedNumber": 96190,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x8f53ad6a55510530f6caa4421ec846b5cf3781adb933b8ede4f662a110eb1b4d",
+          "blockNumber": 140063,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 20,
+      "id": "0x33797aa2e01f23c730605e6f0d7de1c7c5eb35fb24ecbd12ae6c71d3d591b050",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140066,
+      "finalBlock": 140070,
+      "latencyMs": 26722,
+      "latencySeconds": 26.722,
+      "totalGas": 801624,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383992,
+        "gpact_control": 139455
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383992,
+        "integrated_execution_gas": 110048
+      },
+      "chainGas": {
+        "bc1": 417632,
+        "bc2": 383992,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x02aab95fc4dd5f25d940906e293ea2733b1ef7e9612498c1d368fadfaf5d445e",
+          "blockNumber": 140066,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x56fb2f87623d6572e18d4f9c7047528dc29c0c17518090ef8c5fe2eab5e85b8b",
+          "blockNumber": 140067,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xb659f77de272d911b2ed452ed1107caed5ddb823236dd4259d4bbff754568318",
+          "blockNumber": 140068,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "110048",
+          "gasUsedNumber": 110048,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x32627143a7c3c2e660124e48e0a28c2ed78c06c0b658c3c8591d45018eb8e64b",
+          "blockNumber": 140069,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96160",
+          "gasUsedNumber": 96160,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xb570c45cb9a9a0a1d38704c3fd6dcb6c4bf2d87f7265e593e694c56798afb60d",
+          "blockNumber": 140070,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 21,
+      "id": "0xd7c2de11aa31827e9ab663040ef735dc030816b4b3af586ef62ec23f3350c36e",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140073,
+      "finalBlock": 140077,
+      "latencyMs": 26546,
+      "latencySeconds": 26.546,
+      "totalGas": 801616,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 384022,
+        "gpact_control": 139417
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 384022,
+        "integrated_execution_gas": 110010
+      },
+      "chainGas": {
+        "bc1": 417594,
+        "bc2": 384022,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xcc92d16bd0216bb8cea6d19e7bf79f35009119fc5b90c3121ca6d37887469faf",
+          "blockNumber": 140073,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x0fb475e600a9346d6f49fe38d5417440662ad545056b941290d35c94088b82ce",
+          "blockNumber": 140074,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x9979dabd474e380240d9b9e380dc752c00491e8cb45ec2928f94d42dc4a0272c",
+          "blockNumber": 140075,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "110010",
+          "gasUsedNumber": 110010,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x5d947b85a0f5d15774418c1af009d9141bc354687780ea01575a4f91de9908ad",
+          "blockNumber": 140076,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96190",
+          "gasUsedNumber": 96190,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xab770a226b9f9289266f679f32486b863c37f6b43e59a9cd52b67379368e27c8",
+          "blockNumber": 140077,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 22,
+      "id": "0xc36b2ca9b980f52479a66e76568d85f34bd443a115f6b2462fecd7eb02fc00c1",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140079,
+      "finalBlock": 140083,
+      "latencyMs": 22101,
+      "latencySeconds": 22.101,
+      "totalGas": 801476,
+      "categoryGas": {
+        "user_submission": 278165,
+        "remote_gpact_segment": 383970,
+        "gpact_control": 139341
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307560,
+        "state_lock_unlock_gas": 383970,
+        "integrated_execution_gas": 109946
+      },
+      "chainGas": {
+        "bc1": 417506,
+        "bc2": 383970,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xa8ddd1500d59d3a34cfa6988a46ec430b71ad762f383df82f7f39e035c04f041",
+          "blockNumber": 140079,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278165",
+          "gasUsedNumber": 278165,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x79a0b8200163b9aaffcbd1fdf5d7919ffa0c8c505bcc85fd50ec87f4d7b12a0b",
+          "blockNumber": 140080,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287820",
+          "gasUsedNumber": 287820,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x475b465f2cf98f784e9cf9b4a9aabfa53f6a63869d24ee7ed47246b07b04089d",
+          "blockNumber": 140081,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109946",
+          "gasUsedNumber": 109946,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x0858c15a31bfa35195f366be27b7e6a16187728018af21490408ffe9248357d7",
+          "blockNumber": 140082,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96150",
+          "gasUsedNumber": 96150,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x2906bd3fb55e9e06337a605cda0144ea25cc943d1c2af21724f051423ff70752",
+          "blockNumber": 140083,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29395",
+          "gasUsedNumber": 29395,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 23,
+      "id": "0xb82fee90591cff061be08dc319bb909c1daab4b01eb206eddffae84d48310e5d",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140086,
+      "finalBlock": 140090,
+      "latencyMs": 27774,
+      "latencySeconds": 27.774,
+      "totalGas": 801569,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 384001,
+        "gpact_control": 139391
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 384001,
+        "integrated_execution_gas": 109984
+      },
+      "chainGas": {
+        "bc1": 417568,
+        "bc2": 384001,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x735185eab5b64f34a1260c22f896ea92d97fbc6db33a11f3eebd52631401d38e",
+          "blockNumber": 140086,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x578a74b168b9f0152afc31bf9839884437a6dadab088aabe309e1bf910e7a5c5",
+          "blockNumber": 140087,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x40f00d7a3864a73b1308c6ce316724d91440d7a1e2a43bffbf927a696da85cad",
+          "blockNumber": 140088,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109984",
+          "gasUsedNumber": 109984,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x636966ea1782e9fdeb75511c649e0bce2c9db7bf45d70cb1e0e93bedd302de36",
+          "blockNumber": 140089,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96169",
+          "gasUsedNumber": 96169,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xd4d7d4a72fff07a9afb3e010c7fb3d232cc6be332183a402c83086d83d7df09d",
+          "blockNumber": 140090,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 24,
+      "id": "0x287dbd2f29fbfebb48c337d5c1c2ba6f5f290f5e0bc9efe979ecd7d6a2aa44e0",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140092,
+      "finalBlock": 140096,
+      "latencyMs": 22844,
+      "latencySeconds": 22.844,
+      "totalGas": 801612,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383992,
+        "gpact_control": 139443
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383992,
+        "integrated_execution_gas": 110036
+      },
+      "chainGas": {
+        "bc1": 417620,
+        "bc2": 383992,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x6b86681eeb294a29f8eeab4d465a8bb685066e918f87bbdfabe36d3cbf882cd1",
+          "blockNumber": 140092,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xc659f085cf645469496ef9c7fc6692c7f60deff82fa0bcfb46339c4e5127c9f0",
+          "blockNumber": 140093,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xafeeabd8c76b760c569cd970d06a6a87b6c4d0343d3c8efdc0be12c22a6c367f",
+          "blockNumber": 140094,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "110036",
+          "gasUsedNumber": 110036,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x328db8c681f685cfb259269b49ee9dbd265ba4c33e70b637049d2f16530bcd60",
+          "blockNumber": 140095,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96160",
+          "gasUsedNumber": 96160,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x643ef919bb4ab51264898416c713746395cc1851c05fc3990298d76cefb179f8",
+          "blockNumber": 140096,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 25,
+      "id": "0x12c3ee54b1fa10c6d3e03562cab75c6adbf32fe7c6a0ea2aec56290536c1a2da",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140098,
+      "finalBlock": 140102,
+      "latencyMs": 22785,
+      "latencySeconds": 22.785,
+      "totalGas": 801551,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383971,
+        "gpact_control": 139403
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383971,
+        "integrated_execution_gas": 109996
+      },
+      "chainGas": {
+        "bc1": 417580,
+        "bc2": 383971,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xa9b62d8c9a1a76a4246f73c140605aebda3805f8997ec50a6396febf5398595b",
+          "blockNumber": 140098,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x7c17705c0ec151eb43ee918b070672bdd260af118a2632a1de9cf2e01cb01425",
+          "blockNumber": 140099,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x1160fb63ff4694b3b6a28e822fe8239f47960cc3b46baddd20390317341a43de",
+          "blockNumber": 140100,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109996",
+          "gasUsedNumber": 109996,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x3626916e8c1ef4d6b4760e5f9162dae71b0273d2ec3f1fd928c48a5483c5edff",
+          "blockNumber": 140101,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96139",
+          "gasUsedNumber": 96139,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x17b40a3f2ee22bbe27a24130898fd88e735f71de3cb3b08f07ff7c3d9496f7ec",
+          "blockNumber": 140102,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 26,
+      "id": "0xcdc0948cd7a706d5de5fc88215f47e0736625e106f7ca3f6c6be7a273ef49f35",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140104,
+      "finalBlock": 140108,
+      "latencyMs": 22896,
+      "latencySeconds": 22.896,
+      "totalGas": 801602,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 384022,
+        "gpact_control": 139403
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 384022,
+        "integrated_execution_gas": 109996
+      },
+      "chainGas": {
+        "bc1": 417580,
+        "bc2": 384022,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xcce9e11116c5744cfd0455656394368f00a2c70c1acfc4cb60328b861dc2097b",
+          "blockNumber": 140104,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x1130ab5bfa0132a068a503e6b12fcb5b2fb9668e49df631b04919b9a87a65881",
+          "blockNumber": 140105,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xcaebcb490e5a10c4b22b9849e96ece2ee402e82c510921484dfb9439c48a361c",
+          "blockNumber": 140106,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109996",
+          "gasUsedNumber": 109996,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xa43f36018530169b14ed3777579f5a714498b4c9c4494f86ed2bc278d37fe362",
+          "blockNumber": 140107,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96190",
+          "gasUsedNumber": 96190,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xf514678bc9d452ca790c092454d191e0bfbc9f17c3e32d972e6fb2a68a1a0252",
+          "blockNumber": 140108,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 27,
+      "id": "0x21ffe8c83cc653a5a865acbc4b3dee198790e64494fd65ac33ee0d371e1f65f9",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140110,
+      "finalBlock": 140114,
+      "latencyMs": 22559,
+      "latencySeconds": 22.559,
+      "totalGas": 801546,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383992,
+        "gpact_control": 139377
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383992,
+        "integrated_execution_gas": 109970
+      },
+      "chainGas": {
+        "bc1": 417554,
+        "bc2": 383992,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xb7abe97281e289b14d4bfd335901ba2515ff5e8ee4aee75a2a176da8a1e49f6f",
+          "blockNumber": 140110,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x06175578dae23bdb4faff833ce6209e61c162bfaab9af0236cca606976afb8dc",
+          "blockNumber": 140111,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xbc4246adb368ebd962d22fdc56d1be5953649a593de5c3c5518f50868900db86",
+          "blockNumber": 140112,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109970",
+          "gasUsedNumber": 109970,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x48e0a6f4d367c0a662e190353c0d2e3dabcc0b1fc79fd2f111de310fbf185000",
+          "blockNumber": 140113,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96160",
+          "gasUsedNumber": 96160,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x5a5e5cd40b6c25ed106e9f9a4ddf5ce0e0ff2d95691a54afd9b291724ff5e397",
+          "blockNumber": 140114,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 28,
+      "id": "0xa53909a523f38f5a3513f30bb6df664ca6e8e9dcae70f83c20630918d239710b",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140116,
+      "finalBlock": 140120,
+      "latencyMs": 22946,
+      "latencySeconds": 22.946,
+      "totalGas": 801548,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383992,
+        "gpact_control": 139379
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383992,
+        "integrated_execution_gas": 109972
+      },
+      "chainGas": {
+        "bc1": 417556,
+        "bc2": 383992,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x5db8fee1f1b697802c73e544cfedc0be66c11436db2a8c60d9ef780edbbdd099",
+          "blockNumber": 140116,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x39db7f7334355b8db94576268281237f25289d185ff77b9ca0212126bca2e951",
+          "blockNumber": 140117,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x07a60de2cfc14a7ab89b6c98aa3acccb14fca15bdee77ec95a7a5967f68a65e6",
+          "blockNumber": 140118,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109972",
+          "gasUsedNumber": 109972,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x14cfe00508b8034528c2a7fe5b1f34ffe7db5bdc5f16455cba03e98024a78fc5",
+          "blockNumber": 140119,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96160",
+          "gasUsedNumber": 96160,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xfa62827e0528ccdd5380e53de541d8bf15cb429a7881fcbf32ece6d5ef6bd38d",
+          "blockNumber": 140120,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 29,
+      "id": "0xd7156d1d2a938c1a813981604a02ff52e6bbd71d15aa2fbbccdb0a7f3ffe354e",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140122,
+      "finalBlock": 140126,
+      "latencyMs": 22993,
+      "latencySeconds": 22.993,
+      "totalGas": 801532,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 383952,
+        "gpact_control": 139403
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 383952,
+        "integrated_execution_gas": 109996
+      },
+      "chainGas": {
+        "bc1": 417580,
+        "bc2": 383952,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x48448f1cfed798e5ea56e5e73cbf2c3efcaa7deb75c127389c9280b36cea52e9",
+          "blockNumber": 140122,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xf322c5db1e00a6a7b1d5f56e64fee6efdf8240b09e62d5cb15743290e07f8838",
+          "blockNumber": 140123,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x487ebe044d0459394f01e7c4cf2a7292a56415b3e16e85876b89ff44cc3c2393",
+          "blockNumber": 140124,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109996",
+          "gasUsedNumber": 109996,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xaf0c1af1ff4655bd0e202aab45835777998393b74f734fed496be7c9d175db57",
+          "blockNumber": 140125,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96120",
+          "gasUsedNumber": 96120,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x4af0bb16aa3a49ddefbce505a5a91993f01b900b6defa8ebf95efef9772d74fc",
+          "blockNumber": 140126,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 30,
+      "id": "0x7698bcf25d281fcfd8b365bb4b59aa9baacbbdbcb8d111972058a968fd0b7221",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": 5,
+      "startBlock": 140128,
+      "finalBlock": 140132,
+      "latencyMs": 22800,
+      "latencySeconds": 22.8,
+      "totalGas": 801569,
+      "categoryGas": {
+        "user_submission": 278177,
+        "remote_gpact_segment": 384001,
+        "gpact_control": 139391
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 307584,
+        "state_lock_unlock_gas": 384001,
+        "integrated_execution_gas": 109984
+      },
+      "chainGas": {
+        "bc1": 417568,
+        "bc2": 384001,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x690a278ab142b4cb85f37a71248097da5cfd212e481be0f5643d03241b3403b9",
+          "blockNumber": 140128,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7b0686b1edeaeff45bc964246b20d5417566d21a",
+          "toLabel": "bc1.gpactTravelRoot",
+          "gasUsed": "278177",
+          "gasUsedNumber": 278177,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "startBooking",
+          "eventNames": [
+            "StartEvent",
+            "BookingStarted"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x4314454f0c0dad01c98d1b196f29ab02e5e10336b049cc686dd5e1fb88874215",
+          "blockNumber": 140129,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "287832",
+          "gasUsedNumber": 287832,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SegmentEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x8de74dcf465737949e2b50664a64da229dc23a26153739665b5790314fd4a73e",
+          "blockNumber": 140130,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "109984",
+          "gasUsedNumber": 109984,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "RootEvent"
+          ],
+          "category": "gpact_control",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xd4c904157911ce9753ea35ce6bbf99a7f1392d9c47bba1c8b0782a669736d92d",
+          "blockNumber": 140131,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xc40bea0d285850bc9406f79db1f6795445d4809a",
+          "toLabel": "bc2.gpactCrosschainControl",
+          "gasUsed": "96169",
+          "gasUsedNumber": 96169,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "SignallingEvent"
+          ],
+          "category": "remote_gpact_segment",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x43fbb284f45b5eb9a84312253754f3b820c891c6f453d1165caae4327d59af03",
+          "blockNumber": 140132,
+          "from": "0x0152e1ca220bf5edd7dd188a7cf92f4120a6dc92",
+          "to": "0xbd9c0ab53c86c298680e98eb07e5f54af3c04a47",
+          "toLabel": "bc1.gpactCrosschainControl",
+          "gasUsed": "29407",
+          "gasUsedNumber": 29407,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "gpact_control",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    }
+  ]
+}

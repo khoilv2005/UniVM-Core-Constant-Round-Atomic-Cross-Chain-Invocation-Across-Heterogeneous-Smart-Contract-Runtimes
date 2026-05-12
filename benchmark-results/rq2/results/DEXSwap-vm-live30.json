@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ2a",
+  "mode": "vm-full-live-original-vs-translated",
+  "contract": "DEXSwap",
+  "namespace": "vm-live30-20260428-204411",
+  "casesPath": "D:\\UIT\\randomly\\benchmark-results\\rq2\\cases\\dexswap.jsonl",
+  "generatedAt": "2026-04-28T19:04:09.722Z",
+  "elapsedSeconds": 7757.42,
+  "runs": 30,
+  "targetRuns": 30,
+  "pass": 30,
+  "fail": 0,
+  "passRate": 1,
+  "results": [
+    {
+      "caseId": "dex-0000",
+      "seed": 20260426,
+      "pass": true,
+      "originalSnapshotHash": "0xe85b47ac9ff53aa2e06016ec02be997fa2c55d3564a7117841f8851e0032d90c",
+      "translatedSnapshotHash": "0xe85b47ac9ff53aa2e06016ec02be997fa2c55d3564a7117841f8851e0032d90c"
+    },
+    {
+      "caseId": "dex-0001",
+      "seed": 20268345,
+      "pass": true,
+      "originalSnapshotHash": "0x875c1e35fa2a7572d2560d9976220836f22714c5c4925b41c126f028a2fb9bba",
+      "translatedSnapshotHash": "0x875c1e35fa2a7572d2560d9976220836f22714c5c4925b41c126f028a2fb9bba"
+    },
+    {
+      "caseId": "dex-0002",
+      "seed": 20276264,
+      "pass": true,
+      "originalSnapshotHash": "0x56c535871296a789191bb8c49fd0698544d27557ab85fccc1c863940d8408843",
+      "translatedSnapshotHash": "0x56c535871296a789191bb8c49fd0698544d27557ab85fccc1c863940d8408843"
+    },
+    {
+      "caseId": "dex-0003",
+      "seed": 20284183,
+      "pass": true,
+      "originalSnapshotHash": "0x8ce68058dc79277ccb5fb779412280596b279a02a43988a011227c5b0e5d6b80",
+      "translatedSnapshotHash": "0x8ce68058dc79277ccb5fb779412280596b279a02a43988a011227c5b0e5d6b80"
+    },
+    {
+      "caseId": "dex-0004",
+      "seed": 20292102,
+      "pass": true,
+      "originalSnapshotHash": "0x17984b229763e9496687b704381eb71f887aa98b3af44ec138bb394399cfaf4d",
+      "translatedSnapshotHash": "0x17984b229763e9496687b704381eb71f887aa98b3af44ec138bb394399cfaf4d"
+    },
+    {
+      "caseId": "dex-0005",
+      "seed": 20300021,
+      "pass": true,
+      "originalSnapshotHash": "0x3d007ee54fe27fc381dd50144a826bbc606b02d2d9ed2f1c43a039e9714df152",
+      "translatedSnapshotHash": "0x3d007ee54fe27fc381dd50144a826bbc606b02d2d9ed2f1c43a039e9714df152"
+    },
+    {
+      "caseId": "dex-0006",
+      "seed": 20307940,
+      "pass": true,
+      "originalSnapshotHash": "0xa3e3acbad42ac1400dce95d9a0e21a000083c63e2fdf717347320d71af996386",
+      "translatedSnapshotHash": "0xa3e3acbad42ac1400dce95d9a0e21a000083c63e2fdf717347320d71af996386"
+    },
+    {
+      "caseId": "dex-0007",
+      "seed": 20315859,
+      "pass": true,
+      "originalSnapshotHash": "0xa1f75f26f0f972fcafc7fb3ae0c2df993bf04649473c97cfcfb4ea853f941a45",
+      "translatedSnapshotHash": "0xa1f75f26f0f972fcafc7fb3ae0c2df993bf04649473c97cfcfb4ea853f941a45"
+    },
+    {
+      "caseId": "dex-0008",
+      "seed": 20323778,
+      "pass": true,
+      "originalSnapshotHash": "0x731c4759c43de438b3dc07cf33af3db7782e403300e498d48b69d0969bc0763d",
+      "translatedSnapshotHash": "0x731c4759c43de438b3dc07cf33af3db7782e403300e498d48b69d0969bc0763d"
+    },
+    {
+      "caseId": "dex-0009",
+      "seed": 20331697,
+      "pass": true,
+      "originalSnapshotHash": "0x2654f4c1c7608106c8efc2833655624225c0bf279055690286cd23e61fda5ed5",
+      "translatedSnapshotHash": "0x2654f4c1c7608106c8efc2833655624225c0bf279055690286cd23e61fda5ed5"
+    },
+    {
+      "caseId": "dex-0010",
+      "seed": 20339616,
+      "pass": true,
+      "originalSnapshotHash": "0x394e8db11182e5b7b1c60b046dcdf332cae5e11585dda798e0d31bcfccf4f33c",
+      "translatedSnapshotHash": "0x394e8db11182e5b7b1c60b046dcdf332cae5e11585dda798e0d31bcfccf4f33c"
+    },
+    {
+      "caseId": "dex-0011",
+      "seed": 20347535,
+      "pass": true,
+      "originalSnapshotHash": "0x111a0cc651a448c7ea824e41da8a8dd7f29079ebc7b87a59f58a34be6647ee27",
+      "translatedSnapshotHash": "0x111a0cc651a448c7ea824e41da8a8dd7f29079ebc7b87a59f58a34be6647ee27"
+    },
+    {
+      "caseId": "dex-0012",
+      "seed": 20355454,
+      "pass": true,
+      "originalSnapshotHash": "0xd60659d0bba206a456aca93c0709f74abecca11dcd096ef2d5ce0dd141b74d74",
+      "translatedSnapshotHash": "0xd60659d0bba206a456aca93c0709f74abecca11dcd096ef2d5ce0dd141b74d74"
+    },
+    {
+      "caseId": "dex-0013",
+      "seed": 20363373,
+      "pass": true,
+      "originalSnapshotHash": "0xa8df97773175cb61468b2eed9300dfdfdad4b9997c0592b8941902efb4a8fe23",
+      "translatedSnapshotHash": "0xa8df97773175cb61468b2eed9300dfdfdad4b9997c0592b8941902efb4a8fe23"
+    },
+    {
+      "caseId": "dex-0014",
+      "seed": 20371292,
+      "pass": true,
+      "originalSnapshotHash": "0xac56e5fe960726ed83cb34d2cf76b9b375fa1aa8697539162c53b69c99634f15",
+      "translatedSnapshotHash": "0xac56e5fe960726ed83cb34d2cf76b9b375fa1aa8697539162c53b69c99634f15"
+    },
+    {
+      "caseId": "dex-0015",
+      "seed": 20379211,
+      "pass": true,
+      "originalSnapshotHash": "0x241f5b91e010c9a51cf80e1b4722c7aa4795927dd1c18fbb3e22ad1929866a90",
+      "translatedSnapshotHash": "0x241f5b91e010c9a51cf80e1b4722c7aa4795927dd1c18fbb3e22ad1929866a90"
+    },
+    {
+      "caseId": "dex-0016",
+      "seed": 20387130,
+      "pass": true,
+      "originalSnapshotHash": "0x78aa29612d43ac96f2e9c6c4a27171bdefe521db5a8d8dcc996486bfa9178ac0",
+      "translatedSnapshotHash": "0x78aa29612d43ac96f2e9c6c4a27171bdefe521db5a8d8dcc996486bfa9178ac0"
+    },
+    {
+      "caseId": "dex-0017",
+      "seed": 20395049,
+      "pass": true,
+      "originalSnapshotHash": "0x814fecdace6b54d1a10cc2a1c28ecd7b131e514761f3aaaba85aa85e093697b5",
+      "translatedSnapshotHash": "0x814fecdace6b54d1a10cc2a1c28ecd7b131e514761f3aaaba85aa85e093697b5"
+    },
+    {
+      "caseId": "dex-0018",
+      "seed": 20402968,
+      "pass": true,
+      "originalSnapshotHash": "0xdc0db35cc90a09780d9ac4eeaaa6c674382302966c7be603b3a24d1e7afd452e",
+      "translatedSnapshotHash": "0xdc0db35cc90a09780d9ac4eeaaa6c674382302966c7be603b3a24d1e7afd452e"
+    },
+    {
+      "caseId": "dex-0019",
+      "seed": 20410887,
+      "pass": true,
+      "originalSnapshotHash": "0x0e83f2afe2cc88faa9ea15bedd0d20d3fd1290f5f9f5cbc9ef9eb2ca49deea4d",
+      "translatedSnapshotHash": "0x0e83f2afe2cc88faa9ea15bedd0d20d3fd1290f5f9f5cbc9ef9eb2ca49deea4d"
+    },
+    {
+      "caseId": "dex-0020",
+      "seed": 20418806,
+      "pass": true,
+      "originalSnapshotHash": "0x1bf711b9b15a104b9517670936a0466ee05f768d1e3c71fe5192a54c819d8dd3",
+      "translatedSnapshotHash": "0x1bf711b9b15a104b9517670936a0466ee05f768d1e3c71fe5192a54c819d8dd3"
+    },
+    {
+      "caseId": "dex-0021",
+      "seed": 20426725,
+      "pass": true,
+      "originalSnapshotHash": "0x9b7d7b279f27cd5ae18ea7bd7056ac36306aa3b50b3142ea83d8ee50fc05b1fb",
+      "translatedSnapshotHash": "0x9b7d7b279f27cd5ae18ea7bd7056ac36306aa3b50b3142ea83d8ee50fc05b1fb"
+    },
+    {
+      "caseId": "dex-0022",
+      "seed": 20434644,
+      "pass": true,
+      "originalSnapshotHash": "0x418b389e3bdf3a379a650ea1079d669dc41fb60ab597596dac63e1c338bad80a",
+      "translatedSnapshotHash": "0x418b389e3bdf3a379a650ea1079d669dc41fb60ab597596dac63e1c338bad80a"
+    },
+    {
+      "caseId": "dex-0023",
+      "seed": 20442563,
+      "pass": true,
+      "originalSnapshotHash": "0xa65017ece4ec8a4e31d678c45d6b95a6c025a478c67b66bfc91ad55adbb863d6",
+      "translatedSnapshotHash": "0xa65017ece4ec8a4e31d678c45d6b95a6c025a478c67b66bfc91ad55adbb863d6"
+    },
+    {
+      "caseId": "dex-0024",
+      "seed": 20450482,
+      "pass": true,
+      "originalSnapshotHash": "0xb4680a72ecab04263be5137f234f2d7c73d424c2081f4881c072550ac0a02329",
+      "translatedSnapshotHash": "0xb4680a72ecab04263be5137f234f2d7c73d424c2081f4881c072550ac0a02329"
+    },
+    {
+      "caseId": "dex-0025",
+      "seed": 20458401,
+      "pass": true,
+      "originalSnapshotHash": "0x8b996744e064008e204ad9d2f99ff72115198d2a14fdb7ebd8f3b537122918e4",
+      "translatedSnapshotHash": "0x8b996744e064008e204ad9d2f99ff72115198d2a14fdb7ebd8f3b537122918e4"
+    },
+    {
+      "caseId": "dex-0026",
+      "seed": 20466320,
+      "pass": true,
+      "originalSnapshotHash": "0x07034def1f0b4433619bf9c2edadcbe7b9181e8a67a80dbeaf7a732ca35fe1aa",
+      "translatedSnapshotHash": "0x07034def1f0b4433619bf9c2edadcbe7b9181e8a67a80dbeaf7a732ca35fe1aa"
+    },
+    {
+      "caseId": "dex-0027",
+      "seed": 20474239,
+      "pass": true,
+      "originalSnapshotHash": "0x33208075951b2891085a9f6f725e6e8937f536802854c02f4ec2b39ae7a06933",
+      "translatedSnapshotHash": "0x33208075951b2891085a9f6f725e6e8937f536802854c02f4ec2b39ae7a06933"
+    },
+    {
+      "caseId": "dex-0028",
+      "seed": 20482158,
+      "pass": true,
+      "originalSnapshotHash": "0x2ca9773052104c857bbb6a156835738e1f708a974d835f26a410f63a06fb988b",
+      "translatedSnapshotHash": "0x2ca9773052104c857bbb6a156835738e1f708a974d835f26a410f63a06fb988b"
+    },
+    {
+      "caseId": "dex-0029",
+      "seed": 20490077,
+      "pass": true,
+      "originalSnapshotHash": "0x46435ff2171202ff1d0080e1e1dc54d6a6d80e7f03d17fa2661cb03cc699949c",
+      "translatedSnapshotHash": "0x46435ff2171202ff1d0080e1e1dc54d6a6d80e7f03d17fa2661cb03cc699949c"
+    }
+  ]
+}

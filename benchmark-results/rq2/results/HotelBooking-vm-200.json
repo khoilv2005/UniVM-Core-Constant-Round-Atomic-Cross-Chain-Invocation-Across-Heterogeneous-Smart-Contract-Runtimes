@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ2a",
+  "mode": "vm-full-live-original-vs-translated",
+  "contract": "HotelBooking",
+  "namespace": "vm200-20260426194210-HotelBooking",
+  "casesPath": "benchmark-results/rq2/cases/hotel-booking.jsonl",
+  "generatedAt": "2026-04-26T13:24:43.121Z",
+  "elapsedSeconds": 2548.043,
+  "runs": 14,
+  "targetRuns": 200,
+  "pass": 14,
+  "fail": 0,
+  "passRate": 1,
+  "results": [
+    {
+      "caseId": "hotel-0000",
+      "seed": 20260426,
+      "pass": true,
+      "originalSnapshotHash": "0x1119732af03dfbc17f1f6b849cfedeb2d624cfbdbe0a370be69bbdecfb3bf35b",
+      "translatedSnapshotHash": "0x1119732af03dfbc17f1f6b849cfedeb2d624cfbdbe0a370be69bbdecfb3bf35b"
+    },
+    {
+      "caseId": "hotel-0001",
+      "seed": 20268345,
+      "pass": true,
+      "originalSnapshotHash": "0x84c3a902840ddcdc137e999a6e5fd4e8cb98e8f9f9305115baf844166768cced",
+      "translatedSnapshotHash": "0x84c3a902840ddcdc137e999a6e5fd4e8cb98e8f9f9305115baf844166768cced"
+    },
+    {
+      "caseId": "hotel-0002",
+      "seed": 20276264,
+      "pass": true,
+      "originalSnapshotHash": "0x26de27ff2094c10c6e4a098db464d7abdb968a2462ca0489f9b38cdb8f58c801",
+      "translatedSnapshotHash": "0x26de27ff2094c10c6e4a098db464d7abdb968a2462ca0489f9b38cdb8f58c801"
+    },
+    {
+      "caseId": "hotel-0003",
+      "seed": 20284183,
+      "pass": true,
+      "originalSnapshotHash": "0x6e3adb8091c87894f08fca10e740522eac589ea095d1cffbb5165d7967671ef2",
+      "translatedSnapshotHash": "0x6e3adb8091c87894f08fca10e740522eac589ea095d1cffbb5165d7967671ef2"
+    },
+    {
+      "caseId": "hotel-0004",
+      "seed": 20292102,
+      "pass": true,
+      "originalSnapshotHash": "0x4bbce2c436d814e26bf6f37507f6c8f63cf55d29525ccdcc1085047348155e03",
+      "translatedSnapshotHash": "0x4bbce2c436d814e26bf6f37507f6c8f63cf55d29525ccdcc1085047348155e03"
+    },
+    {
+      "caseId": "hotel-0005",
+      "seed": 20300021,
+      "pass": true,
+      "originalSnapshotHash": "0x223bf236ef1d3094f537f1f9ebe668780b7a71edd1c5f1df48a96fd851c20b10",
+      "translatedSnapshotHash": "0x223bf236ef1d3094f537f1f9ebe668780b7a71edd1c5f1df48a96fd851c20b10"
+    },
+    {
+      "caseId": "hotel-0006",
+      "seed": 20307940,
+      "pass": true,
+      "originalSnapshotHash": "0x98a4c48c854533c8f650dd1ba564a880b09f248f98deae968b1e49793080db46",
+      "translatedSnapshotHash": "0x98a4c48c854533c8f650dd1ba564a880b09f248f98deae968b1e49793080db46"
+    },
+    {
+      "caseId": "hotel-0007",
+      "seed": 20315859,
+      "pass": true,
+      "originalSnapshotHash": "0x0a7ab56a0f29c123a1dcad438b5177421db2e7bfe9622b8c166cb967f9124365",
+      "translatedSnapshotHash": "0x0a7ab56a0f29c123a1dcad438b5177421db2e7bfe9622b8c166cb967f9124365"
+    },
+    {
+      "caseId": "hotel-0008",
+      "seed": 20323778,
+      "pass": true,
+      "originalSnapshotHash": "0x5daee747f80eecac17da45677690f1ffa731aeec108177163a2e91a25f542909",
+      "translatedSnapshotHash": "0x5daee747f80eecac17da45677690f1ffa731aeec108177163a2e91a25f542909"
+    },
+    {
+      "caseId": "hotel-0009",
+      "seed": 20331697,
+      "pass": true,
+      "originalSnapshotHash": "0x2d7a6a9ccda086a67fe828c308898b122d57a02e9f3ed5bbc3e726ae3693df47",
+      "translatedSnapshotHash": "0x2d7a6a9ccda086a67fe828c308898b122d57a02e9f3ed5bbc3e726ae3693df47"
+    },
+    {
+      "caseId": "hotel-0010",
+      "seed": 20339616,
+      "pass": true,
+      "originalSnapshotHash": "0x5fe360f78104de126f92257abf67e2c96af9d59535078cb4300a7e071f8aae4c",
+      "translatedSnapshotHash": "0x5fe360f78104de126f92257abf67e2c96af9d59535078cb4300a7e071f8aae4c"
+    },
+    {
+      "caseId": "hotel-0011",
+      "seed": 20347535,
+      "pass": true,
+      "originalSnapshotHash": "0xcd04bc86638fd3d7aae51aa09c6ad6d7b12956a95f9e6e66780f539de196aa0f",
+      "translatedSnapshotHash": "0xcd04bc86638fd3d7aae51aa09c6ad6d7b12956a95f9e6e66780f539de196aa0f"
+    },
+    {
+      "caseId": "hotel-0012",
+      "seed": 20355454,
+      "pass": true,
+      "originalSnapshotHash": "0x61df8146815030833bac09d6d380a7086f416de83d03ab77e86b66b6b1dabd11",
+      "translatedSnapshotHash": "0x61df8146815030833bac09d6d380a7086f416de83d03ab77e86b66b6b1dabd11"
+    },
+    {
+      "caseId": "hotel-0013",
+      "seed": 20363373,
+      "pass": true,
+      "originalSnapshotHash": "0x9688c70af602f5d695c96faeadfe7350c182195eadabd304cf90bb1962221a85",
+      "translatedSnapshotHash": "0x9688c70af602f5d695c96faeadfe7350c182195eadabd304cf90bb1962221a85"
+    }
+  ]
+}

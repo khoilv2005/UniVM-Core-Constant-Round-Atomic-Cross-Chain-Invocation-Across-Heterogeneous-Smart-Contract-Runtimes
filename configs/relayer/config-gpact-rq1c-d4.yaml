@@ -1,0 +1,90 @@
+title: "GPACT RQ1c Heterogeneous Depth 4"
+
+protocol: "gpact"
+
+relayer:
+  id: "gpact-rq1c-d4"
+  log_level: "debug"
+  workers: 4
+  private_key: "70ff25649b86772b672f211d338ea82f042683c2bf5901a9a1e542f77110489e"
+  checkpoint_file: "./var/gpact-rq1c-d4-ckpt.json"
+
+chains:
+  bc1:
+    name: "Execution Chain"
+    vm: "evm"
+    chain_id: 1
+    finality_blocks: 4
+    rpc_url: "ws://209.38.21.129:8546"
+    http_url: "http://209.38.21.129:8545"
+    gpact_control_address: "0x55036b72884EA0e224F26de4AD2b0cd714Fe0D60"
+    gpact_app_address: "0x259c1581576d3E1a477479fB82E1cCf90873e294"
+    gpact_signer_registry_address: "0x086908f7ad85d1f35CeF9A7F6c1F5B9128304CdB"
+
+  bc2:
+    name: "WASM GPACT Segment Chain"
+    vm: "wasm"
+    chain_id: 2
+    finality_blocks: 1
+    rpc_url: "http://170.64.194.4:18545"
+    ws_url: "ws://170.64.194.4:18545"
+    metadata_path: "D:/UIT/randomly/contracts/xsmart/bc2/bridge/target/ink/xbridge_bc2.contract"
+    account_endpoint: "5GRFGjrKB5AcNsufYR92DWDSG6DYEFJy3PadA3XDJWy6a5je"
+    submitter_uri: "//Alice"
+
+  bc3:
+    name: "Fabric GPACT Segment Chain"
+    vm: "fabric"
+    chain_id: 3
+    finality_blocks: 1
+    rpc_url: "http://127.0.0.1:18645"
+    http_url: "http://127.0.0.1:18645"
+    account_endpoint: "XBridgeBc3"
+    fabric_gateway_endpoint: "209.38.21.129:7051"
+    fabric_channel: "mychannel"
+    fabric_chaincode: "xsmart-bc3"
+    fabric_msp_id: "Org1MSP"
+    fabric_user_cert_path: "D:/UIT/randomly/configs/fabric/crypto-generated/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem"
+    fabric_user_key_path: "D:/UIT/randomly/configs/fabric/crypto-generated/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/key.pem"
+    fabric_tls_cert_path: "D:/UIT/randomly/configs/fabric/crypto-generated/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
+    fabric_peer_name: "peer0.org1.example.com"
+
+  bc2evm:
+    name: "EVM GPACT Flight Chain"
+    vm: "evm"
+    chain_id: 22
+    finality_blocks: 4
+    rpc_url: "ws://170.64.194.4:8546"
+    http_url: "http://170.64.194.4:8545"
+    gpact_control_address: "0xf56f6B08A0A6F4b92147972220E70E0621621a9D"
+    gpact_app_address: "0x4597f43de2D25B8bF15BA842326953df929b006A"
+    gpact_signer_registry_address: "0x1996c3fa2586f1361F34721A7dc20f438c643BA0"
+
+  bc3evm:
+    name: "EVM GPACT Taxi Chain"
+    vm: "evm"
+    chain_id: 33
+    finality_blocks: 4
+    rpc_url: "ws://170.64.164.173:8546"
+    http_url: "http://170.64.164.173:8545"
+    gpact_control_address: "0xEb60f2fDfeD759Ca39e37B1163eE498419daF800"
+    gpact_app_address: "0xE8057658087c0f3bfc17d3A71150282294cEA864"
+    gpact_signer_registry_address: "0xc87216f620fccb5d51de0Ee9f78F772ce1778BC9"
+
+proof:
+  max_retry: 3
+  retry_delay_ms: 1000
+  confirmation_blocks: 4
+
+relay:
+  timeout_seconds: 120
+  max_pending: 100
+
+gpact:
+  manifest: "../../manifests/gpact/travel-hetero-d4.generated.json"
+  event_transfer_mode: "direct-signing"
+  execution_mode: "serial"
+  signer_private_keys:
+    - "70ff25649b86772b672f211d338ea82f042683c2bf5901a9a1e542f77110489e"
+    - "fbd6535363327d6c7b8fb48481e726ff61a0c16faf20fab3edd4288748a68897"
+    - "28df2e95c9fb5530abf55ab4d2408c6ce9292db79db60fcc1115ecf1dd327d69"

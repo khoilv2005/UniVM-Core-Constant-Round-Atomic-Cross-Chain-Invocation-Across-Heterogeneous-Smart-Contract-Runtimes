@@ -1,0 +1,723 @@
+{
+  "meta": {
+    "name": "train_booking",
+    "version": "rustc 1.85.1",
+    "source_vm": {
+      "Wasm": {
+        "ink_version": "rustc 1.85.1"
+      }
+    },
+    "source_hash": [
+      161,
+      9,
+      6,
+      49,
+      22,
+      174,
+      148,
+      213,
+      238,
+      131,
+      144,
+      125,
+      97,
+      253,
+      110,
+      183,
+      100,
+      55,
+      176,
+      25,
+      244,
+      10,
+      104,
+      0,
+      224,
+      139,
+      224,
+      248,
+      191,
+      221,
+      199,
+      208
+    ]
+  },
+  "storage": {
+    "slots": [
+      {
+        "id": "bridge",
+        "ty": "Address",
+        "native_offset": 0,
+        "native_encoding": {
+          "WasmMap": {
+            "hash": "Blake2b_128"
+          }
+        }
+      },
+      {
+        "id": "price",
+        "ty": "U128",
+        "native_offset": 1,
+        "native_encoding": {
+          "WasmMap": {
+            "hash": "Blake2b_128"
+          }
+        }
+      },
+      {
+        "id": "remain",
+        "ty": "U64",
+        "native_offset": 2,
+        "native_encoding": {
+          "WasmMap": {
+            "hash": "Blake2b_128"
+          }
+        }
+      },
+      {
+        "id": "ir_hash",
+        "ty": {
+          "Tuple": [
+            "Bytes"
+          ]
+        },
+        "native_offset": 3,
+        "native_encoding": {
+          "WasmMap": {
+            "hash": "Blake2b_128"
+          }
+        }
+      },
+      {
+        "id": "locked_amount",
+        "ty": "U128",
+        "native_offset": 4,
+        "native_encoding": {
+          "WasmMap": {
+            "hash": "Blake2b_128"
+          }
+        }
+      },
+      {
+        "id": "lock_block",
+        "ty": "U32",
+        "native_offset": 5,
+        "native_encoding": {
+          "WasmMap": {
+            "hash": "Blake2b_128"
+          }
+        }
+      },
+      {
+        "id": "timeout_blocks",
+        "ty": "U32",
+        "native_offset": 6,
+        "native_encoding": {
+          "WasmMap": {
+            "hash": "Blake2b_128"
+          }
+        }
+      },
+      {
+        "id": "active",
+        "ty": "Bool",
+        "native_offset": 7,
+        "native_encoding": {
+          "WasmMap": {
+            "hash": "Blake2b_128"
+          }
+        }
+      },
+      {
+        "id": "locked_total",
+        "ty": "U128",
+        "native_offset": 8,
+        "native_encoding": {
+          "WasmMap": {
+            "hash": "Blake2b_128"
+          }
+        }
+      },
+      {
+        "id": "accounts",
+        "ty": "U128",
+        "native_offset": 9,
+        "native_encoding": {
+          "WasmMap": {
+            "hash": "Blake2b_128"
+          }
+        }
+      },
+      {
+        "id": "bookings",
+        "ty": "U64",
+        "native_offset": 10,
+        "native_encoding": {
+          "WasmMap": {
+            "hash": "Blake2b_128"
+          }
+        }
+      },
+      {
+        "id": "lock_size",
+        "ty": "U64",
+        "native_offset": 11,
+        "native_encoding": {
+          "WasmMap": {
+            "hash": "Blake2b_128"
+          }
+        }
+      }
+    ]
+  },
+  "signatures": [
+    {
+      "name": "ir_hash",
+      "selector4": [
+        75,
+        68,
+        15,
+        40
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "Tuple": [
+            "Bytes"
+          ]
+        }
+      ],
+      "mutability": "View",
+      "effects": [],
+      "entry_block": 0
+    },
+    {
+      "name": "get_price",
+      "selector4": [
+        17,
+        243,
+        124,
+        235
+      ],
+      "inputs": [],
+      "outputs": [
+        "U128"
+      ],
+      "mutability": "View",
+      "effects": [
+        {
+          "Read": {
+            "slot": "price"
+          }
+        }
+      ],
+      "entry_block": 1
+    },
+    {
+      "name": "get_remain",
+      "selector4": [
+        253,
+        76,
+        198,
+        72
+      ],
+      "inputs": [],
+      "outputs": [
+        "U64"
+      ],
+      "mutability": "View",
+      "effects": [
+        {
+          "Read": {
+            "slot": "remain"
+          }
+        }
+      ],
+      "entry_block": 2
+    },
+    {
+      "name": "get_available_remain",
+      "selector4": [
+        61,
+        22,
+        199,
+        116
+      ],
+      "inputs": [],
+      "outputs": [
+        "U64"
+      ],
+      "mutability": "View",
+      "effects": [
+        {
+          "Read": {
+            "slot": "locked_total"
+          }
+        },
+        {
+          "Read": {
+            "slot": "price"
+          }
+        },
+        {
+          "Read": {
+            "slot": "remain"
+          }
+        }
+      ],
+      "entry_block": 3
+    },
+    {
+      "name": "get_account_balance",
+      "selector4": [
+        175,
+        108,
+        183,
+        87
+      ],
+      "inputs": [
+        "Address"
+      ],
+      "outputs": [
+        "U128"
+      ],
+      "mutability": "View",
+      "effects": [
+        {
+          "Read": {
+            "slot": "accounts"
+          }
+        }
+      ],
+      "entry_block": 4
+    },
+    {
+      "name": "get_booking",
+      "selector4": [
+        149,
+        72,
+        72,
+        221
+      ],
+      "inputs": [
+        "Address"
+      ],
+      "outputs": [
+        "U64"
+      ],
+      "mutability": "View",
+      "effects": [
+        {
+          "Read": {
+            "slot": "bookings"
+          }
+        }
+      ],
+      "entry_block": 5
+    },
+    {
+      "name": "is_state_locked",
+      "selector4": [
+        218,
+        15,
+        120,
+        138
+      ],
+      "inputs": [
+        "U64"
+      ],
+      "outputs": [
+        "Bool"
+      ],
+      "mutability": "View",
+      "effects": [],
+      "entry_block": 6
+    },
+    {
+      "name": "vassp_encode_state",
+      "selector4": [
+        89,
+        15,
+        180,
+        35
+      ],
+      "inputs": [
+        "U64"
+      ],
+      "outputs": [
+        "Bytes"
+      ],
+      "mutability": "View",
+      "effects": [],
+      "entry_block": 7
+    },
+    {
+      "name": "book_local",
+      "selector4": [
+        199,
+        168,
+        79,
+        107
+      ],
+      "inputs": [
+        "Address",
+        "U64"
+      ],
+      "outputs": [
+        "U128"
+      ],
+      "mutability": "NonPayable",
+      "effects": [
+        {
+          "Read": {
+            "slot": "accounts"
+          }
+        },
+        {
+          "Read": {
+            "slot": "bookings"
+          }
+        },
+        {
+          "Read": {
+            "slot": "locked_total"
+          }
+        },
+        {
+          "Read": {
+            "slot": "price"
+          }
+        },
+        {
+          "Read": {
+            "slot": "remain"
+          }
+        },
+        {
+          "Write": {
+            "slot": "accounts"
+          }
+        },
+        {
+          "Write": {
+            "slot": "bookings"
+          }
+        },
+        {
+          "Write": {
+            "slot": "remain"
+          }
+        }
+      ],
+      "entry_block": 8
+    },
+    {
+      "name": "lock_state",
+      "selector4": [
+        205,
+        192,
+        137,
+        126
+      ],
+      "inputs": [
+        "U64",
+        "U64",
+        "U32"
+      ],
+      "outputs": [
+        "Bytes"
+      ],
+      "mutability": "NonPayable",
+      "effects": [
+        {
+          "Read": {
+            "slot": "bridge"
+          }
+        },
+        {
+          "Read": {
+            "slot": "lock_size"
+          }
+        },
+        {
+          "Read": {
+            "slot": "locked_total"
+          }
+        },
+        {
+          "Read": {
+            "slot": "price"
+          }
+        },
+        {
+          "Read": {
+            "slot": "remain"
+          }
+        },
+        {
+          "Write": {
+            "slot": "locked_total"
+          }
+        }
+      ],
+      "entry_block": 9
+    },
+    {
+      "name": "update_state",
+      "selector4": [
+        26,
+        213,
+        57,
+        89
+      ],
+      "inputs": [
+        "U64",
+        "U64",
+        "Address",
+        "U64",
+        "U128"
+      ],
+      "outputs": [
+        "Bytes"
+      ],
+      "mutability": "NonPayable",
+      "effects": [
+        {
+          "Read": {
+            "slot": "accounts"
+          }
+        },
+        {
+          "Read": {
+            "slot": "bookings"
+          }
+        },
+        {
+          "Read": {
+            "slot": "bridge"
+          }
+        },
+        {
+          "Write": {
+            "slot": "accounts"
+          }
+        },
+        {
+          "Write": {
+            "slot": "bookings"
+          }
+        },
+        {
+          "Write": {
+            "slot": "locked_total"
+          }
+        },
+        {
+          "Write": {
+            "slot": "remain"
+          }
+        }
+      ],
+      "entry_block": 10
+    },
+    {
+      "name": "unlock_state",
+      "selector4": [
+        216,
+        41,
+        116,
+        238
+      ],
+      "inputs": [
+        "U64"
+      ],
+      "outputs": [
+        "Bytes"
+      ],
+      "mutability": "NonPayable",
+      "effects": [
+        {
+          "Read": {
+            "slot": "bridge"
+          }
+        },
+        {
+          "Write": {
+            "slot": "locked_total"
+          }
+        }
+      ],
+      "entry_block": 11
+    },
+    {
+      "name": "unlock_on_timeout",
+      "selector4": [
+        157,
+        17,
+        104,
+        95
+      ],
+      "inputs": [
+        "U64"
+      ],
+      "outputs": [
+        "Bytes"
+      ],
+      "mutability": "NonPayable",
+      "effects": [
+        {
+          "Write": {
+            "slot": "locked_total"
+          }
+        }
+      ],
+      "entry_block": 12
+    },
+    {
+      "name": "set_bridge",
+      "selector4": [
+        124,
+        19,
+        171,
+        207
+      ],
+      "inputs": [
+        "Address"
+      ],
+      "outputs": [
+        "Bytes"
+      ],
+      "mutability": "NonPayable",
+      "effects": [
+        {
+          "Read": {
+            "slot": "bridge"
+          }
+        },
+        {
+          "Write": {
+            "slot": "bridge"
+          }
+        }
+      ],
+      "entry_block": 13
+    }
+  ],
+  "cfg": {
+    "blocks": [
+      {
+        "id": 0,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 1,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 2,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 3,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 4,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 5,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 6,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 7,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 8,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 9,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 10,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 11,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 12,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      },
+      {
+        "id": 13,
+        "preds": [],
+        "ops": [],
+        "term": {
+          "Return": []
+        }
+      }
+    ]
+  },
+  "externals": []
+}

@@ -1,0 +1,10 @@
+[package]
+name = "ubtl-frontend-evm"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[dependencies]
+serde_json = "1.0"
+tiny-keccak = { version = "2.0", features = ["keccak"] }
+ubtl-ir = { path = "../ir" }

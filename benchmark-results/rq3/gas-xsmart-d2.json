@@ -1,0 +1,3694 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ3b",
+  "protocol": "xsmart",
+  "mode": "gas-homogeneous-evm",
+  "depth": 2,
+  "scope": "homogeneous-evm-all-chain-gas-bc1-bc2-bc3",
+  "note": "All-chain EVM gas sums receipts on bc1, bc2, and bc3 that touch watched protocol contracts within the request timestamp window.",
+  "scanMarginSeconds": 15,
+  "summary": {
+    "runs": 30,
+    "completed": 30,
+    "rolledBack": 0,
+    "avgTotalGas": 669869,
+    "avgCategoryGas": {
+      "finalization": 90935,
+      "integrated_execution": 83679,
+      "remote_state": 299081,
+      "user_submission": 196174
+    },
+    "avgPaperCategoryGas": {
+      "bridge_gas": 287109,
+      "integrated_execution_gas": 83679,
+      "state_lock_unlock_gas": 299081
+    },
+    "avgChainGas": {
+      "bc1": 370788,
+      "bc2": 299081,
+      "bc3": 0
+    }
+  },
+  "runs": [
+    {
+      "run": 1,
+      "id": "1777229815157021",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139488,
+      "finalBlock": 139492,
+      "latencyMs": 30110,
+      "latencySeconds": 30.11,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x583f086bd66eb61462ba1ba1fccdaf3c810e7f578200a4c402c8bd6b8fc4e46f",
+          "blockNumber": 139488,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x9843d4f8244647bd9e040140695e4fa71882dbedefe2c6bde6c0088e1a41177f",
+          "blockNumber": 139489,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xdc6fc55c90b5d431f111c1c422a021afcaa08e30320d034638c14aa632727998",
+          "blockNumber": 139490,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xbef49dc92dc2ddcbbc94b8d337abdb78f681610838b52764f1fdbb12b6fc92b8",
+          "blockNumber": 139491,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x239e09c25afcdfa40966ded6975388429af72947f2510de1b32e2b13a9fee0d0",
+          "blockNumber": 139492,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "id": "1777229852382022",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139496,
+      "finalBlock": 139500,
+      "latencyMs": 33373,
+      "latencySeconds": 33.373,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x8980e6f88778ffee4aa72e82469632d649ff3093178e614e250f300f173b7118",
+          "blockNumber": 139496,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xa635e60cc3a7595d5a422b6de08444c8bcefd4e9eef545638012ed40ba76a17d",
+          "blockNumber": 139497,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x09569a9ec3ba3e648cf848b0ede3c8bc3467d00aa1f41752753dd0cacc28ec10",
+          "blockNumber": 139498,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x6fe1cc104de0e061b8dc27fa72b1401841b0190c8163de664451762f17f2a498",
+          "blockNumber": 139499,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x6176aa24d8e0973553e178549f125d729251b34e4dffecda3ca6c181f0a8a18d",
+          "blockNumber": 139500,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "id": "1777229892727023",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139504,
+      "finalBlock": 139508,
+      "latencyMs": 32530,
+      "latencySeconds": 32.53,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x283c851ca3673e7e2353661636dfd520072b03c36566470efd66bad547575814",
+          "blockNumber": 139504,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x538050c2e024cec1f1115cff779809d228c535d905148f9b5d6692cefc9640da",
+          "blockNumber": 139505,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x4e70767f3908f022865cbd69069b959c9b08d3c1cc093fa6d5c80c34325eb008",
+          "blockNumber": 139506,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x37235eaed6d341a421e46db5c3595554a129d2f82d328f6c3e3961420b33decb",
+          "blockNumber": 139507,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x6c2554937f99689c3566e60eb3a071a572fa1fb9f0b29e7ddee8e1dbaaa87f62",
+          "blockNumber": 139508,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 4,
+      "id": "1777229932274024",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139512,
+      "finalBlock": 139516,
+      "latencyMs": 33116,
+      "latencySeconds": 33.116,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x7269640977e9aa440009d614712de69ac080d8988ef48c82e5cd4fd519741f5d",
+          "blockNumber": 139512,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xcd9ec4ac7673cf700e0731fbd656782c26f0c6fff1b9cdccd3163439a8c81b35",
+          "blockNumber": 139513,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x1d0dd7c0c3c95a32504941cca792baf0085df5054b5ef335dfcbf712f2c53534",
+          "blockNumber": 139514,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x80aa773a8393e11068fcbb191ec75a7b47f4601cc1e3da0e49e73c48192140eb",
+          "blockNumber": 139515,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x9e0b3cd6822a663a06615b6cf3213fd87ccce2f6d1b59a1fc29559ae54899812",
+          "blockNumber": 139516,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 5,
+      "id": "1777229972455025",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139520,
+      "finalBlock": 139524,
+      "latencyMs": 33336,
+      "latencySeconds": 33.336,
+      "totalGas": 669859,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90925
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287099,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370778,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xd8b5dbf6bb13e72b79eedf122813929945be53541278ee5785cfbb4b714755d0",
+          "blockNumber": 139520,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x3afa8072ce0d6b5f7b43938afc89f06cdc67da61a291871af0388be1376b5c9f",
+          "blockNumber": 139521,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x69cbc57808ff6ba2c2fe36d3a4d1b264d85572af87c9613b09ea7a875b9426c1",
+          "blockNumber": 139522,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x83445aea706e2e350ddff55ca400ffecda569dc6c83b208073685c785d9f4afd",
+          "blockNumber": 139523,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x28aa2c7ee59db989de86ade83a742ad0fc9eb07c4263806ad2ff2a122e3cbf8b",
+          "blockNumber": 139524,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90925",
+          "gasUsedNumber": 90925,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 6,
+      "id": "1777230012799026",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139528,
+      "finalBlock": 139532,
+      "latencyMs": 33416,
+      "latencySeconds": 33.416,
+      "totalGas": 669859,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90925
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287099,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370778,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xe8845f66a750a28387dd4d9a85297626b6d8fb3aa25368a57110ee54a832e284",
+          "blockNumber": 139528,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xe80432845358d6073e4b23d75fe06026894413cf891390fcac1b9db7d480c887",
+          "blockNumber": 139529,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xb0ae2ba1b08b749a67068d26e37b9d694ce9b14e1a4634c84e08e3fc3883141d",
+          "blockNumber": 139530,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x889409a09f3cb7e07c95f4b5859c974ca000f587820bee906f91d552586ba1b3",
+          "blockNumber": 139531,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x683f4d6fcc67dcbce960559f9efb3d9474f6743c70866c6857a1e1baeaa4be39",
+          "blockNumber": 139532,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90925",
+          "gasUsedNumber": 90925,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 7,
+      "id": "1777230053520027",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139536,
+      "finalBlock": 139540,
+      "latencyMs": 32054,
+      "latencySeconds": 32.054,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xe7d9108ec8436e4a49a4487fb44c22e8e5a64cf75a276e6c86ead36041d8481d",
+          "blockNumber": 139536,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x89d0631d306abc9aeee085a29b9cbaf3ea499b567d16074a30c0ca23a7530edd",
+          "blockNumber": 139537,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xd0bd17885db8c7ca2cf8109068dac056f8bc57f2eae126945f49f9d0e59512f5",
+          "blockNumber": 139538,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xb43234d97aab320fe703dabf6c16dced4e50b4d73e2a48371675f5ccce6bd99f",
+          "blockNumber": 139539,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x4bbeedb5b1ff472d70fbf89f1c6b26b5c3645cee76b4b2d2655a4a08c92ca19a",
+          "blockNumber": 139540,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 8,
+      "id": "1777230093230028",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139544,
+      "finalBlock": 139548,
+      "latencyMs": 32303,
+      "latencySeconds": 32.303,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x80b8f984edc17dad218272df71eac05dca365a9f55b7ec1645f27080c11c34b9",
+          "blockNumber": 139544,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xbdc0798e1a43b13572ee221887b6cd13e1a91b8ca1eef42cfb1106458cd9bb07",
+          "blockNumber": 139545,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x4faf2fa555804a02cc17f0db81cbac0a415cfbda9219e1906671ed70c60503f2",
+          "blockNumber": 139546,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x72fbff5743fe6f5cb9e1ba8db6594cb908e78cbb45b5108097c40fa6b40d347c",
+          "blockNumber": 139547,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x8857e868541e081f730c86bea0c8e30a66b145ce0f772781425f6f83454f1028",
+          "blockNumber": 139548,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 9,
+      "id": "1777230132445029",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139552,
+      "finalBlock": 139556,
+      "latencyMs": 32977,
+      "latencySeconds": 32.977,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x8f4f837c5c94b5e3fd727ba826cc34127c78f019f9a412a07f8904c67e4d19e4",
+          "blockNumber": 139552,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x46d540a81e8d2292b98f0da8640d9e0791a27d0ff9ff2ac1b416758c4845668d",
+          "blockNumber": 139553,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x10965c87f92b3150bb5a7d2836d2bdf962016feb719174b2b0b7e855d8afa398",
+          "blockNumber": 139554,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x411099332319b1b15f681c42723c2c1b1ef62b87ed24af1bb20d51d24b23fb50",
+          "blockNumber": 139555,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xd8c0ae2d5096141a9d73d237d82f892fa1290880f3787de88af8b9b5066d0769",
+          "blockNumber": 139556,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 10,
+      "id": "1777230172456030",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139560,
+      "finalBlock": 139564,
+      "latencyMs": 32986,
+      "latencySeconds": 32.986,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x2066eedf8a992e58af2fe6620f2920e7fd43f3536a98ad2f8bf7962c7f7b368c",
+          "blockNumber": 139560,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xdbeecd4cbffae1f0ebeb2fd2eaf6551d319b2c51011e5193ce940944d3de7097",
+          "blockNumber": 139561,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x2cc7637c092665e160fc1776f83e2ab2cd11f8d7f345ef8a28036f61302b6ca8",
+          "blockNumber": 139562,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x260df506c90c71a475a7965b32e04fedf987885a6ced83ead7b31799f022d1a0",
+          "blockNumber": 139563,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xf627f9d5efc91197b5c0c10b4aff51412cbc0c9b8c78aab3df433c4135b47508",
+          "blockNumber": 139564,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 11,
+      "id": "1777230212570031",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139568,
+      "finalBlock": 139572,
+      "latencyMs": 32931,
+      "latencySeconds": 32.931,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xb51b2cdb2c236d57f157a0dab290c0080203e42f664b924778fd28428dcad9c0",
+          "blockNumber": 139568,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x0a4fe3ef7e8438a29a5282c1ad2dcaba168a1d1d1ab1dc61051b6f5f26a76919",
+          "blockNumber": 139569,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x4ce9c8f722813d47254b27420f1b086749ce86abf48d80b03d56631306abd232",
+          "blockNumber": 139570,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x79eae69ded8124396744a61957a029edb4af292d5ce621a5f9a9d0155410ae3e",
+          "blockNumber": 139571,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xd1c52cca4f4cf6ea46bfb4e446298d218f73a33721824fe0418f6ab862e14b13",
+          "blockNumber": 139572,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 12,
+      "id": "1777230252593032",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139576,
+      "finalBlock": 139580,
+      "latencyMs": 32872,
+      "latencySeconds": 32.872,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x36687f005a03bf4faac43b49238241337f748703df352ef764af5e7dddaf7d55",
+          "blockNumber": 139576,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x05183f9a1a6ad0abc0ca32d9cc40f26ff8a30c4a9b268de7b42733b2099e26d1",
+          "blockNumber": 139577,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x3756f8f693695d0780bf5448f23a33e6376b6845171a5c646e72ed7e367fa488",
+          "blockNumber": 139578,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x4673dfa4b51396c881c08786d82a4844eb1e04c56074c938a266073a5bafd1b5",
+          "blockNumber": 139579,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xf8043c5e2b27ee4481b73d690a342d25a4c30dd0a70ca3fe12c0c7d20cf1cc30",
+          "blockNumber": 139580,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 13,
+      "id": "1777230294147033",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139584,
+      "finalBlock": 139588,
+      "latencyMs": 31265,
+      "latencySeconds": 31.265,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xd009b58e30206efcb7fc8dba27d99aeaea0bdb8d96981c5e7b9954b18de592e2",
+          "blockNumber": 139584,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xa358ba8b332084182f5d7d9757960bd87b5368e07f36ceaf1288d52deb5b5be1",
+          "blockNumber": 139585,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xecf4b628f8235d25fa38415c54ab902fb8b3547c64bea7f4656a128ddb2a1bcf",
+          "blockNumber": 139586,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xb15cda1b3c44dcd2ac75af66a0270263d520ae794fe0726bbd0efb44cd91a7c8",
+          "blockNumber": 139587,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xde331e4104d6f6524884ad66f140226c77bc0d286c121a0adbb2bcfef989bc26",
+          "blockNumber": 139588,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 14,
+      "id": "1777230332534034",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139592,
+      "finalBlock": 139596,
+      "latencyMs": 32944,
+      "latencySeconds": 32.944,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x857be7af200da267bf981abd6355782075dffbbf5a592bb73697cc39d8c562d2",
+          "blockNumber": 139592,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xe23882f58896445d395fd7f296f7d6891028baceb1f86932d12d6d5b5f4745b4",
+          "blockNumber": 139593,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xe66653b30b6fb0906cfc1a3150dee2ab585d2513f5851a73988bc373a7249ba5",
+          "blockNumber": 139594,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x2e36b842ac09fd37b3adce7a6050efcd92cd7e0a20a68298142b7768cbb6706a",
+          "blockNumber": 139595,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x3406b11c8767eca604af9afe60cd511845d96bb5b4240b0ee7b75b500e953921",
+          "blockNumber": 139596,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 15,
+      "id": "1777230372599035",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139600,
+      "finalBlock": 139604,
+      "latencyMs": 32982,
+      "latencySeconds": 32.982,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xfb9ab500805d2baa29af132c4aa1391f758ba72d282b858b9d8e41becaf0488e",
+          "blockNumber": 139600,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x9e25265713269aa335eb25ab537594b3292e945fc136696aac6332189cc5771c",
+          "blockNumber": 139601,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x4c980c0741147424964c042027b5e1097347c3c2fc905cf264c0665d9cd22fd0",
+          "blockNumber": 139602,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x61c2ed495d17848d2e93833459c5b6be2724c7d96c8af1ed117afa0ecfd23e9e",
+          "blockNumber": 139603,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x3d620aeeaca52eb01b290c907509e0665e8188005f2b92003ce4848bfb323613",
+          "blockNumber": 139604,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 16,
+      "id": "1777230412672036",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139608,
+      "finalBlock": 139612,
+      "latencyMs": 32647,
+      "latencySeconds": 32.647,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x8ceafe8c1849705dc447b44ccc4cb825959f94e7e469374bf440e684e6203fdb",
+          "blockNumber": 139608,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xa6ba5ea0cf6e040644ac5c22eb4ca22f0cf5cbeb66734a0c6a1ab96250ce8934",
+          "blockNumber": 139609,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x396f9529e50c9aba6f58c0193ae8a0f2037036a3e716e971eb2ec692e51ea957",
+          "blockNumber": 139610,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x3f810318856a393663942cfa7969efab27b64de493603df7cdf0739a4c250184",
+          "blockNumber": 139611,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xa4e6b84ed08e19e00016d0e2bb0964a10e9ef03dc9f4654243df6cd3b5ddf54c",
+          "blockNumber": 139612,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 17,
+      "id": "1777230452483037",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139616,
+      "finalBlock": 139620,
+      "latencyMs": 32927,
+      "latencySeconds": 32.927,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x2d93944bdb51e3943a0eb84291f3605894efbdd6ffc7db0e5012e8b398439db4",
+          "blockNumber": 139616,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x5c51b8db211f1347affc74cc4f239bdd59bb967402fe91729425db9c9d349bf7",
+          "blockNumber": 139617,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x70bd9c3f08feada7f4ba1b168df0849333c465913216d243733433cd15f80982",
+          "blockNumber": 139618,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xd4bbf1c5f93efc51cc4e234c35dea51ac5331f7bc11712319faee7bcef8f30a4",
+          "blockNumber": 139619,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xa29432bbba3488a02408f789a4c1eb6cfcaf19ab5b630419ad78114d46ce8824",
+          "blockNumber": 139620,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 18,
+      "id": "1777230492653038",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139624,
+      "finalBlock": 139628,
+      "latencyMs": 33121,
+      "latencySeconds": 33.121,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x49ce924a038ee3b031b90f7e59e4d2a9068a98ed2552898ced47fa2733c7b742",
+          "blockNumber": 139624,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x48cb1d1eae80b54ef04ee4e3b171d4da97131af664205b7de447678995e34f04",
+          "blockNumber": 139625,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x6d1e9fe40df459ccd0f0ef6d16b627956b8c39c26fa54663b132bcbeaf07e54f",
+          "blockNumber": 139626,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xdf5fbafd6bdd32cbdee4dbbc6b716154ef8e0dab8f13b4812a89912b89886104",
+          "blockNumber": 139627,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x81ebeb443547e1156006523b12176b875f4540a40b6c3a98d79bed6b1fa58dbc",
+          "blockNumber": 139628,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 19,
+      "id": "1777230532926039",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139632,
+      "finalBlock": 139636,
+      "latencyMs": 32768,
+      "latencySeconds": 32.768,
+      "totalGas": 669859,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90925
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287099,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370778,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xc653308f027037a054307ff597907e2d77de1d73f58388db2f27b92582181d25",
+          "blockNumber": 139632,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xa25b2521252552602388fcb289adb0a8ecbd5e32efc3ac8a8eed404e583cee77",
+          "blockNumber": 139633,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x8cc17a9af9b6113fc798dc6de4cb4b861987d573f7eef5c1c9502ce77157da43",
+          "blockNumber": 139634,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xf1e7858fc1b3abc05e540b6c76000a4f1a554f32f63bf4535667ea23637269f7",
+          "blockNumber": 139635,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x6d839f8173986c2ea971eaa190d9f67ba865a2bc6d59b2d80ad02016ce09fef4",
+          "blockNumber": 139636,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90925",
+          "gasUsedNumber": 90925,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 20,
+      "id": "1777230572937040",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139640,
+      "finalBlock": 139644,
+      "latencyMs": 32611,
+      "latencySeconds": 32.611,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x089c040a9d07014bcdd59c4a7238d5d4bc06ef7278e0458249ce71f7b995e3c9",
+          "blockNumber": 139640,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xdeb911294856aec240800abb02b7266f8488404f76fd5e6b5cc8756261f1b1a8",
+          "blockNumber": 139641,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x087030ccd9403b2e2b7c527fbe33d56be179e46d15ce668dfafbd6e7ac31c696",
+          "blockNumber": 139642,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x35072953f83b889a64ee94b6a0b23ff5799962bac545f81fb65cbbcc797e3965",
+          "blockNumber": 139643,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x64e3fa6c2ca219d74ec0d9baf2873ac62410f8f777052f0c3d87f1576fda1588",
+          "blockNumber": 139644,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 21,
+      "id": "1777230613567041",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139648,
+      "finalBlock": 139652,
+      "latencyMs": 32285,
+      "latencySeconds": 32.285,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xf99dc99328db4c622fed0e05efa4819840911bcd48e9de7966807fbec1bb6ae2",
+          "blockNumber": 139648,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x505a6e92afc8bbc8023fe211c772b30c59cfa9d7232268f3ac3f215a3224a3c4",
+          "blockNumber": 139649,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x5ca96a1b615b9e47f311b698baad335c0e5919568d02c85ebcc09ee2e3fbed5a",
+          "blockNumber": 139650,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xdd7e42f09d92335db0ff322b10b7ea602220dc7ca67ee97d76c9442b260c40b3",
+          "blockNumber": 139651,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x82e86d245309bbacfd8ae5661eb58e0a2a12717d1dfafcbd205c285bbe832ea6",
+          "blockNumber": 139652,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 22,
+      "id": "1777230653011042",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139656,
+      "finalBlock": 139660,
+      "latencyMs": 32815,
+      "latencySeconds": 32.815,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x0d4d09c94c6f2b9f2617b8fc95a5b08e915ca34aa342972ae9051e61cd7de178",
+          "blockNumber": 139656,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xe52eedeecaf4ba3a3d8de471ffa9a0ec93f69f599da78b62abf65078d6b68f2f",
+          "blockNumber": 139657,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x4341c8b415dcc6caaa0ba86ab8a2f4be3292da1fbf5636cc0e4d89c195efffd7",
+          "blockNumber": 139658,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xb19be84df6d7e061ecf75a643e385be79fd88d7813e23ae9fedda8aa012becd8",
+          "blockNumber": 139659,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x189dc7bdc3d68dad21e69d4c51a5977a0557b9f8518e377311e6db07b7abfdda",
+          "blockNumber": 139660,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 23,
+      "id": "1777230692837043",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139664,
+      "finalBlock": 139668,
+      "latencyMs": 32977,
+      "latencySeconds": 32.977,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xc72270ad2cf91c073f8c91d8957d1e9a01149847d8f66134e8570736f928547e",
+          "blockNumber": 139664,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x514281f7046454e5b33fb3c0ccd476ac36f759b53d488b53918625bdcaa10ed7",
+          "blockNumber": 139665,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x10adfda85384b9a17d8b63b9e3d733e238b7367f07453f5566fb369fda1bbcac",
+          "blockNumber": 139666,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x08515f7e222432512dccb5c73e0349eaec4d2be9254ec79d0979ef10c3511fa3",
+          "blockNumber": 139667,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x4740d7dd47db15d7f551da54ac67f90cdba2a2790c059a8b66569e0d9c544872",
+          "blockNumber": 139668,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 24,
+      "id": "1777230732838044",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139672,
+      "finalBlock": 139676,
+      "latencyMs": 33038,
+      "latencySeconds": 33.038,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xd4d94b25e936a2e8ef78e007822ac232054eb0e2cf2e38d70fef8f832e92dc18",
+          "blockNumber": 139672,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xab7f5fa31400e2b46ed64f06b07cd662a9c0fe7c855b44354eb6876825a3c0ce",
+          "blockNumber": 139673,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x0f85745d449538adcab81310957fed71c812127a3029122b0b2e8adf6530c8f5",
+          "blockNumber": 139674,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x9b8876aa56113070e4390ce690faa6250e8b5c87bc6384d12c2eea0930bad5da",
+          "blockNumber": 139675,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xeb1d9fa261a4c148536ba370aa3e29ebfd4f1e375b56fc7d5dc31c9485a402f7",
+          "blockNumber": 139676,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 25,
+      "id": "1777230773196045",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139680,
+      "finalBlock": 139684,
+      "latencyMs": 32103,
+      "latencySeconds": 32.103,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x27c642cf0cfdab312b037ea3e5b69963a9d18e4fa83edeb06dfadbb14ee05bc1",
+          "blockNumber": 139680,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xdd98b65d33f2bdb407c64983614583527089cf13f6959de44410b44d2cc1d099",
+          "blockNumber": 139681,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x1da3422fe2af5899bb17f1688ea174e79775d4ccc8aedc8ac65af4643b8ba31d",
+          "blockNumber": 139682,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x3faa70fe244266c5421bcd5a59fa09fccc640333490453884db45b8791089c43",
+          "blockNumber": 139683,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x871a7ce5f6a5f5b757e31e96c4323e88c7051ae78b40c01dca02133487c8ddce",
+          "blockNumber": 139684,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 26,
+      "id": "1777230812684046",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139688,
+      "finalBlock": 139692,
+      "latencyMs": 33203,
+      "latencySeconds": 33.203,
+      "totalGas": 669847,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90913
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287087,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370766,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x8b1f3a7e65c5518592b63aff3c8505dd658a5f5aaf5a7aca308484a17e9578a6",
+          "blockNumber": 139688,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x8b169996428365a168dd067b70c2b9f7163c9d5f5b002e11d79eef3edb32e261",
+          "blockNumber": 139689,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x5563b037398c673be913161433902a9543041810898fcfea2306feb1ffd0ee7e",
+          "blockNumber": 139690,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xe000a15ac6490fb94c57f6f166f5e8c9429a84e1b9e85b092e9cb15a2cfc0088",
+          "blockNumber": 139691,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xce1845240c802cbd5dfd9d76aeeea31d33c77c7b67f62046e4692ad72827a16d",
+          "blockNumber": 139692,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90913",
+          "gasUsedNumber": 90913,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 27,
+      "id": "1777230853504047",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139696,
+      "finalBlock": 139700,
+      "latencyMs": 32244,
+      "latencySeconds": 32.244,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x9fbef9a41537e191a6e742db13490ae3b80f3807a482a962ad01231bf23deec1",
+          "blockNumber": 139696,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xeb2d100819f4b6100c5bc4d250f68518cabb1fd7aa7a29b72edafce223a27f74",
+          "blockNumber": 139697,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x87da0309678e1d7fdbe919b3c2a9fd9a37ee1c9f41a79ef9cb7fe4f9806c145e",
+          "blockNumber": 139698,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xecde21c609e104d26bae8d5730b263c811cba289b1445a45157fadf4e2777c17",
+          "blockNumber": 139699,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x973e6b0968d16734f6ee8f98f86bf3e06a7d0e8155627f0e027ba38c5a2f39a7",
+          "blockNumber": 139700,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 28,
+      "id": "1777230892906048",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139704,
+      "finalBlock": 139708,
+      "latencyMs": 32516,
+      "latencySeconds": 32.516,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xc32e3f9edb15f473491e66635330203ec1e98d1a8e27baa3c43f1d0a675d5342",
+          "blockNumber": 139704,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x267ea77eac89f2111a8edf105cb40a20020f277507985bc1fa8a7810572b0129",
+          "blockNumber": 139705,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x893b2de1546ff40ee220f88ffd7822a418fdfa849878a42c47aeccf7b16df2af",
+          "blockNumber": 139706,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xa84e3e525207341b309ec9cb94d8e5c693b186ac47af4fdf52d8be89a0a287a3",
+          "blockNumber": 139707,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xf02bc38409c87e4aecafc4e9b18d745f05d88b72ef1efd6c3d0ec199d1b54b58",
+          "blockNumber": 139708,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 29,
+      "id": "1777230932638049",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139712,
+      "finalBlock": 139716,
+      "latencyMs": 33225,
+      "latencySeconds": 33.225,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x229b056375f658201b9958f342a0af9a6ae6eb2cb502445d2bde51c41b833703",
+          "blockNumber": 139712,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xa537ac75afc3951ce33601c485664cff5981f1a762bcaf30a38b1215d7d4a362",
+          "blockNumber": 139713,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x1ba5b94037b4a82209da7f2c3beea300189d571f4d6378c5e9e5f6d1a77d7acb",
+          "blockNumber": 139714,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0xff96c01570a45398b8d845d515c374b88f3d8ec1dacb41cb6b644cfdc743ae64",
+          "blockNumber": 139715,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0x85280e8a8b6e45a4429e49b44701f26c7834f98d3165d769fdc600bc9f1f8a73",
+          "blockNumber": 139716,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    },
+    {
+      "run": 30,
+      "id": "1777230972988050",
+      "completed": true,
+      "rolledBack": false,
+      "finalStatus": "ExecutionCompleted",
+      "startBlock": 139720,
+      "finalBlock": 139724,
+      "latencyMs": 32424,
+      "latencySeconds": 32.424,
+      "totalGas": 669871,
+      "categoryGas": {
+        "user_submission": 196174,
+        "remote_state": 299081,
+        "integrated_execution": 83679,
+        "finalization": 90937
+      },
+      "paperCategoryGas": {
+        "bridge_gas": 287111,
+        "state_lock_unlock_gas": 299081,
+        "integrated_execution_gas": 83679
+      },
+      "chainGas": {
+        "bc1": 370790,
+        "bc2": 299081,
+        "bc3": 0
+      },
+      "transactions": [
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xf62b0b1d66c612fe833b7381ce66977791f500039fdc835fa8d9fdc805d22a92",
+          "blockNumber": 139720,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "196174",
+          "gasUsedNumber": 196174,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "requestLockStates",
+          "eventNames": [
+            "CrossChainLockRequested"
+          ],
+          "category": "user_submission",
+          "paperCategory": "bridge_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x06d29bbeded716a8834cc59c3232ed5ff9715dfcc6d55efe41b87d744dadde67",
+          "blockNumber": 139721,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "208982",
+          "gasUsedNumber": 208982,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xc7471f5af854ee9ef9a6dc076368b117a7570f8363f92d6a909af33027217d9a",
+          "blockNumber": 139722,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "83679",
+          "gasUsedNumber": 83679,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": "executeIntegratedCallTree",
+          "eventNames": [
+            "CallTreeNodeExecuted",
+            "IntegratedExecutionPerformed"
+          ],
+          "category": "integrated_execution",
+          "paperCategory": "integrated_execution_gas"
+        },
+        {
+          "chain": "bc2",
+          "scannedChain": "bc1",
+          "hash": "0x4e2d2444d721e47c0fe1557d07302f63baa6e91f5a9f1580d9a20c7bb811ef6d",
+          "blockNumber": 139723,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0xce98506470315868fce3c841760c89e00dbb2fe3",
+          "toLabel": "bc2.xBridgingContract",
+          "gasUsed": "90099",
+          "gasUsedNumber": 90099,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [],
+          "category": "remote_state",
+          "paperCategory": "state_lock_unlock_gas"
+        },
+        {
+          "chain": "bc1",
+          "scannedChain": "bc1",
+          "hash": "0xe0233ffa6bf138ebce44a5eaf2f64d4d99da9fc445a44f8d69403193f9d0a299",
+          "blockNumber": 139724,
+          "from": "0x71562b71999873db5b286df957af199ec94617f7",
+          "to": "0x7e2d3404561241b4e20aab1c877e73818defa8ae",
+          "toLabel": "bc1.xBridgingContract",
+          "gasUsed": "90937",
+          "gasUsedNumber": 90937,
+          "effectiveGasPrice": null,
+          "feeWei": null,
+          "functionName": null,
+          "eventNames": [
+            "ExecutionCompleted"
+          ],
+          "category": "finalization",
+          "paperCategory": "bridge_gas"
+        }
+      ]
+    }
+  ]
+}

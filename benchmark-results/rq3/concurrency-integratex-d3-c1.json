@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ3c",
+  "protocol": "integratex",
+  "mode": "homogeneous-evm-concurrency",
+  "workload": {
+    "depth": 3,
+    "concurrency": 1,
+    "overlap": "all requests reuse the same benchmark service/state set for the selected depth",
+    "submission": "back-to-back burst from one signer; protocol completion is overlapped"
+  },
+  "timing": {
+    "startedAt": "2026-04-27T05:54:48.039Z",
+    "endedAt": "2026-04-27T05:55:15.976Z",
+    "elapsedSeconds": 27.937,
+    "timeoutSeconds": 420,
+    "pollIntervalMs": 250,
+    "submitGapMs": 0
+  },
+  "summary": {
+    "submitted": 1,
+    "terminal": 1,
+    "completed": 1,
+    "rolledBack": 0,
+    "timedOut": 0,
+    "successRate": 1,
+    "avgCompletionLatencyMs": 25025,
+    "medianCompletionLatencyMs": 25025,
+    "stdCompletionLatencyMs": 0,
+    "avgCompletionLatencySeconds": 25.025,
+    "medianCompletionLatencySeconds": 25.025,
+    "stdCompletionLatencySeconds": 0
+  },
+  "samples": [
+    {
+      "id": "1000612",
+      "index": 1,
+      "startBlock": 147382,
+      "submitStartedAtMs": 1777269290950,
+      "submittedAtMs": 1777269295744,
+      "submitLatencyMs": 4794,
+      "protocolTxHash": "0x3b9f9f174ddcfc601e0eb0903e6911d6f3788755da13200746b4345a8c7cc87c",
+      "terminal": true,
+      "completed": true,
+      "rolledBack": false,
+      "timedOut": false,
+      "finalStatus": 7,
+      "finalBlock": 147386,
+      "observedAtMs": 1777269315975,
+      "latencyMs": 25025,
+      "latencySeconds": 25.025
+    }
+  ]
+}

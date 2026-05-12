@@ -1,0 +1,51 @@
+title: "Atom Relayer Configuration"
+
+protocol: "atom"
+
+relayer:
+  id: "atom-relayer"
+  log_level: "debug"
+  workers: 4
+  private_key: "70ff25649b86772b672f211d338ea82f042683c2bf5901a9a1e542f77110489e"
+
+chains:
+  bc1:
+    name: "Execution Chain"
+    chain_id: 1
+    rpc_url: "ws://209.38.21.129:8546"
+    http_url: "http://209.38.21.129:8545"
+    atom_service_address: "0x7625A7e25601CBC8414EFdB8B993AE03A4a23CE2"
+    atom_entry_address: "0x33e96FC423c30e33a7C8195407d584AB5970B4Be"
+    atom_registry_address: "0xE01478D3BC0123Fc4E22166ECB487e92edB2AB35"
+    atom_community_address: "0xDE9021116FB5A7c290d81C4b7Fd80f35CBC21de7"
+
+  bc2:
+    name: "Hotel Chain"
+    chain_id: 2
+    rpc_url: "ws://170.64.194.4:8546"
+    http_url: "http://170.64.194.4:8545"
+    atom_hotel_address: "0x761bDc266438B88a138915010155c2C9eD381F9c"
+
+  bc3:
+    name: "Train Chain"
+    chain_id: 3
+    rpc_url: "ws://170.64.164.173:8546"
+    http_url: "http://170.64.164.173:8545"
+    atom_train_address: "0xB23566BE17D283fF6f6C7BdD0bacd3db891461ed"
+
+proof:
+  max_retry: 3
+  retry_delay_ms: 1000
+  confirmation_blocks: 1
+
+relay:
+  timeout_seconds: 60
+  max_pending: 100
+
+atom:
+  write_only_manifest: "../../manifests/atom/train-hotel-write-only.generated.json"
+  read_write_manifest: "../../manifests/atom/train-hotel-read-write.generated.json"
+  judge_private_keys:
+    - "b71c71a67e1177ad4e901695e1b4b9ee17ae16c6668d313eac2f96dbcda3f291"
+    - "fbd6535363327d6c7b8fb48481e726ff61a0c16faf20fab3edd4288748a68897"
+    - "28df2e95c9fb5530abf55ab4d2408c6ce9292db79db60fcc1115ecf1dd327d69"

@@ -1,0 +1,56 @@
+title: "XSmart Relayer Configuration (RQ1a EVM)"
+
+protocol: "xsmart"
+
+relayer:
+  id: "xsmart-relayer-1a"
+  log_level: "debug"
+  workers: 4
+  private_key: "b71c71a67e1177ad4e901695e1b4b9ee17ae16c6668d313eac2f96dbcda3f291"
+
+chains:
+  bc1:
+    name: "Execution Chain"
+    vm: "evm"
+    chain_id: 1
+    rpc_url: "http://35.185.111.61:8545"
+    http_url: "http://35.185.111.61:8545"
+  bc2:
+    name: "Hotel Chain"
+    vm: "evm"
+    chain_id: 2
+    rpc_url: "http://34.118.30.0:8545"
+    http_url: "http://34.118.30.0:8545"
+  bc3:
+    name: "Train Chain"
+    vm: "evm"
+    chain_id: 3
+    rpc_url: "http://35.187.203.226:8545"
+    http_url: "http://35.187.203.226:8545"
+
+contracts:
+  xsmart:
+    bc1:
+      xbridging_contract: "0x3Dc2cd8F2E345951508427872d8ac9f635fBe0EC"
+      ubtl_registry: "0x537e697c7AB75A26f9ECF0Ce810e3154dFcaaf44"
+      relayer_manager: "0xdB7d6AB1f17c6b31909aE466702703dAEf9269Cf"
+      light_client: "0x3A220f351252089D385b29beca14e27F204c296A"
+    bc2:
+      xbridging_contract: "0x3Dc2cd8F2E345951508427872d8ac9f635fBe0EC"
+    bc3:
+      xbridging_contract: "0x3Dc2cd8F2E345951508427872d8ac9f635fBe0EC"
+
+proof:
+  max_retry: 3
+  retry_delay_ms: 1000
+  confirmation_blocks: 1
+
+relay:
+  timeout_seconds: 120
+  max_pending: 100
+
+xsmart:
+  manifest: "D:/UIT/randomly/manifests/xsmart/travel-evm-1a.generated.json"
+  service_id: "travel"
+  wasm_lock_num: 1
+  wasm_timeout_blocks: 30

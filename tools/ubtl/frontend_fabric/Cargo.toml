@@ -1,0 +1,9 @@
+[package]
+name = "ubtl-frontend-fabric"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[dependencies]
+tiny-keccak = { version = "2.0", features = ["keccak"] }
+ubtl-ir = { path = "../ir" }

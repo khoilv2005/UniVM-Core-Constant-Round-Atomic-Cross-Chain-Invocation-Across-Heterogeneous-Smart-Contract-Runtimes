@@ -1,0 +1,13 @@
+{
+  "workflow_id": "gpact-travel-depth-2",
+  "root_chain_id": 1,
+  "segments": [
+    {
+      "segment_id": 1,
+      "chain_id": 2,
+      "contract": "0xd5C91F8fDD6E2e13a2699E71F3274900B493E5f0",
+      "function": "hotel",
+      "kind": "hotel"
+    }
+  ]
+}

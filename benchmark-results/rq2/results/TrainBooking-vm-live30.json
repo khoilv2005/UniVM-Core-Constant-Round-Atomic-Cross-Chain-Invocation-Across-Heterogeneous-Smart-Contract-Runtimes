@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ2a",
+  "mode": "vm-full-live-original-vs-translated",
+  "contract": "TrainBooking",
+  "namespace": "vm-live30-20260428-204411",
+  "casesPath": "D:\\UIT\\randomly\\benchmark-results\\rq2\\cases\\trainbooking.jsonl",
+  "generatedAt": "2026-04-28T15:50:13.965Z",
+  "elapsedSeconds": 4174.135,
+  "runs": 30,
+  "targetRuns": 30,
+  "pass": 30,
+  "fail": 0,
+  "passRate": 1,
+  "results": [
+    {
+      "caseId": "train-0000",
+      "seed": 20260426,
+      "pass": true,
+      "originalSnapshotHash": "0x0c9c80902c18b4fc64e00034d0b028517c36d625c97f4b016d1fafd8313ff7f9",
+      "translatedSnapshotHash": "0x0c9c80902c18b4fc64e00034d0b028517c36d625c97f4b016d1fafd8313ff7f9"
+    },
+    {
+      "caseId": "train-0001",
+      "seed": 20268345,
+      "pass": true,
+      "originalSnapshotHash": "0xad1ee8b8669e1d07f8eef95e21b6876ea8f7ce6b5c1168a090fb682fbdd5267d",
+      "translatedSnapshotHash": "0xad1ee8b8669e1d07f8eef95e21b6876ea8f7ce6b5c1168a090fb682fbdd5267d"
+    },
+    {
+      "caseId": "train-0002",
+      "seed": 20276264,
+      "pass": true,
+      "originalSnapshotHash": "0x8a3cf2890c68e4de368a551f463df081a2306dc5d57d1a44d1b7beb85d874119",
+      "translatedSnapshotHash": "0x8a3cf2890c68e4de368a551f463df081a2306dc5d57d1a44d1b7beb85d874119"
+    },
+    {
+      "caseId": "train-0003",
+      "seed": 20284183,
+      "pass": true,
+      "originalSnapshotHash": "0xed698a99123b9ae3caaef15efa4322c5a6d25070f397c8674cce8b94a482ff6c",
+      "translatedSnapshotHash": "0xed698a99123b9ae3caaef15efa4322c5a6d25070f397c8674cce8b94a482ff6c"
+    },
+    {
+      "caseId": "train-0004",
+      "seed": 20292102,
+      "pass": true,
+      "originalSnapshotHash": "0xe275c4c8791b6405d647c854f8ddabeffb05f68994b1d4d8c33a4f3b6301179c",
+      "translatedSnapshotHash": "0xe275c4c8791b6405d647c854f8ddabeffb05f68994b1d4d8c33a4f3b6301179c"
+    },
+    {
+      "caseId": "train-0005",
+      "seed": 20300021,
+      "pass": true,
+      "originalSnapshotHash": "0x31512b147592ec7cdbd9147e1cf4ae5bdddd598640a565d3bc79485d4997c082",
+      "translatedSnapshotHash": "0x31512b147592ec7cdbd9147e1cf4ae5bdddd598640a565d3bc79485d4997c082"
+    },
+    {
+      "caseId": "train-0006",
+      "seed": 20307940,
+      "pass": true,
+      "originalSnapshotHash": "0x77e07484dfd5e4396ecfdb14a5a4eeda1c24d396b3b193bf32aaff65d94ffcfb",
+      "translatedSnapshotHash": "0x77e07484dfd5e4396ecfdb14a5a4eeda1c24d396b3b193bf32aaff65d94ffcfb"
+    },
+    {
+      "caseId": "train-0007",
+      "seed": 20315859,
+      "pass": true,
+      "originalSnapshotHash": "0x7ac361519988d680424240289f84ac394a66ca2fda5ea7e6933858a220f791fc",
+      "translatedSnapshotHash": "0x7ac361519988d680424240289f84ac394a66ca2fda5ea7e6933858a220f791fc"
+    },
+    {
+      "caseId": "train-0008",
+      "seed": 20323778,
+      "pass": true,
+      "originalSnapshotHash": "0x56d9c1a57a185e50242dfa988b9d8eeaf07bdfe4942baaf8da5e94d82d5feb5e",
+      "translatedSnapshotHash": "0x56d9c1a57a185e50242dfa988b9d8eeaf07bdfe4942baaf8da5e94d82d5feb5e"
+    },
+    {
+      "caseId": "train-0009",
+      "seed": 20331697,
+      "pass": true,
+      "originalSnapshotHash": "0x47b8a954d4251eedfb6504dfab4593e9c09169d914034ef8f673643b1e7d9438",
+      "translatedSnapshotHash": "0x47b8a954d4251eedfb6504dfab4593e9c09169d914034ef8f673643b1e7d9438"
+    },
+    {
+      "caseId": "train-0010",
+      "seed": 20339616,
+      "pass": true,
+      "originalSnapshotHash": "0x36127d51004d56de6dc5d8a79050f295bcbd73215dfbb1153d263f3a8c6bd648",
+      "translatedSnapshotHash": "0x36127d51004d56de6dc5d8a79050f295bcbd73215dfbb1153d263f3a8c6bd648"
+    },
+    {
+      "caseId": "train-0011",
+      "seed": 20347535,
+      "pass": true,
+      "originalSnapshotHash": "0x3ae2222f4ea512b5d4e68b9f5ec555db1aaf8c6219c299c754fbcb47f9245f2d",
+      "translatedSnapshotHash": "0x3ae2222f4ea512b5d4e68b9f5ec555db1aaf8c6219c299c754fbcb47f9245f2d"
+    },
+    {
+      "caseId": "train-0012",
+      "seed": 20355454,
+      "pass": true,
+      "originalSnapshotHash": "0xf805ed7afb9a79436ae6f4093500945b43f4010c03379230fdc891dd3d3a579d",
+      "translatedSnapshotHash": "0xf805ed7afb9a79436ae6f4093500945b43f4010c03379230fdc891dd3d3a579d"
+    },
+    {
+      "caseId": "train-0013",
+      "seed": 20363373,
+      "pass": true,
+      "originalSnapshotHash": "0x91d03679f0eb433727a6a5afe63bc6ed42eef1f7bf97088d8967642298fd4a91",
+      "translatedSnapshotHash": "0x91d03679f0eb433727a6a5afe63bc6ed42eef1f7bf97088d8967642298fd4a91"
+    },
+    {
+      "caseId": "train-0014",
+      "seed": 20371292,
+      "pass": true,
+      "originalSnapshotHash": "0x8e9505c2903d473553c34b31bf3a9f2dfe3ae5d856fb875a187d057a4385a124",
+      "translatedSnapshotHash": "0x8e9505c2903d473553c34b31bf3a9f2dfe3ae5d856fb875a187d057a4385a124"
+    },
+    {
+      "caseId": "train-0015",
+      "seed": 20379211,
+      "pass": true,
+      "originalSnapshotHash": "0xeabacc96d967fbd9ad2283b95a136d0e61335528fa774d07a801e285a233defa",
+      "translatedSnapshotHash": "0xeabacc96d967fbd9ad2283b95a136d0e61335528fa774d07a801e285a233defa"
+    },
+    {
+      "caseId": "train-0016",
+      "seed": 20387130,
+      "pass": true,
+      "originalSnapshotHash": "0x29ccf3ec5a368efcd38280c992f0d9e4cd182ab72b85257ec91574504b93dca9",
+      "translatedSnapshotHash": "0x29ccf3ec5a368efcd38280c992f0d9e4cd182ab72b85257ec91574504b93dca9"
+    },
+    {
+      "caseId": "train-0017",
+      "seed": 20395049,
+      "pass": true,
+      "originalSnapshotHash": "0x68312b16c6693ecd40dd4b7d287869f4a88c04cdbe25f56dd8fc330663fd57c5",
+      "translatedSnapshotHash": "0x68312b16c6693ecd40dd4b7d287869f4a88c04cdbe25f56dd8fc330663fd57c5"
+    },
+    {
+      "caseId": "train-0018",
+      "seed": 20402968,
+      "pass": true,
+      "originalSnapshotHash": "0x9acbafb4d28be0dda8456a0417c02e1e1cbd45ac76a22c43faf0b9dd31c97f9b",
+      "translatedSnapshotHash": "0x9acbafb4d28be0dda8456a0417c02e1e1cbd45ac76a22c43faf0b9dd31c97f9b"
+    },
+    {
+      "caseId": "train-0019",
+      "seed": 20410887,
+      "pass": true,
+      "originalSnapshotHash": "0xcf89179f61c2032ce435ee9237729b9f729c037d6f58ceee028f9e7e31c47fbb",
+      "translatedSnapshotHash": "0xcf89179f61c2032ce435ee9237729b9f729c037d6f58ceee028f9e7e31c47fbb"
+    },
+    {
+      "caseId": "train-0020",
+      "seed": 20418806,
+      "pass": true,
+      "originalSnapshotHash": "0x71057b5f97f7b8ce5afa218bea3d173165309dfa408076512b4e39783f1da658",
+      "translatedSnapshotHash": "0x71057b5f97f7b8ce5afa218bea3d173165309dfa408076512b4e39783f1da658"
+    },
+    {
+      "caseId": "train-0021",
+      "seed": 20426725,
+      "pass": true,
+      "originalSnapshotHash": "0xfa550e3129a050f110b1fc0bc13e6b2d0ea0f77e49742d32fe4669010ec14f93",
+      "translatedSnapshotHash": "0xfa550e3129a050f110b1fc0bc13e6b2d0ea0f77e49742d32fe4669010ec14f93"
+    },
+    {
+      "caseId": "train-0022",
+      "seed": 20434644,
+      "pass": true,
+      "originalSnapshotHash": "0xb61f2656d7052a297fdf68ded7a6a0f19582ced8179ab795f9cf61ece60ccf06",
+      "translatedSnapshotHash": "0xb61f2656d7052a297fdf68ded7a6a0f19582ced8179ab795f9cf61ece60ccf06"
+    },
+    {
+      "caseId": "train-0023",
+      "seed": 20442563,
+      "pass": true,
+      "originalSnapshotHash": "0x2f38405572bcd290f5335e3dd9f25f16eba384367cf7179371322f904bfc983b",
+      "translatedSnapshotHash": "0x2f38405572bcd290f5335e3dd9f25f16eba384367cf7179371322f904bfc983b"
+    },
+    {
+      "caseId": "train-0024",
+      "seed": 20450482,
+      "pass": true,
+      "originalSnapshotHash": "0x4d3a742a7cf14aa2cd1952906c47b92cf5425c0db25d136390992734c51eb784",
+      "translatedSnapshotHash": "0x4d3a742a7cf14aa2cd1952906c47b92cf5425c0db25d136390992734c51eb784"
+    },
+    {
+      "caseId": "train-0025",
+      "seed": 20458401,
+      "pass": true,
+      "originalSnapshotHash": "0x3956613cf64a846890a655c0d75bbcea6abe10eb0e51a66209151ae51594fe23",
+      "translatedSnapshotHash": "0x3956613cf64a846890a655c0d75bbcea6abe10eb0e51a66209151ae51594fe23"
+    },
+    {
+      "caseId": "train-0026",
+      "seed": 20466320,
+      "pass": true,
+      "originalSnapshotHash": "0xc117e1a533c1467c1c2729191d788db14671fa2b1bae7c161d51e5d929dd77eb",
+      "translatedSnapshotHash": "0xc117e1a533c1467c1c2729191d788db14671fa2b1bae7c161d51e5d929dd77eb"
+    },
+    {
+      "caseId": "train-0027",
+      "seed": 20474239,
+      "pass": true,
+      "originalSnapshotHash": "0x8ff23e6f0c216888d120ed490b27461033be22163d0db118044f6e865b2f48a6",
+      "translatedSnapshotHash": "0x8ff23e6f0c216888d120ed490b27461033be22163d0db118044f6e865b2f48a6"
+    },
+    {
+      "caseId": "train-0028",
+      "seed": 20482158,
+      "pass": true,
+      "originalSnapshotHash": "0xec5cc51e8dc66510ecb00f0ceabd0fa393f2ee7b7944baab7c5be6ff8fee4cee",
+      "translatedSnapshotHash": "0xec5cc51e8dc66510ecb00f0ceabd0fa393f2ee7b7944baab7c5be6ff8fee4cee"
+    },
+    {
+      "caseId": "train-0029",
+      "seed": 20490077,
+      "pass": true,
+      "originalSnapshotHash": "0x7029d800e18eb319e7fc3059db430de53955c68c808745142af857069d6fc13d",
+      "translatedSnapshotHash": "0x7029d800e18eb319e7fc3059db430de53955c68c808745142af857069d6fc13d"
+    }
+  ]
+}

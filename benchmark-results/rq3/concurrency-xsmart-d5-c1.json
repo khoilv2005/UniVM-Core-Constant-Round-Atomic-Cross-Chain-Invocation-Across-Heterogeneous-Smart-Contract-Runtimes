@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ3c",
+  "protocol": "xsmart",
+  "mode": "homogeneous-evm-concurrency",
+  "workload": {
+    "depth": 5,
+    "concurrency": 1,
+    "overlap": "all requests reuse the same benchmark service/state set for the selected depth",
+    "submission": "back-to-back burst from one signer; protocol completion is overlapped"
+  },
+  "timing": {
+    "startedAt": "2026-05-11T08:21:14.959Z",
+    "endedAt": "2026-05-11T08:21:59.373Z",
+    "elapsedSeconds": 44.414,
+    "timeoutSeconds": 360,
+    "pollIntervalMs": 250,
+    "submitGapMs": 0
+  },
+  "summary": {
+    "submitted": 1,
+    "terminal": 1,
+    "completed": 1,
+    "rolledBack": 0,
+    "timedOut": 0,
+    "successRate": 1,
+    "avgCompletionLatencyMs": 44413,
+    "medianCompletionLatencyMs": 44413,
+    "p90CompletionLatencyMs": 44413,
+    "p99CompletionLatencyMs": 44413,
+    "stdCompletionLatencyMs": 0,
+    "avgCompletionLatencySeconds": 44.413,
+    "medianCompletionLatencySeconds": 44.413,
+    "p90CompletionLatencySeconds": 44.413,
+    "p99CompletionLatencySeconds": 44.413,
+    "stdCompletionLatencySeconds": 0
+  },
+  "samples": [
+    {
+      "id": "1778487674960001",
+      "index": 1,
+      "startBlock": 300,
+      "submitStartedAtMs": 1778487674960,
+      "submittedAtMs": 1778487689939,
+      "submitLatencyMs": 14979,
+      "protocolTxHash": "0x477e8c197c0cac0665c5cef4237565b551c0901d390abe91ba958fd925ffea9a",
+      "terminal": true,
+      "completed": true,
+      "rolledBack": false,
+      "timedOut": false,
+      "finalStatus": "ExecutionCompleted",
+      "finalBlock": 302,
+      "observedAtMs": 1778487719373,
+      "latencyMs": 44413,
+      "latencySeconds": 44.413
+    }
+  ]
+}

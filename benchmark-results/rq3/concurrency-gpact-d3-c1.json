@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "rq": "RQ3c",
+  "protocol": "gpact",
+  "mode": "homogeneous-evm-concurrency",
+  "workload": {
+    "depth": 3,
+    "concurrency": 1,
+    "overlap": "all requests reuse the same benchmark service/state set for the selected depth",
+    "submission": "back-to-back burst from one signer; protocol completion is overlapped"
+  },
+  "timing": {
+    "startedAt": "2026-04-27T05:56:07.761Z",
+    "endedAt": "2026-04-27T05:56:41.073Z",
+    "elapsedSeconds": 33.312,
+    "timeoutSeconds": 420,
+    "pollIntervalMs": 250,
+    "submitGapMs": 0
+  },
+  "summary": {
+    "submitted": 1,
+    "terminal": 1,
+    "completed": 1,
+    "rolledBack": 0,
+    "timedOut": 0,
+    "successRate": 1,
+    "avgCompletionLatencyMs": 33309,
+    "medianCompletionLatencyMs": 33309,
+    "stdCompletionLatencyMs": 0,
+    "avgCompletionLatencySeconds": 33.309,
+    "medianCompletionLatencySeconds": 33.309,
+    "stdCompletionLatencySeconds": 0
+  },
+  "samples": [
+    {
+      "id": "0xa399b643e6cb4780260fba57a9f40814908afed1b2c2acc94ded285bf2c24c8a",
+      "index": 1,
+      "startBlock": 147397,
+      "submitStartedAtMs": 1777269367764,
+      "submittedAtMs": 1777269370832,
+      "submitLatencyMs": 3068,
+      "protocolTxHash": "0x188956a8402f0145e123dcf40c2ceb2781c16e227bcbfb8b42eb27623cfb7240",
+      "terminal": true,
+      "completed": true,
+      "rolledBack": false,
+      "timedOut": false,
+      "finalStatus": 5,
+      "finalBlock": 147403,
+      "observedAtMs": 1777269401073,
+      "latencyMs": 33309,
+      "latencySeconds": 33.309
+    }
+  ]
+}
