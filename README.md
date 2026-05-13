@@ -2,8 +2,6 @@
 
 Research artifact for **UniVM-Core**, a prototype for constant-round atomic cross-chain invocation across heterogeneous smart-contract runtimes.
 
-**DOI:** https://doi.org/10.5281/zenodo.20140391
-
 This repository contains smart-contract prototypes, relayer code, benchmark harnesses, raw result artifacts, and figure-generation scripts used to reproduce the reported evaluation. The artifact is intended for review, replication, and follow-on systems research, not production deployment.
 
 ## Artifact Scope
